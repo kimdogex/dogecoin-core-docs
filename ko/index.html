@@ -641,11 +641,11 @@ zmqpubsequence=tcp://127.0.0.1:28336</code></pre>
                         <div class="zmq-topics">
                             <div class="topic">
                                 <code>rawblock</code>
-                                <span>네트워크에서 받은 원시 블록 데이터</span>
+                                <span>네트워크에서 받은 Raw 블록 데이터</span>
                             </div>
                             <div class="topic">
                                 <code>rawtx</code>
-                                <span>네트워크에서 받은 원시 트랜잭션 데이터</span>
+                                <span>네트워크에서 받은 Raw 트랜잭션 데이터</span>
                             </div>
                             <div class="topic">
                                 <code>hashtx</code>
@@ -657,7 +657,7 @@ zmqpubsequence=tcp://127.0.0.1:28336</code></pre>
                             </div>
                             <div class="topic">
                                 <code>sequence</code>
-                                <span>시퀀스 번호 및 원시 데이터</span>
+                                <span>시퀀스 번호 및 Raw 데이터</span>
                             </div>
                         </div>
                     </div>
@@ -812,13 +812,13 @@ rpc.call('getwalletinfo').then(result => {
     <section id="transactions" class="section">
         <div class="container">
             <h2 class="section-title">
-                트랜잭션 및 원시 트랜잭션
+                트랜잭션 및 Raw 트랜잭션
                 <span class="doge-word">Such Transfer!</span>
             </h2>
             
             <div class="transaction-content">
                 <div class="transaction-intro">
-                    <p>일반 거래를 보내는 방법과 고급 사용 사례를 위한 원시 거래 생성 방법을 배웁니다. Much sending, so transaction!</p>
+                    <p>일반 거래를 보내는 방법과 고급 사용 사례를 위한 Raw 거래 생성 방법을 배웁니다. Much sending, so transaction!</p>
                 </div>
 
                 <div class="transaction-types">
@@ -884,20 +884,20 @@ curl -u your_username:your_password \
                     </div>
 
                     <div class="transaction-type">
-                        <h3><span class="material-icons">settings</span> 원시 트랜잭션</h3>
-                        <p>다중서명, 커스텀 스크립트, 외부 시스템 연동과 같은 고급 사용 사례를 위해 수동으로 거래를 생성합니다.</p>
+                        <h3><span class="material-icons">settings</span> Raw 트랜잭션</h3>
+                        <p>멀티시그, 커스텀 스크립트, 외부 시스템 연동과 같은 고급 사용 사례를 위해 수동으로 거래를 생성합니다.</p>
                         
                         <div class="raw-tx-steps">
                             <div class="step">
                                 <div class="step-number">1</div>
                                 <div class="step-content">
-                                    <h4>원시 트랜잭션 생성</h4>
+                                    <h4>Raw 트랜잭션 생성</h4>
                                     <div class="code-block">
                                         <div class="code-header">
-                                            <span>원시 트랜잭션 생성</span>
+                                            <span>Raw 트랜잭션 생성</span>
                                             <button class="copy-btn" onclick="copyCode(this)">복사</button>
                                         </div>
-                                        <pre><code># 원시 트랜잭션 생성
+                                        <pre><code># Raw 트랜잭션 생성
 curl -u your_username:your_password \
   -X POST \
   -H "Content-Type: application/json" \
@@ -918,13 +918,13 @@ curl -u your_username:your_password \
                             <div class="step">
                                 <div class="step-number">2</div>
                                 <div class="step-content">
-                                    <h4>원시 트랜잭션 서명</h4>
+                                    <h4>Raw 트랜잭션 서명</h4>
                                     <div class="code-block">
                                         <div class="code-header">
-                                            <span>원시 트랜잭션 서명</span>
+                                            <span>Raw 트랜잭션 서명</span>
                                             <button class="copy-btn" onclick="copyCode(this)">복사</button>
                                         </div>
-                                        <pre><code># 원시 거래 서명
+                                        <pre><code># Raw 거래 서명
 curl -u your_username:your_password \
   -X POST \
   -H "Content-Type: application/json" \
@@ -942,13 +942,13 @@ curl -u your_username:your_password \
                             <div class="step">
                                 <div class="step-number">3</div>
                                 <div class="step-content">
-                                    <h4>원시 트랜잭션 전송</h4>
+                                    <h4>Raw 트랜잭션 전송</h4>
                                     <div class="code-block">
                                         <div class="code-header">
                                             <span>네트워크에 브로드캐스트</span>
                                             <button class="copy-btn" onclick="copyCode(this)">복사</button>
                                         </div>
-                                        <pre><code># 원시 트랜잭션 전송
+                                        <pre><code># Raw 트랜잭션 전송
 curl -u your_username:your_password \
   -X POST \
   -H "Content-Type: application/json" \
@@ -970,7 +970,7 @@ curl -u your_username:your_password \
                     <h3><span class="material-icons">build</span> 트랜잭션 도구 및 유틸리티</h3>
                     <div class="tools-grid">
                         <div class="tool">
-                            <h4>원시 트랜잭션 디코드</h4>
+                            <h4>Raw 트랜잭션 디코드</h4>
                             <div class="code-block">
                                 <div class="code-header">
                                     <span>트랜잭션 디코드</span>
@@ -1049,7 +1049,7 @@ curl -u your_username:your_password \
 
                 <div class="opcodes-explanation">
                     <h3><span class="material-icons">code</span> OP_CODES란?</h3>
-                    <p>OP_CODES는 도지코인 스크립트 언어에서 트랜잭션 사용 방식을 정의하는 연산 코드입니다. 조건부 지출, 다중서명(Multisig)지갑 등 고급 기능을 지원합니다.</p>
+                    <p>OP_CODES는 도지코인 스크립트 언어에서 트랜잭션 사용 방식을 정의하는 연산 코드입니다. 조건부 지출, 멀티시그 지갑 등 고급 기능을 지원합니다.</p>
                 </div>
 
                 <div class="opcodes-categories">
@@ -1106,11 +1106,11 @@ curl -u your_username:your_password \
                     </div>
 
                     <div class="category">
-                        <h3><span class="material-icons">group</span> 다중 서명(Multisig) OP_CODES</h3>
+                        <h3><span class="material-icons">group</span> 멀티시그 OP_CODES</h3>
                         <div class="opcode-list">
                             <div class="opcode-item">
                                 <code>OP_CHECKMULTISIG</code>
-                                <span>다중 서명 검증</span>
+                                <span>멀티시그 검증</span>
                             </div>
                             <div class="opcode-item">
                                 <code>OP_1</code> to <code>OP_16</code>
@@ -1158,14 +1158,14 @@ curl -u your_username:your_password \
                     </div>
 
                     <div class="example">
-                        <h4>2. 다중 서명 지갑</h4>
-                        <p>2/3 다중 서명 지갑 생성. Such security, much protection!</p>
+                        <h4>2. 멀티시그 지갑</h4>
+                        <p>2/3 멀티시그 지갑 생성. Such security, much protection!</p>
                         <div class="code-block">
                             <div class="code-header">
-                                <span>2/3 다중 서명 주소 생성</span>
+                                <span>2/3 멀티시그 주소 생성</span>
                                 <button class="copy-btn" onclick="copyCode(this)">복사</button>
                             </div>
-                            <pre><code># 다중 서명 주소 생성
+                            <pre><code># 멀티시그 주소 생성
 curl -u your_username:your_password \
   -X POST \
   -H "Content-Type: application/json" \
