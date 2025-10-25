@@ -1518,20 +1518,20 @@ dogecoin-cli getnetworkinfo</code></pre>
                         </div>
 
                         <div class="method">
-                            <h4>Configuration File Switching</h4>
+                            <h4>설정 파일 전환</h4>
                             <div class="code-block">
                                 <div class="code-header">
-                                    <span>Use different config files</span>
-                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                    <span>다른 설정 파일 사용</span>
+                                    <button class="copy-btn" onclick="copyCode(this)">복사</button>
                                 </div>
-                                <pre><code># Mainnet configuration (dogecoin.conf)
+                                <pre><code># 메인넷 설정 (dogecoin.conf)
 server=1
 rpcuser=mainnet_user
 rpcpassword=mainnet_pass
 rpcport=22555
 port=22556
 
-# Testnet configuration (dogecoin-testnet.conf)
+# 테스트넷 설정 (dogecoin-testnet.conf)
 testnet=1
 server=1
 rpcuser=testnet_user
@@ -1539,7 +1539,7 @@ rpcpassword=testnet_pass
 rpcport=44555
 port=44556
 
-# Use specific config file
+# 특정 설정 파일 사용
 dogecoin-qt -conf=dogecoin-testnet.conf</code></pre>
                             </div>
                         </div>
@@ -1547,42 +1547,42 @@ dogecoin-qt -conf=dogecoin-testnet.conf</code></pre>
                 </div>
 
                 <div class="network-troubleshooting">
-                    <h3><span class="material-icons">build</span> Network Troubleshooting</h3>
-                    <p>Diagnose and fix common network connectivity issues with your Dogecoin node. Such troubleshooting, much solutions!</p>
+                    <h3><span class="material-icons">build</span> 네트워크 문제 해결</h3>
+                    <p>도지코인 노드의 일반적인 네트워크 연결 문제를 진단하고 해결하세요. Such troubleshooting, much solutions!</p>
                     
                     <div class="troubleshooting-categories">
                         <div class="troubleshooting-category">
                             <div class="category-header">
                                 <span class="material-icons">wifi_off</span>
-                                <h4>Connection Problems</h4>
-                                <span class="severity high">High Priority</span>
+                                <h4>연결 문제</h4>
+                                <span class="severity high">높은 우선순위</span>
                             </div>
                             <div class="troubleshooting-issues">
                                 <div class="troubleshooting-issue">
                                     <div class="issue-header">
                                         <span class="material-icons">error</span>
-                                        <h5>Can't Connect to Peers</h5>
-                                        <span class="issue-status">Common</span>
+                                        <h5>피어에 연결할 수 없음</h5>
+                                        <span class="issue-status">일반적</span>
                                     </div>
                                     <div class="issue-content">
                                         <div class="problem-section">
-                                            <h6><span class="material-icons">warning</span> Problem Symptoms:</h6>
+                                            <h6><span class="material-icons">warning</span> 문제 증상:</h6>
                                             <ul>
-                                                <li>Node shows 0 connections</li>
-                                                <li>"No block source available" message</li>
-                                                <li>Stuck at "Connecting to peers"</li>
+                                                <li>노드가 0개의 연결을 표시함</li>
+                                                <li>"블록 소스가 없음" 메시지</li>
+                                                <li>"피어에 연결 중"에서 멈춤</li>
                                             </ul>
                                         </div>
                                         <div class="solution-section">
-                                            <h6><span class="material-icons">check_circle</span> Solutions:</h6>
+                                            <h6><span class="material-icons">check_circle</span> 해결 방법:</h6>
                                             <div class="solution-steps">
                                                 <div class="solution-step">
                                                     <span class="step-number">1</span>
                                                     <div class="step-content">
-                                                        <h6>Check Firewall Settings</h6>
-                                                        <p>Ensure port 22556 (mainnet) or 44556 (testnet) is open</p>
+                                                        <h6>방화벽 설정 확인</h6>
+                                                        <p>포트 22556 (메인넷) or 44556 (테스트넷)이 열려있는지 확인</p>
                                                         <div class="code-snippet">
-                                                            <code># Windows Firewall
+                                                            <code># Windows 방화벽
 netsh advfirewall firewall add rule name="Dogecoin" dir=in action=allow protocol=TCP localport=22556
 
 # Linux UFW
@@ -1593,10 +1593,10 @@ sudo ufw allow 22556/tcp</code>
                                                 <div class="solution-step">
                                                     <span class="step-number">2</span>
                                                     <div class="step-content">
-                                                        <h6>Verify Network Configuration</h6>
-                                                        <p>Check your dogecoin.conf file for correct settings</p>
+                                                        <h6>네트워크 설정 확인</h6>
+                                                        <p>dogecoin.conf 파일의 설정이 올바른지 확인</p>
                                                         <div class="code-snippet">
-                                                            <code># Add to dogecoin.conf
+                                                            <code># dogecoin.conf에 추가
 maxconnections=125
 addnode=seed.dogecoin.com
 addnode=seed.multidoge.org</code>
@@ -1606,12 +1606,12 @@ addnode=seed.multidoge.org</code>
                                                 <div class="solution-step">
                                                     <span class="step-number">3</span>
                                                     <div class="step-content">
-                                                        <h6>Test DNS Resolution</h6>
-                                                        <p>Try different DNS servers if connection fails</p>
+                                                        <h6>DNS 해석 테스트</h6>
+                                                        <p>연결 실패 시 다른 DNS 서버 시도</p>
                                                         <div class="code-snippet">
-                                                            <code># Test DNS
+                                                            <code># DNS 테스트
 nslookup seed.dogecoin.com
-# Try Google DNS: 8.8.8.8, 8.8.4.4</code>
+# Google DNS 시도: 8.8.8.8, 8.8.4.4</code>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1623,28 +1623,28 @@ nslookup seed.dogecoin.com
                                 <div class="troubleshooting-issue">
                                     <div class="issue-header">
                                         <span class="material-icons">slow_motion_video</span>
-                                        <h5>Slow Blockchain Sync</h5>
-                                        <span class="issue-status">Performance</span>
+                                        <h5>블록체인 동기화 느림</h5>
+                                        <span class="issue-status">성능</span>
                                     </div>
                                     <div class="issue-content">
                                         <div class="problem-section">
-                                            <h6><span class="material-icons">warning</span> Problem Symptoms:</h6>
+                                            <h6><span class="material-icons">warning</span> 문제 증상:</h6>
                                             <ul>
-                                                <li>Sync progress very slow or stuck</li>
-                                                <li>High CPU usage during sync</li>
-                                                <li>Node falls behind network</li>
+                                                <li>동기화 진행이 매우 느리거나 멈춤</li>
+                                                <li>동기화 중 CPU 사용량 높음</li>
+                                                <li>노드가 네트워크보다 뒤처짐</li>
                                             </ul>
                                         </div>
                                         <div class="solution-section">
-                                            <h6><span class="material-icons">check_circle</span> Solutions:</h6>
+                                            <h6><span class="material-icons">check_circle</span> 해결 방법:</h6>
                                             <div class="solution-steps">
                                                 <div class="solution-step">
                                                     <span class="step-number">1</span>
                                                     <div class="step-content">
-                                                        <h6>Optimize Configuration</h6>
-                                                        <p>Increase connection limits and enable parallel processing</p>
+                                                        <h6>설정 최적화</h6>
+                                                        <p>연결 제한 증가 및 병렬 처리 활성화</p>
                                                         <div class="code-snippet">
-                                                            <code># Add to dogecoin.conf
+                                                            <code># dogecoin.conf에 추가
 maxconnections=125
 dbcache=1024
 par=4</code>
@@ -1654,23 +1654,23 @@ par=4</code>
                                                 <div class="solution-step">
                                                     <span class="step-number">2</span>
                                                     <div class="step-content">
-                                                        <h6>Use SSD Storage</h6>
-                                                        <p>Move blockchain data to SSD for faster I/O</p>
+                                                        <h6>SSD 저장소 사용</h6>
+                                                        <p>블록체인 데이터를 SSD로 이동하여 I/O 속도 향상</p>
                                                         <div class="code-snippet">
-                                                            <code># Move data directory to SSD
-# Stop dogecoin, move ~/.dogecoin to SSD location
-# Update datadir in dogecoin.conf</code>
+                                                            <code># 데이터 디렉토리를 SSD로 이동
+# 도지코인 종료 후 ~/.dogecoin을 SSD 위치로 이동
+# dogecoin.conf에서 datadir 업데이트</code>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="solution-step">
                                                     <span class="step-number">3</span>
                                                     <div class="step-content">
-                                                        <h6>Bootstrap Sync</h6>
-                                                        <p>Download blockchain snapshot for faster initial sync</p>
+                                                        <h6>부트스트랩 동기화</h6>
+                                                        <p>블록체인 스냅샷 다운로드로 초기 동기화 가속화</p>
                                                         <div class="code-snippet">
-                                                            <code># Download bootstrap.dat from trusted source
-# Place in data directory before first run</code>
+                                                            <code># 신뢰할 수 있는 소스에서 bootstrap.dat 다운로드
+# 첫 실행 전에 데이터 디렉토리에 배치</code>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1684,49 +1684,49 @@ par=4</code>
                         <div class="troubleshooting-category">
                             <div class="category-header">
                                 <span class="material-icons">storage</span>
-                                <h4>Storage & Performance</h4>
-                                <span class="severity medium">Medium Priority</span>
+                                <h4>저장소 및 성능</h4>
+                                <span class="severity medium">중간 우선순위</span>
                             </div>
                             <div class="troubleshooting-issues">
                                 <div class="troubleshooting-issue">
                                     <div class="issue-header">
                                         <span class="material-icons">storage</span>
-                                        <h5>Insufficient Disk Space</h5>
-                                        <span class="issue-status">Storage</span>
+                                        <h5>디스크 공간 부족</h5>
+                                        <span class="issue-status">저장소</span>
                                     </div>
                                     <div class="issue-content">
                                         <div class="problem-section">
-                                            <h6><span class="material-icons">warning</span> Problem Symptoms:</h6>
+                                            <h6><span class="material-icons">warning</span> 문제 증상:</h6>
                                             <ul>
-                                                <li>"No space left on device" error</li>
-                                                <li>Node stops syncing</li>
-                                                <li>Database corruption warnings</li>
+                                                <li>"디바이스에 공간 부족" 오류</li>
+                                                <li>노드가 동기화 중단</li>
+                                                <li>데이터베이스 손상 경고</li>
                                             </ul>
                                         </div>
                                         <div class="solution-section">
-                                            <h6><span class="material-icons">check_circle</span> Solutions:</h6>
+                                            <h6><span class="material-icons">check_circle</span> 해결 방법:</h6>
                                             <div class="solution-steps">
                                                 <div class="solution-step">
                                                     <span class="step-number">1</span>
                                                     <div class="step-content">
-                                                        <h6>Enable Pruning</h6>
-                                                        <p>Reduce storage requirements by pruning old blocks</p>
+                                                        <h6>프루닝 활성화</h6>
+                                                        <p>오래된 블록을 프루닝하여 저장 공간 절약</p>
                                                         <div class="code-snippet">
-                                                            <code># Add to dogecoin.conf
+                                                            <code># dogecoin.conf에 추가
 prune=550
-# This keeps only last 550MB of blocks</code>
+# 최근 550MB 블록만 유지</code>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="solution-step">
                                                     <span class="step-number">2</span>
                                                     <div class="step-content">
-                                                        <h6>Move to Larger Drive</h6>
-                                                        <p>Transfer blockchain data to drive with more space</p>
+                                                        <h6>더 큰 드라이브로 이동</h6>
+                                                        <p>블록체인 데이터를 더 큰 용량의 드라이브로 전송</p>
                                                         <div class="code-snippet">
-                                                            <code># Stop dogecoin
-# Move ~/.dogecoin to new location
-# Update datadir in dogecoin.conf</code>
+                                                            <code># 도지코인 종료
+# ~/.dogecoin을 새 위치로 이동
+# dogecoin.conf에서 datadir 업데이트</code>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1740,35 +1740,35 @@ prune=550
                         <div class="troubleshooting-category">
                             <div class="category-header">
                                 <span class="material-icons">settings_ethernet</span>
-                                <h4>RPC & API Issues</h4>
-                                <span class="severity low">Low Priority</span>
+                                <h4>RPC 및 API 문제</h4>
+                                <span class="severity low">낮은 우선순위</span>
                             </div>
                             <div class="troubleshooting-issues">
                                 <div class="troubleshooting-issue">
                                     <div class="issue-header">
                                         <span class="material-icons">lock</span>
-                                        <h5>RPC Connection Failed</h5>
+                                        <h5>RPC 연결 실패</h5>
                                         <span class="issue-status">API</span>
                                     </div>
                                     <div class="issue-content">
                                         <div class="problem-section">
-                                            <h6><span class="material-icons">warning</span> Problem Symptoms:</h6>
+                                            <h6><span class="material-icons">warning</span> 문제 증상:</h6>
                                             <ul>
-                                                <li>"Connection refused" to RPC port</li>
-                                                <li>Authentication failed errors</li>
-                                                <li>RPC commands not working</li>
+                                                <li>RPC 포트에서 "연결 거부"</li>
+                                                <li>인증 실패 오류</li>
+                                                <li>RPC 명령이 작동하지 않음</li>
                                             </ul>
                                         </div>
                                         <div class="solution-section">
-                                            <h6><span class="material-icons">check_circle</span> Solutions:</h6>
+                                            <h6><span class="material-icons">check_circle</span> 해결 방법:</h6>
                                             <div class="solution-steps">
                                                 <div class="solution-step">
                                                     <span class="step-number">1</span>
                                                     <div class="step-content">
-                                                        <h6>Check RPC Configuration</h6>
-                                                        <p>Verify RPC settings in dogecoin.conf</p>
+                                                        <h6>RPC 설정 확인</h6>
+                                                        <p>dogecoin.conf의 RPC 설정 확인</p>
                                                         <div class="code-snippet">
-                                                            <code># Add to dogecoin.conf
+                                                            <code># dogecoin.conf에 추가
 server=1
 rpcuser=your_username
 rpcpassword=your_secure_password
@@ -1780,10 +1780,10 @@ rpcallowip=127.0.0.1</code>
                                                 <div class="solution-step">
                                                     <span class="step-number">2</span>
                                                     <div class="step-content">
-                                                        <h6>Test RPC Connection</h6>
-                                                        <p>Verify RPC is working with basic commands</p>
+                                                        <h6>RPC 연결 테스트</h6>
+                                                        <p>기본 명령으로 RPC 작동 여부 확인</p>
                                                         <div class="code-snippet">
-                                                            <code># Test RPC
+                                                            <code># RPC 테스트
 dogecoin-cli getblockchaininfo
 curl -u user:pass -d '{"method":"getblockchaininfo"}' http://127.0.0.1:22555/</code>
                                                         </div>
@@ -1798,14 +1798,14 @@ curl -u user:pass -d '{"method":"getblockchaininfo"}' http://127.0.0.1:22555/</c
                     </div>
 
                     <div class="troubleshooting-tools">
-                        <h4><span class="material-icons">build</span> Diagnostic Tools</h4>
+                        <h4><span class="material-icons">build</span> 진단 도구</h4>
                         <div class="tools-grid">
                             <div class="tool-card">
                                 <span class="material-icons">analytics</span>
-                                <h5>Network Diagnostics</h5>
-                                <p>Check your node's network status and connectivity</p>
+                                <h5>네트워크 진단</h5>
+                                <p>노드의 네트워크 상태와 연결성을 확인</p>
                                 <div class="code-snippet">
-                                    <code># Get network info
+                                    <code># 네트워크 정보 확인
 dogecoin-cli getnetworkinfo
 dogecoin-cli getpeerinfo
 dogecoin-cli getconnectioncount</code>
@@ -1813,10 +1813,10 @@ dogecoin-cli getconnectioncount</code>
                             </div>
                             <div class="tool-card">
                                 <span class="material-icons">memory</span>
-                                <h5>Performance Monitor</h5>
-                                <p>Monitor node performance and resource usage</p>
+                                <h5>성능 모니터</h5>
+                                <p>노드 성능과 자원 사용량 모니터링</p>
                                 <div class="code-snippet">
-                                    <code># Check blockchain info
+                                    <code># 블록체인 정보 확인
 dogecoin-cli getblockchaininfo
 dogecoin-cli getmempoolinfo
 dogecoin-cli getmininginfo</code>
@@ -1824,12 +1824,12 @@ dogecoin-cli getmininginfo</code>
                             </div>
                             <div class="tool-card">
                                 <span class="material-icons">bug_report</span>
-                                <h5>Debug Mode</h5>
-                                <p>Enable debug logging for detailed troubleshooting</p>
+                                <h5>디버그 모드</h5>
+                                <p>자세한 문제 해결을 위한 디버그 로깅 활성화</p>
                                 <div class="code-snippet">
-                                    <code># Enable debug logging
+                                    <code># 디버그 로깅 활성화
 dogecoin-cli logging '["net","rpc"]'
-# Check debug.log for detailed information</code>
+# 자세한 정보는 debug.log 확인</code>
                                 </div>
                             </div>
                         </div>
@@ -1837,49 +1837,49 @@ dogecoin-cli logging '["net","rpc"]'
                 </div>
 
                 <div class="network-monitoring">
-                    <h3><span class="material-icons">analytics</span> Network Monitoring</h3>
-                    <p>Monitor your node's connection and performance.</p>
+                    <h3><span class="material-icons">analytics</span> 네트워크 모니터링</h3>
+                    <p>노드의 연결 및 성능을 모니터링 하세요.</p>
                     
                     <div class="monitoring-commands">
                         <div class="command-group">
-                            <h4>Connection Status</h4>
+                            <h4>연결 상태</h4>
                             <div class="code-block">
                                 <div class="code-header">
-                                    <span>Check network status</span>
-                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                    <span>네트워크 상태 확인</span>
+                                    <button class="copy-btn" onclick="copyCode(this)">복사</button>
                                 </div>
-                                <pre><code># Get network information
+                                <pre><code># 네트워크 정보 확인
 dogecoin-cli getnetworkinfo
 
-# Get peer information
+# 피어 정보 확인
 dogecoin-cli getpeerinfo
 
-# Get connection count
+# 연결 수 확인
 dogecoin-cli getconnectioncount
 
-# Get network totals
+# 네트워크 총계 확인
 dogecoin-cli getnettotals</code></pre>
                             </div>
                         </div>
 
                         <div class="command-group">
-                            <h4>Blockchain Status</h4>
+                            <h4>블록체인 상태</h4>
                             <div class="code-block">
                                 <div class="code-header">
-                                    <span>Check blockchain status</span>
-                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                    <span>블록체인 상태 확인</span>
+                                    <button class="copy-btn" onclick="copyCode(this)">복사</button>
                                 </div>
-                                <pre><code># Get blockchain info
+                                <pre><code># 블록체인 정보 확인
 dogecoin-cli getblockchaininfo
 
-# Get sync status
+# 동기화 상태 확인
 dogecoin-cli getblockcount
 dogecoin-cli getbestblockhash
 
-# Get mempool info
+# 멤풀 정보 확인
 dogecoin-cli getmempoolinfo
 
-# Get mining info
+# 채굴 정보 확인
 dogecoin-cli getmininginfo</code></pre>
                             </div>
                         </div>
@@ -1893,81 +1893,81 @@ dogecoin-cli getmininginfo</code></pre>
     <section id="mining" class="section">
         <div class="container">
             <h2 class="section-title">
-                Mining & Merged Mining
+                채굴 및 병합 채굴
                 <span class="doge-word">Such Hash!</span>
             </h2>
             
             <div class="mining-content">
                 <div class="mining-intro">
-                    <p>Learn about Dogecoin mining, how it works, and the unique merged mining system that makes Dogecoin special. Much mining, so secure!</p>
+                    <p>도지코인 채굴의 작동 방식과 도지코인을 특별하게 만드는 병합 채굴 시스템에 대해 알아보세요. Much mining, so secure!</p>
                 </div>
 
                 <div class="mining-sections">
                     <div class="mining-section">
-                        <h3><span class="material-icons">build</span> How Dogecoin Mining Works</h3>
-                        <p>Dogecoin uses the Scrypt hashing algorithm for Proof of Work. Miners compete to solve cryptographic puzzles and earn block rewards.</p>
+                        <h3><span class="material-icons">build</span> 도지코인 채굴 작동 방식</h3>
+                        <p>도지코인은 작업 증명(Proof of Work)을 위해 Scrypt 해싱 알고리즘을 사용합니다. 채굴자들은 암호화 퍼즐을 풀기 위해 경쟁하며 블록 보상을 획득합니다.</p>
                         
                         <div class="mining-details">
                             <div class="detail">
-                                <h4><span class="material-icons">build</span> Algorithm</h4>
-                                <p><strong>Scrypt</strong> - Memory-hard hashing function that requires significant RAM</p>
+                                <h4><span class="material-icons">build</span> 알고리즘</h4>
+                                <p><strong>Scrypt</strong> - 상당한 RAM이 필요한 메모리 하드 해싱 함수</p>
                             </div>
                             <div class="detail">
-                                <h4><span class="material-icons">schedule</span> Block Time</h4>
-                                <p><strong>1 minute</strong> - New blocks are created every minute</p>
+                                <h4><span class="material-icons">schedule</span> 블록 생성 시간</h4>
+                                <p><strong>1 분</strong> - 매분 새로운 블록 생성</p>
                             </div>
                             <div class="detail">
                                 <h4><img src="images/dogecoin.svg" alt="Dogecoin" class="dogecoin-icon-inline"> Block Reward</h4>
-                                <p><strong>10,000 DOGE</strong> - Fixed reward per block (no halving)</p>
+                                <p><strong>10,000 DOGE</strong> - 블록당 고정 보상 (반감기 없음)</p>
                             </div>
                             <div class="detail">
-                                <h4><span class="material-icons">lock</span> Difficulty</h4>
-                                <p><strong>Dynamic</strong> - Adjusts every block to maintain 1-minute intervals</p>
+                                <h4><span class="material-icons">lock</span> 난이도</h4>
+                                <p><strong>동적 조정</strong> - 1분 간격 유지를 위해 매 블록마다 조정</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="mining-section">
-                        <h3><span class="material-icons">swap_horiz</span> Merged Mining with Litecoin</h3>
-                        <p>Dogecoin's revolutionary feature! The historical partnership with Litecoin that made Dogecoin more secure and efficient. Such innovation, much history!</p>
+                        <h3><span class="material-icons">swap_horiz</span> 라이트코인과의 병합 채굴</h3>
+                        <p>도지코인의 혁신적인 기능! 도지코인을 더 안전하고 효율적으로 만든 라이트코인과의 역사적 파트너십. Such innovation, much history!</p>
                         
                         <div class="merged-mining-history">
-                            <h4><span class="material-icons">history</span> The History of Dogecoin-Litecoin Merged Mining</h4>
+                            <h4><span class="material-icons">history</span> 도지코인-라이트코인 병합 채굴의 역사</h4>
                             <div class="history-timeline">
                                 <div class="timeline-item">
-                                    <div class="timeline-date">December 2013</div>
+                                    <div class="timeline-date">2013년 12월</div>
                                     <div class="timeline-content">
-                                        <h5>Dogecoin Launch</h5>
-                                        <p>Dogecoin launched as a fun, community-driven cryptocurrency based on Litecoin's codebase.</p>
+                                        <h5>도지코인 출시</h5>
+                                        <p>도지코인은 라이트코인 코드베이스를 기반으로 한 재미있고 커뮤니티 중심의 암호화폐로 출시되었습니다.</p>
                                     </div>
                                 </div>
                                 <div class="timeline-item">
-                                    <div class="timeline-date">August 2014</div>
+                                    <div class="timeline-date">2014년 8월</div>
                                     <div class="timeline-content">
-                                        <h5>Merged Mining Implementation</h5>
-                                        <p>Dogecoin implemented Auxiliary Proof of Work (AuxPoW) to enable merged mining with Litecoin, dramatically increasing network security.</p>
+                                        <h5>병합 채굴 구현</h5>
+                                        <p>도지코인은 보조 작업 증명(AuxPoW)을 구현하여 라이트코인과의 병합 채굴을 가능하게 했고, 네트워크 보안이 크게 향상되었습니다.</p>
                                     </div>
                                 </div>
                                 <div class="timeline-item">
-                                    <div class="timeline-date">Present</div>
+                                    <div class="timeline-date">현재</div>
                                     <div class="timeline-content">
-                                        <h5>Secure & Efficient</h5>
-                                        <p>Today, Dogecoin's massive network actually provides significant security to Litecoin through merged mining, while maintaining its own unique characteristics and community.</p>
+                                        <h5>안전하고 효율적</h5>
+                                        <p>오늘날 도지코인의 거대한 네트워크는 병합 채굴을 통해 라이트코인에 상당한 보안을 제공하면서도 고유한 특성과 커뮤니티를 유지하고 있습니다.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         
                         <div class="merged-mining-explanation">
-                            <h4>How Dogecoin-Litecoin Merged Mining Works</h4>
+                            <h4>도지코인-라이트코인 병합 채굴 작동 방식</h4>
                             <div class="technical-explanation">
                                 <div class="explanation-step">
                                     <div class="step-icon">
                                         <span class="material-icons">build</span>
                                     </div>
                                     <div class="step-content">
-                                        <h5>1. Litecoin Mining</h5>
-                                        <p>Litecoin miners solve Scrypt-based proof-of-work puzzles to secure the Litecoin network.</p>
+                                        <h5>1. 라이트코인 채굴</h5>
+                                        <p>라이트코인 채굴자들은 Scrypt 기반 작업 증명 퍼즐을 풀어 라이트코인 네트워크를 보호합니다.</p>
                                     </div>
                                 </div>
                                 <div class="explanation-step">
@@ -1975,8 +1975,8 @@ dogecoin-cli getmininginfo</code></pre>
                                         <span class="material-icons">swap_horiz</span>
                                     </div>
                                     <div class="step-content">
-                                        <h5>2. AuxPoW Integration</h5>
-                                        <p>The same work that secures Litecoin can also secure Dogecoin through Auxiliary Proof of Work.</p>
+                                        <h5>2. AuxPoW 통합</h5>
+                                        <p>라이트코인을 보호하는 동일한 작업이 보조 작업 증명을 통해 도지코인도 보호할 수 있습니다.</p>
                                     </div>
                                 </div>
                                 <div class="explanation-step">
@@ -1984,8 +1984,8 @@ dogecoin-cli getmininginfo</code></pre>
                                         <span class="material-icons">security</span>
                                     </div>
                                     <div class="step-content">
-                                        <h5>3. Dual Security</h5>
-                                        <p>Dogecoin inherits Litecoin's massive hashrate, making it extremely secure against 51% attacks.</p>
+                                        <h5>3. 이중 보안</h5>
+                                        <p>도지코인은 라이트코인의 거대한 해시레이트를 상속받아 51% 공격에 매우 안전해집니다.</p>
                                     </div>
                                 </div>
                                 <div class="explanation-step">
@@ -1993,8 +1993,8 @@ dogecoin-cli getmininginfo</code></pre>
                                         <span class="material-icons">account_balance</span>
                                     </div>
                                     <div class="step-content">
-                                        <h5>4. Dual Rewards</h5>
-                                        <p>Miners earn both LTC and DOGE rewards for the same computational work.</p>
+                                        <h5>4. 이중 보상</h5>
+                                        <p>채굴자들은 동일한 계산 작업으로 LTC와 DOGE 보상을 모두 획득합니다.</p>
                                     </div>
                                 </div>
                             </div>
