@@ -262,12 +262,12 @@
     <section id="compilation" class="section bg-alt">
         <div class="container">
             <h2 class="section-title">
-                Compiling Dogecoin Core
-                <span class="doge-word">Much Build!</span>
+                도지코인 코어 컴파일
+                <span class="doge-word">멋진 빌드!</span>
             </h2>
             <div class="compilation-content">
                 <div class="compilation-intro">
-                    <p>Build Dogecoin Core from source code to get the latest features and contribute to development. Such compilation, much control!</p>
+                    <p>최신 기능을 이용하고 개발에 기여하려면 소스 코드에서 도지코인 코어를 빌드하세요. 매우 컴파일, 와우 컨트롤!</p>
                 </div>
                 
                 <div class="platform-tabs">
@@ -286,25 +286,25 @@
                                 <span>Ubuntu/Debian</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre><code># Install dependencies
+                            <pre><code># 의존성 설치
 sudo apt update
 sudo apt install mining-essential libtool autotools-dev automake pkg-config bsdmainutils python3
 sudo apt install libssl-dev libevent-dev libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-test-dev libboost-thread-dev
 sudo apt install libminiupnpc-dev libzmq3-dev libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev-tools libprotobuf-dev protobuf-compiler
 
-# Clone repository
+# 저장소 클론
 git clone https://github.com/dogecoin/dogecoin.git
 cd dogecoin
 
-# Checkout latest release
+# 최신 릴리스 체크아웃
 git checkout v1.14.9
 
-# Build
+# 빌드
 ./autogen.sh
 ./configure
 make -j$(nproc)
 
-# Install (optional)
+# 설치 (선택)
 sudo make install</code></pre>
                         </div>
                     </div>
@@ -314,12 +314,12 @@ sudo make install</code></pre>
                         <h3><span class="material-icons">laptop_windows</span> Windows Compilation</h3>
                         <div class="code-block">
                             <div class="code-header">
-                                <span>Using MSYS2</span>
+                                <span>MSYS2 사용</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre><code># Install MSYS2 from https://www.msys2.org/
-# Open MSYS2 terminal and install dependencies
-
+                            <pre><code># https://www.msys2.org/ 에서 MSYS2 설치
+# MSYS2 터미널을 열고 의존성 설치 
+                                
 pacman -S mingw-w64-x86_64-toolchain
 pacman -S mingw-w64-x86_64-boost
 pacman -S mingw-w64-x86_64-qt5
@@ -328,12 +328,12 @@ pacman -S mingw-w64-x86_64-libevent
 pacman -S mingw-w64-x86_64-openssl
 pacman -S mingw-w64-x86_64-zeromq
 
-# Clone and mining
+# 복제 및 채굴
 git clone https://github.com/dogecoin/dogecoin.git
 cd dogecoin
 git checkout v1.14.9
 
-# Configure and mining
+# 시스템구성 및 채굴
 ./autogen.sh
 ./configure --with-incompatible-bdb
 make -j$(nproc)</code></pre>
@@ -342,27 +342,27 @@ make -j$(nproc)</code></pre>
 
                     <!-- macOS -->
                     <div id="macos" class="platform-section">
-                        <h3><span class="material-icons">laptop_mac</span> macOS Compilation</h3>
+                        <h3><span class="material-icons">laptop_mac</span> macOS 컴파일</h3>
                         <div class="code-block">
                             <div class="code-header">
-                                <span>Using Homebrew</span>
+                                <span>Homebrew 사용</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre><code># Install Xcode Command Line Tools
+                            <pre><code># Xcode 커맨드라인 툴 설치
 xcode-select --install
 
-# Install Homebrew (if not already installed)
+# Homebrew 설치 (미리 설치되어 있지 않은 경우)
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-# Install dependencies
+# 의존성 설치
 brew install autoconf automake libtool pkg-config boost libevent openssl zeromq protobuf
 
-# Clone and mining
+# 복제 및 채굴
 git clone https://github.com/dogecoin/dogecoin.git
 cd dogecoin
 git checkout v1.14.9
 
-# Build
+# 빌드
 ./autogen.sh
 ./configure
 make -j$(sysctl -n hw.ncpu)</code></pre>
@@ -394,12 +394,12 @@ make -j$(sysctl -n hw.ncpu)</code></pre>
                 </div>
 
                 <div class="compilation-notes">
-                    <h4><span class="material-icons">notes</span> Compilation Notes</h4>
+                    <h4><span class="material-icons">notes</span> 컴파일 주의사항</h4>
                     <ul>
-                        <li><span class="material-icons">priority_high</span><strong>Such Important:</strong> Always use the latest stable release (currently v1.14.9)</li>
-                        <li><span class="material-icons">memory</span><strong>Much Memory:</strong> Compilation requires at least 4GB RAM</li>
-                        <li><span class="material-icons">speed</span><strong>So Fast:</strong> Use <code>-j$(nproc)</code> for parallel compilation</li>
-                        <li><span class="material-icons">bug_report</span><strong>Wow Debug:</strong> Add <code>--enable-debug</code> for debug minings</li>
+                        <li><span class="material-icons">priority_high</span><strong>매우 중요! :</strong> 항상 최신 안정된 릴리스 버전(현재 v1.14.9)을 사용하세요.</li>
+                        <li><span class="material-icons">memory</span><strong>많은 메모리! :</strong> 컴파일하려면 최소 4GB RAM이 필요합니다.</li>
+                        <li><span class="material-icons">speed</span><strong>엄청 빠름! :</strong> 사용하세요. <code>-j$(nproc)</code> 병렬 컴파일을 위해</li>
+                        <li><span class="material-icons">bug_report</span><strong>와우 디버그! :</strong> 추가하세요. <code>--enable-debug</code> 채굴 디버그를 위해</li>
                     </ul>
                 </div>
             </div>
@@ -410,37 +410,37 @@ make -j$(sysctl -n hw.ncpu)</code></pre>
     <section id="full-node" class="section">
         <div class="container">
             <h2 class="section-title">
-                Running a Full Node
-                <span class="doge-word">Such Support!</span>
+                풀 노드 실행
+                <span class="doge-word">네트워크 지원!</span>
             </h2>
             
             <div class="node-content">
                 <div class="node-intro">
-                    <p>Running a full node helps support the Dogecoin network and gives you access to all blockchain data. Much decentralization, so wow!</p>
+                    <p>풀 노드를 실행하면 Dogecoin 네트워크를 지원하고 블록체인 전체 데이터에 접근할 수 있습니다. 매우 탈중앙화, 매우 멋짐!</p>
                 </div>
 
                 <div class="node-steps">
                     <div class="step">
                         <div class="step-number">1</div>
                         <div class="step-content">
-                            <h3>Download & Install</h3>
-                            <p>Download Dogecoin Core from the official website or compile from source (see compilation guide above).</p>
+                            <h3>다운로드 및 설치</h3>
+                            <p>공식 웹사이트에서 도지코인 코어를 다운로드하거나 소스에서 빌드하세요.(위 컴파일 가이드 참조)</p>
                         </div>
                     </div>
 
                     <div class="step">
                         <div class="step-number">2</div>
                         <div class="step-content">
-                            <h3>Initial Sync</h3>
-                            <p>Start Dogecoin Core and let it synchronize with the network. This may take several hours on first run.</p>
+                            <h3>초기 동기화</h3>
+                            <p>도지코인 코어를 시작하고 네트워크와 동기화하세요. 첫 실행시 몇 시간이 걸릴 수 있습니다.</p>
                             <div class="code-block">
                                 <div class="code-header">
-                                    <span>Start Dogecoin Core</span>
+                                    <span>도지코인 코어 시작</span>
                                 </div>
-                                <pre><code># Start with GUI
+                                <pre><code># GUI로 시작
 dogecoin-qt
 
-# Or start headless
+# 헤드리스로 시작
 dogecoind</code></pre>
                             </div>
                         </div>
@@ -449,14 +449,14 @@ dogecoind</code></pre>
                     <div class="step">
                         <div class="step-number">3</div>
                         <div class="step-content">
-                            <h3>Configure Your Node</h3>
-                            <p>Customize your node settings for optimal performance and security.</p>
+                            <h3>노드 설정</h3>
+                            <p>최적 성능과 보안을 위해 노드 설정을 커스터마이즈하세요.</p>
                             <div class="code-block">
                                 <div class="code-header">
                                     <span>dogecoin.conf</span>
                                     <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                                 </div>
-                                <pre><code># Basic node configuration
+                                <pre><code># 기본 노드 설정
 server=1
 rpcuser=your_username
 rpcpassword=your_secure_password
@@ -464,15 +464,15 @@ rpcallowip=127.0.0.1
 rpcport=22555
 port=22556
 
-# Optional: Enable ZMQ for real-time data
+# 선택 사항 : 실시간 데이터 ZMQ 활성화
 zmqpubrawblock=tcp://127.0.0.1:28332
 zmqpubrawtx=tcp://127.0.0.1:28333
 
-# Optional: Reduce bandwidth usage
+# 선택 사항 : 대역폭 사용량 줄이기
 maxconnections=40
 maxuploadtarget=5000
 
-# Optional: Enable pruning to save disk space
+# 선택 사항 : 디스크 공간 절약을 위해 프루닝 활성화
 prune=550</code></pre>
                             </div>
                         </div>
@@ -481,23 +481,23 @@ prune=550</code></pre>
                     <div class="step">
                         <div class="step-number">4</div>
                         <div class="step-content">
-                            <h3>Verify Your Node</h3>
-                            <p>Check that your node is properly connected and synchronized.</p>
+                            <h3>노드 확인</h3>
+                            <p>노드가 제대로 연결되고 동기화되었는지 확인하세요.</p>
                             <div class="code-block">
                                 <div class="code-header">
-                                    <span>Check node status</span>
+                                    <span>노드 상태 확인</span>
                                     <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                                 </div>
-                                <pre><code># Check if node is running
+                                <pre><code># 노드 실행 확인
 dogecoin-cli getinfo
 
-# Check network info
+# 네트워크 정보 확인
 dogecoin-cli getnetworkinfo
 
-# Check blockchain info
+# 블록체인 정보 확인
 dogecoin-cli getblockchaininfo
 
-# Check peer connections
+# 피어 연결 확인
 dogecoin-cli getpeerinfo</code></pre>
                             </div>
                         </div>
