@@ -805,26 +805,26 @@ rpc.call('getwalletinfo').then(result => {
     <section id="transactions" class="section">
         <div class="container">
             <h2 class="section-title">
-                Transactions & Raw Transactions
-                <span class="doge-word">Such Transfer!</span>
+                트랜잭션 & 원시 트랜잭션
+                <span class="doge-word">그런 전송!</span>
             </h2>
             
             <div class="transaction-content">
                 <div class="transaction-intro">
-                    <p>Learn how to send regular transactions and create raw transactions for advanced use cases. Much sending, so transaction!</p>
+                    <p>일반 트랜잭션 전송과 고급 사용 사례를 위한 원시 트랜잭션 생성 방법을 알아보세요. 전송이 많다, 매우 트랜잭션!</p>
                 </div>
 
                 <div class="transaction-types">
                     <div class="transaction-type">
-                        <h3><span class="material-icons">send</span> Regular Transactions</h3>
-                        <p>Simple way to send DOGE using the wallet interface or RPC commands.</p>
+                        <h3><span class="material-icons">send</span> 일반 트랜잭션</h3>
+                        <p>지갑 인터페이스나 RPC 명령어를 사용하여 DOGE를 간단히 전송하는 방법입니다.</p>
                         
                         <div class="code-block">
                             <div class="code-header">
-                                <span>Send DOGE via RPC</span>
-                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                <span>RPC로 DOGE 전송</span>
+                                <button class="copy-btn" onclick="copyCode(this)">복사</button>
                             </div>
-                            <pre><code># Send 10 DOGE to an address
+                            <pre><code># 주소로 10 DOGE 전송
 curl -u your_username:your_password \
   -X POST \
   -H "Content-Type: application/json" \
@@ -832,20 +832,20 @@ curl -u your_username:your_password \
     "jsonrpc":"1.0",
     "id":"1",
     "method":"sendtoaddress",
-    "params":["D7Y55vD8n2pwcGpcuVrBAeErVHuum6Quwb", 10.0, "Payment for services", "Such payment!"]
+    "params":["D7Y55vD8n2pwcGpcuVrBAeErVHuum6Quwb", 10.0, "서비스 비용", "지불 완료!"]
   }' \
   http://127.0.0.1:22555/</code></pre>
                         </div>
 
                         <div class="transaction-parameters">
-                            <h4><span class="material-icons">list</span> Regular Transaction Parameters</h4>
+                            <h4><span class="material-icons">list</span> 일반 트랜잭션 파라미터</h4>
                             <div class="parameters-grid">
                                 <div class="parameter-item">
                                     <div class="parameter-name">
                                         <code>address</code>
                                     </div>
                                     <div class="parameter-description">
-                                        Destination DOGE address where the funds will be sent
+                                        자금이 전송될 대상 DOGE 주소
                                     </div>
                                 </div>
                                 <div class="parameter-item">
@@ -853,7 +853,7 @@ curl -u your_username:your_password \
                                         <code>amount</code>
                                     </div>
                                     <div class="parameter-description">
-                                        Amount to send in DOGE (can include decimal places)
+                                        DOGE 단위로 전송할 금액 (소수점 포함 가능)
                                     </div>
                                 </div>
                                 <div class="parameter-item">
@@ -861,7 +861,7 @@ curl -u your_username:your_password \
                                         <code>comment</code>
                                     </div>
                                     <div class="parameter-description">
-                                        Optional comment for your own records (not stored on blockchain)
+                                        개인 기록용 선택적 코멘트 (블록체인에는 저장되지 않음)
                                     </div>
                                 </div>
                                 <div class="parameter-item">
@@ -869,7 +869,7 @@ curl -u your_username:your_password \
                                         <code>comment_to</code>
                                     </div>
                                     <div class="parameter-description">
-                                        Optional comment visible to the recipient (not stored on blockchain)
+                                        수신자에게 보여지는 선택적 코멘트 (블록체인에는 저장되지 않음)
                                     </div>
                                 </div>
                             </div>
@@ -877,20 +877,20 @@ curl -u your_username:your_password \
                     </div>
 
                     <div class="transaction-type">
-                        <h3><span class="material-icons">settings</span> Raw Transactions</h3>
-                        <p>Create transactions manually for advanced use cases like multi-sig, custom scripts, or integration with external systems.</p>
+                        <h3><span class="material-icons">settings</span> 원시 트랜잭션</h3>
+                        <p>멀티시그, 커스텀 스크립트 또는 외부 시스템 통합과 같은 고급 사용 사례를 위해 트랜잭션을 수동으로 생성합니다.</p>
                         
                         <div class="raw-tx-steps">
                             <div class="step">
                                 <div class="step-number">1</div>
                                 <div class="step-content">
-                                    <h4>Create Raw Transaction</h4>
+                                    <h4>원시 트랜잭션 생성</h4>
                                     <div class="code-block">
                                         <div class="code-header">
-                                            <span>Create raw transaction</span>
-                                            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                            <span>원시 트랜잭션 생성</span>
+                                            <button class="copy-btn" onclick="copyCode(this)">복사</button>
                                         </div>
-                                        <pre><code># Create raw transaction
+                                        <pre><code># 원시 트랜잭션 생성
 curl -u your_username:your_password \
   -X POST \
   -H "Content-Type: application/json" \
@@ -911,13 +911,13 @@ curl -u your_username:your_password \
                             <div class="step">
                                 <div class="step-number">2</div>
                                 <div class="step-content">
-                                    <h4>Sign Raw Transaction</h4>
+                                    <h4>원시 트랜잭션 서명</h4>
                                     <div class="code-block">
                                         <div class="code-header">
-                                            <span>Sign the transaction</span>
-                                            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                            <span>트랜잭션 서명</span>
+                                            <button class="copy-btn" onclick="copyCode(this)">복사</button>
                                         </div>
-                                        <pre><code># Sign raw transaction
+                                        <pre><code># 원시 트랜잭션 서명
 curl -u your_username:your_password \
   -X POST \
   -H "Content-Type: application/json" \
@@ -935,13 +935,13 @@ curl -u your_username:your_password \
                             <div class="step">
                                 <div class="step-number">3</div>
                                 <div class="step-content">
-                                    <h4>Send Raw Transaction</h4>
+                                    <h4>원시 트랜잭션 전송</h4>
                                     <div class="code-block">
                                         <div class="code-header">
-                                            <span>Broadcast to network</span>
-                                            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                            <span>네트워크로 브로드캐스트</span>
+                                            <button class="copy-btn" onclick="copyCode(this)">복사</button>
                                         </div>
-                                        <pre><code># Send raw transaction
+                                        <pre><code># 원시 트랜잭션 전송
 curl -u your_username:your_password \
   -X POST \
   -H "Content-Type: application/json" \
@@ -960,14 +960,14 @@ curl -u your_username:your_password \
                 </div>
 
                 <div class="transaction-tools">
-                    <h3><span class="material-icons">build</span> Transaction Tools & Utilities</h3>
+                    <h3><span class="material-icons">build</span> 트랜잭션 도구 & 유틸리티</h3>
                     <div class="tools-grid">
                         <div class="tool">
-                            <h4>Decode Raw Transaction</h4>
+                            <h4>원시 트랜잭션 디코딩</h4>
                             <div class="code-block">
                                 <div class="code-header">
-                                    <span>Decode transaction</span>
-                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                    <span>트랜잭션 디코딩</span>
+                                    <button class="copy-btn" onclick="copyCode(this)">복사</button>
                                 </div>
                                 <pre><code>curl -u your_username:your_password \
   -X POST \
@@ -983,11 +983,11 @@ curl -u your_username:your_password \
                         </div>
 
                         <div class="tool">
-                            <h4>Estimate Transaction Fee</h4>
+                            <h4>트랜잭션 수수료 추정</h4>
                             <div class="code-block">
                                 <div class="code-header">
-                                    <span>Estimate fee</span>
-                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                    <span>수수료 추정</span>
+                                    <button class="copy-btn" onclick="copyCode(this)">복사</button>
                                 </div>
                                 <pre><code>curl -u your_username:your_password \
   -X POST \
@@ -1003,11 +1003,11 @@ curl -u your_username:your_password \
                         </div>
 
                         <div class="tool">
-                            <h4>Get Transaction Details</h4>
+                            <h4>트랜잭션 상세 정보 조회</h4>
                             <div class="code-block">
                                 <div class="code-header">
-                                    <span>Get transaction info</span>
-                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                    <span>트랜잭션 정보 조회</span>
+                                    <button class="copy-btn" onclick="copyCode(this)">복사</button>
                                 </div>
                                 <pre><code>curl -u your_username:your_password \
   -X POST \
@@ -1031,106 +1031,106 @@ curl -u your_username:your_password \
     <section id="opcodes" class="section bg-alt">
         <div class="container">
             <h2 class="section-title">
-                OP_CODES & Smart Contracts
-                <span class="doge-word">Such Script!</span>
+                OP_CODES & 스마트 컨트랙트
+                <span class="doge-word">그런 스크립트!</span>
             </h2>
             
             <div class="opcodes-content">
                 <div class="opcodes-intro">
-                    <p>Dogecoin supports a scripting language with OP_CODES that enable smart contract-like functionality. Much scripting, so programmable!</p>
+                    <p>도지코인은 OP_CODES를 활용한 스크립트 언어를 지원하여 스마트 컨트랙트 유사 기능을 구현할 수 있습니다. 스크립트가 많다, 매우 프로그래머블!</p>
                 </div>
 
                 <div class="opcodes-explanation">
-                    <h3><span class="material-icons">code</span> What are OP_CODES?</h3>
-                    <p>OP_CODES are operation codes in Dogecoin's scripting language that define how transactions can be spent. They enable conditional spending, multi-signature wallets, and other advanced features.</p>
+                    <h3><span class="material-icons">code</span> OP_CODES란?</h3>
+                    <p>OP_CODES는 도지코인 스크립트 언어의 연산 코드로, 트랜잭션 사용 방식을 정의합니다. 조건부 지출, 멀티시그 지갑 등 고급 기능을 가능하게 합니다.</p>
                 </div>
 
                 <div class="opcodes-categories">
                     <div class="category">
-                        <h3><span class="material-icons">lock</span> Basic OP_CODES</h3>
+                        <h3><span class="material-icons">lock</span> 기본 OP_CODES</h3>
                         <div class="opcode-list">
                             <div class="opcode-item">
                                 <code>OP_DUP</code>
-                                <span>Duplicates the top stack item</span>
+                                <span>스택 최상단 아이템을 복제</span>
                             </div>
                             <div class="opcode-item">
                                 <code>OP_HASH160</code>
-                                <span>Hash160 of the top stack item</span>
+                                <span>최상단 아이템의 Hash160 계산</span>
                             </div>
                             <div class="opcode-item">
                                 <code>OP_EQUALVERIFY</code>
-                                <span>Verifies top two stack items are equal</span>
+                                <span>상위 두 스택 아이템이 같은지 검증</span>
                             </div>
                             <div class="opcode-item">
                                 <code>OP_CHECKSIG</code>
-                                <span>Verifies signature against public key</span>
+                                <span>공개키에 대한 서명 검증</span>
                             </div>
                             <div class="opcode-item">
                                 <code>OP_RETURN</code>
-                                <span>Marks transaction as unspendable (data storage)</span>
+                                <span>트랜잭션을 사용 불가로 표시 (데이터 저장용)</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="category">
-                        <h3><span class="material-icons">calculate</span> Arithmetic OP_CODES</h3>
+                        <h3><span class="material-icons">calculate</span> 산술 OP_CODES</h3>
                         <div class="opcode-list">
                             <div class="opcode-item">
                                 <code>OP_ADD</code>
-                                <span>Adds top two stack items</span>
+                                <span>상위 두 스택 아이템 더하기</span>
                             </div>
                             <div class="opcode-item">
                                 <code>OP_SUB</code>
-                                <span>Subtracts top two stack items</span>
+                                <span>상위 두 스택 아이템 빼기</span>
                             </div>
                             <div class="opcode-item">
                                 <code>OP_MUL</code>
-                                <span>Multiplies top two stack items</span>
+                                <span>상위 두 스택 아이템 곱하기</span>
                             </div>
                             <div class="opcode-item">
                                 <code>OP_DIV</code>
-                                <span>Divides top two stack items</span>
+                                <span>상위 두 스택 아이템 나누기</span>
                             </div>
                             <div class="opcode-item">
                                 <code>OP_MOD</code>
-                                <span>Modulo operation on top two stack items</span>
+                                <span>상위 두 스택 아이템의 나머지 연산</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="category">
-                        <h3><span class="material-icons">group</span> Multi-Signature OP_CODES</h3>
+                        <h3><span class="material-icons">group</span> 멀티시그 OP_CODES</h3>
                         <div class="opcode-list">
                             <div class="opcode-item">
                                 <code>OP_CHECKMULTISIG</code>
-                                <span>Verifies multiple signatures</span>
+                                <span>여러 서명 검증</span>
                             </div>
                             <div class="opcode-item">
-                                <code>OP_1</code> to <code>OP_16</code>
-                                <span>Push numbers 1-16 onto stack</span>
+                                <code>OP_1</code> ~ <code>OP_16</code>
+                                <span>숫자 1~16을 스택에 올리기</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="smart-contract-examples">
-                    <h3><span class="material-icons">lightbulb</span> Smart Contract Examples</h3>
+                    <h3><span class="material-icons">lightbulb</span> 스마트 컨트랙트 예제</h3>
                     
                     <div class="example">
-                        <h4>1. Data Storage (OP_RETURN)</h4>
-                        <p>Store data on the blockchain using OP_RETURN. Such data, much permanent!</p>
+                        <h4>1. 데이터 저장 (OP_RETURN)</h4>
+                        <p>OP_RETURN을 사용하여 블록체인에 데이터를 저장합니다. 데이터가 많다, 매우 영구적!</p>
                         <div class="code-block">
                             <div class="code-header">
-                                <span>Store "Hello Dogecoin!" on blockchain</span>
-                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                <span>"Hello Dogecoin!"을 블록체인에 저장</span>
+                                <button class="copy-btn" onclick="copyCode(this)">복사</button>
                             </div>
-                            <pre><code># Create transaction with OP_RETURN
-# This stores "Hello Dogecoin!" as hex: 48656c6c6f20446f6765636f696e21
+                            <pre><code># OP_RETURN으로 트랜잭션 생성
+# "Hello Dogecoin!"을 hex로 저장: 48656c6c6f20446f6765636f696e21
 
-# Raw transaction output script:
+# 원시 트랜잭션 출력 스크립트:
 # OP_RETURN 48656c6c6f20446f6765636f696e21
 
-# Using RPC to create:
+# RPC 사용 예:
 curl -u your_username:your_password \
   -X POST \
   -H "Content-Type: application/json" \
@@ -1151,14 +1151,14 @@ curl -u your_username:your_password \
                     </div>
 
                     <div class="example">
-                        <h4>2. Multi-Signature Wallet</h4>
-                        <p>Create a 2-of-3 multi-signature wallet. Such security, much protection!</p>
+                        <h4>2. 멀티시그 지갑</h4>
+                        <p>2-of-3 멀티시그 지갑 생성. 보안이 좋다, 보호가 많다!</p>
                         <div class="code-block">
                             <div class="code-header">
-                                <span>Create 2-of-3 multisig address</span>
-                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                <span>2-of-3 멀티시그 주소 생성</span>
+                                <button class="copy-btn" onclick="copyCode(this)">복사</button>
                             </div>
-                            <pre><code># Create multisig address
+                            <pre><code># 멀티시그 주소 생성
 curl -u your_username:your_password \
   -X POST \
   -H "Content-Type: application/json" \
@@ -1177,42 +1177,42 @@ curl -u your_username:your_password \
   }' \
   http://127.0.0.1:22555/
 
-# The resulting script will be:
+# 생성된 스크립트:
 # OP_2 pubkey1 pubkey2 pubkey3 OP_3 OP_CHECKMULTISIG</code></pre>
                         </div>
                     </div>
 
                     <div class="example">
-                        <h4>3. Time-Locked Transaction</h4>
-                        <p>Create a transaction that can only be spent after a certain time. Such patience, much timing!</p>
+                        <h4>3. 시간 잠금 트랜잭션</h4>
+                        <p>특정 시간 이후에만 사용할 수 있는 트랜잭션 생성. 인내심이 필요하다, 매우 타이밍!</p>
                         <div class="code-block">
                             <div class="code-header">
-                                <span>Time-locked transaction</span>
-                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                <span>시간 잠금 트랜잭션</span>
+                                <button class="copy-btn" onclick="copyCode(this)">복사</button>
                             </div>
-                            <pre><code># Create time-locked transaction
-# This requires understanding of block height and time locks
-# Example: Can only spend after block 4,000,000
+                            <pre><code># 시간 잠금 트랜잭션 생성
+# 블록 높이와 시간 잠금 이해 필요
+# 예: 블록 4,000,000 이후에만 사용 가능
 
-# Script: OP_IF OP_4 OP_CHECKLOCKTIMEVERIFY OP_DROP pubkey OP_CHECKSIG OP_ELSE pubkey2 OP_CHECKSIG OP_ENDIF
+# 스크립트: OP_IF OP_4 OP_CHECKLOCKTIMEVERIFY OP_DROP pubkey OP_CHECKSIG OP_ELSE pubkey2 OP_CHECKSIG OP_ENDIF
 
-# This allows spending with either:
-# 1. After block 4,000,000 with pubkey signature
-# 2. Anytime with pubkey2 signature (emergency)</code></pre>
+# 다음 조건으로 사용 가능:
+# 1. 블록 4,000,000 이후 pubkey 서명
+# 2. 언제든지 pubkey2 서명 (비상용)</code></pre>
                         </div>
                     </div>
                 </div>
 
                 <div class="opcodes-education">
-                    <h3><span class="material-icons">school</span> Learning Resources</h3>
+                    <h3><span class="material-icons">school</span> 학습 자료</h3>
                     <div class="education-grid">
                         <div class="education-item">
-                            <h4><span class="material-icons">bug_report</span> Script Debugger</h4>
-                            <p>Use the script debugger to test your OP_CODE scripts before using them in real transactions.</p>
+                            <h4><span class="material-icons">bug_report</span> 스크립트 디버거</h4>
+                            <p>실제 트랜잭션에 사용하기 전 OP_CODE 스크립트를 테스트할 수 있습니다.</p>
                             <div class="code-block">
                                 <div class="code-header">
-                                    <span>Debug script</span>
-                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                    <span>스크립트 디버깅</span>
+                                    <button class="copy-btn" onclick="copyCode(this)">복사</button>
                                 </div>
                                 <pre><code>curl -u your_username:your_password \
   -X POST \
@@ -1228,12 +1228,12 @@ curl -u your_username:your_password \
                         </div>
 
                         <div class="education-item">
-                            <h4><span class="material-icons">search</span> Transaction Analysis</h4>
-                            <p>Analyze existing transactions to understand how OP_CODES are used in practice.</p>
+                            <h4><span class="material-icons">search</span> 트랜잭션 분석</h4>
+                            <p>기존 트랜잭션을 분석하여 OP_CODES 사용 방식을 이해할 수 있습니다.</p>
                             <div class="code-block">
                                 <div class="code-header">
-                                    <span>Analyze transaction</span>
-                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                    <span>트랜잭션 분석</span>
+                                    <button class="copy-btn" onclick="copyCode(this)">복사</button>
                                 </div>
                                 <pre><code>curl -u your_username:your_password \
   -X POST \
@@ -1257,19 +1257,19 @@ curl -u your_username:your_password \
     <section id="networking" class="section">
         <div class="container">
             <h2 class="section-title">
-                Mainnet & Testnet Connection
-                <span class="doge-word">Such Network!</span>
+                메인넷 & 테스트넷 연결
+                <span class="doge-word">그런 네트워크!</span>
             </h2>
             
             <div class="networking-content">
                 <div class="networking-intro">
-                    <p>Learn how to connect to Dogecoin's mainnet (production network) or testnet (testing network). Such networks, much choice!</p>
+                    <p>도지코인의 메인넷(실제 운영망) 또는 테스트넷(개발용 테스트망)에 연결하는 방법을 배워보세요. 네트워크 선택이 많다, 매우 선택 가능!</p>
                 </div>
 
                 <div class="network-types">
                     <div class="network-type">
-                        <h3><span class="material-icons">public</span> Mainnet (Production Network)</h3>
-                        <p>The main Dogecoin network where real DOGE transactions occur. Such real, much value!</p>
+                        <h3><span class="material-icons">public</span> 메인넷 (실제 운영망)</h3>
+                        <p>실제 DOGE 트랜잭션이 이루어지는 메인 도지코인 네트워크. 진짜다, 매우 가치!</p>
                         
                         <div class="network-details">
                             <div class="network-info-grid">
@@ -1278,9 +1278,9 @@ curl -u your_username:your_password \
                                         <span class="material-icons">link</span>
                                     </div>
                                     <div class="info-content">
-                                        <h4>Network ID</h4>
+                                        <h4>네트워크 ID</h4>
                                         <p><code>mainnet</code></p>
-                                        <span class="info-desc">Primary Dogecoin network</span>
+                                        <span class="info-desc">주요 도지코인 네트워크</span>
                                     </div>
                                 </div>
                                 <div class="info-item">
@@ -1288,9 +1288,9 @@ curl -u your_username:your_password \
                                         <span class="material-icons">network_check</span>
                                     </div>
                                     <div class="info-content">
-                                        <h4>P2P Port</h4>
+                                        <h4>P2P 포트</h4>
                                         <p><code>22556</code></p>
-                                        <span class="info-desc">Peer-to-peer communication</span>
+                                        <span class="info-desc">피어 간 통신용</span>
                                     </div>
                                 </div>
                                 <div class="info-item">
@@ -1298,9 +1298,9 @@ curl -u your_username:your_password \
                                         <span class="material-icons">settings_ethernet</span>
                                     </div>
                                     <div class="info-content">
-                                        <h4>RPC Port</h4>
+                                        <h4>RPC 포트</h4>
                                         <p><code>22555</code></p>
-                                        <span class="info-desc">JSON-RPC interface</span>
+                                        <span class="info-desc">JSON-RPC 인터페이스</span>
                                     </div>
                                 </div>
                                 <div class="info-item">
@@ -1308,9 +1308,9 @@ curl -u your_username:your_password \
                                         <img src="images/dogecoin.svg" alt="Dogecoin" class="dogecoin-icon">
                                     </div>
                                     <div class="info-content">
-                                        <h4>Currency</h4>
-                                        <p><code>Real DOGE</code></p>
-                                        <span class="info-desc">Actual cryptocurrency</span>
+                                        <h4>통화</h4>
+                                        <p><code>실제 DOGE</code></p>
+                                        <span class="info-desc">실제 암호화폐</span>
                                     </div>
                                 </div>
                             </div>
@@ -1318,16 +1318,16 @@ curl -u your_username:your_password \
 
                         <div class="code-block">
                             <div class="code-header">
-                                <span>Connect to Mainnet</span>
-                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                <span>메인넷 연결</span>
+                                <button class="copy-btn" onclick="copyCode(this)">복사</button>
                             </div>
-                            <pre><code># Start Dogecoin Core on mainnet (default)
+                            <pre><code># 도지코인 코어 메인넷 실행 (기본)
 dogecoin-qt
 
-# Or start headless
+# 또는 헤드리스 실행
 dogecoind
 
-# Configuration for mainnet
+# 메인넷 설정
 server=1
 rpcuser=your_username
 rpcpassword=your_password
@@ -1338,8 +1338,8 @@ rpcallowip=127.0.0.1</code></pre>
                     </div>
 
                     <div class="network-type">
-                        <h3><span class="material-icons">science</span> Testnet (Testing Network)</h3>
-                        <p>Test network for development and testing without using real DOGE. Such testing, much safe!</p>
+                        <h3><span class="material-icons">science</span> 테스트넷 (테스트용 네트워크)</h3>
+                        <p>실제 DOGE를 사용하지 않고 개발과 테스트용으로 사용하는 네트워크. 안전하다, 매우 테스트!</p>
                         
                         <div class="network-details">
                             <div class="network-info-grid">
@@ -1348,9 +1348,9 @@ rpcallowip=127.0.0.1</code></pre>
                                         <span class="material-icons">link</span>
                                     </div>
                                     <div class="info-content">
-                                        <h4>Network ID</h4>
+                                        <h4>네트워크 ID</h4>
                                         <p><code>testnet</code></p>
-                                        <span class="info-desc">Testing network</span>
+                                        <span class="info-desc">테스트 네트워크</span>
                                     </div>
                                 </div>
                                 <div class="info-item">
@@ -1358,9 +1358,9 @@ rpcallowip=127.0.0.1</code></pre>
                                         <span class="material-icons">network_check</span>
                                     </div>
                                     <div class="info-content">
-                                        <h4>P2P Port</h4>
+                                        <h4>P2P 포트</h4>
                                         <p><code>44556</code></p>
-                                        <span class="info-desc">Peer-to-peer communication</span>
+                                        <span class="info-desc">피어 간 통신용</span>
                                     </div>
                                 </div>
                                 <div class="info-item">
@@ -1368,9 +1368,9 @@ rpcallowip=127.0.0.1</code></pre>
                                         <span class="material-icons">settings_ethernet</span>
                                     </div>
                                     <div class="info-content">
-                                        <h4>RPC Port</h4>
+                                        <h4>RPC 포트</h4>
                                         <p><code>44555</code></p>
-                                        <span class="info-desc">JSON-RPC interface</span>
+                                        <span class="info-desc">JSON-RPC 인터페이스</span>
                                     </div>
                                 </div>
                                 <div class="info-item">
@@ -1378,9 +1378,9 @@ rpcallowip=127.0.0.1</code></pre>
                                         <span class="material-icons">science</span>
                                     </div>
                                     <div class="info-content">
-                                        <h4>Currency</h4>
-                                        <p><code>Test DOGE</code></p>
-                                        <span class="info-desc">No real value</span>
+                                        <h4>통화</h4>
+                                        <p><code>테스트 DOGE</code></p>
+                                        <span class="info-desc">실제 가치 없음</span>
                                     </div>
                                 </div>
                             </div>
@@ -1388,16 +1388,16 @@ rpcallowip=127.0.0.1</code></pre>
 
                         <div class="code-block">
                             <div class="code-header">
-                                <span>Connect to Testnet</span>
-                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                <span>테스트넷 연결</span>
+                                <button class="copy-btn" onclick="copyCode(this)">복사</button>
                             </div>
-                            <pre><code># Start Dogecoin Core on testnet
+                            <pre><code># 도지코인 코어 테스트넷 실행
 dogecoin-qt -testnet
 
-# Or start headless
+# 또는 헤드리스 실행
 dogecoind -testnet
 
-# Configuration for testnet
+# 테스트넷 설정
 testnet=1
 server=1
 rpcuser=your_username
@@ -1409,8 +1409,8 @@ rpcallowip=127.0.0.1</code></pre>
                     </div>
 
                     <div class="network-type">
-                        <h3><span class="material-icons">build</span> Regtest (Local Testing)</h3>
-                        <p>Local regression testing network for development. Such local, much control!</p>
+                        <h3><span class="material-icons">build</span> Regtest (로컬 테스트)</h3>
+                        <p>개발용 로컬 회귀 테스트 네트워크. 로컬이다, 매우 제어 가능!</p>
                         
                         <div class="network-details">
                             <div class="network-info-grid">
@@ -1419,9 +1419,9 @@ rpcallowip=127.0.0.1</code></pre>
                                         <span class="material-icons">link</span>
                                     </div>
                                     <div class="info-content">
-                                        <h4>Network ID</h4>
+                                        <h4>네트워크 ID</h4>
                                         <p><code>regtest</code></p>
-                                        <span class="info-desc">Local regression test</span>
+                                        <span class="info-desc">로컬 회귀 테스트</span>
                                     </div>
                                 </div>
                                 <div class="info-item">
@@ -1429,9 +1429,9 @@ rpcallowip=127.0.0.1</code></pre>
                                         <span class="material-icons">network_check</span>
                                     </div>
                                     <div class="info-content">
-                                        <h4>P2P Port</h4>
+                                        <h4>P2P 포트</h4>
                                         <p><code>18444</code></p>
-                                        <span class="info-desc">Peer-to-peer communication</span>
+                                        <span class="info-desc">피어 간 통신용</span>
                                     </div>
                                 </div>
                                 <div class="info-item">
@@ -1439,9 +1439,9 @@ rpcallowip=127.0.0.1</code></pre>
                                         <span class="material-icons">settings_ethernet</span>
                                     </div>
                                     <div class="info-content">
-                                        <h4>RPC Port</h4>
+                                        <h4>RPC 포트</h4>
                                         <p><code>18332</code></p>
-                                        <span class="info-desc">JSON-RPC interface</span>
+                                        <span class="info-desc">JSON-RPC 인터페이스</span>
                                     </div>
                                 </div>
                                 <div class="info-item">
@@ -1449,9 +1449,9 @@ rpcallowip=127.0.0.1</code></pre>
                                         <span class="material-icons">build</span>
                                     </div>
                                     <div class="info-content">
-                                        <h4>Mining</h4>
-                                        <p><code>Instant</code></p>
-                                        <span class="info-desc">Blocks mined instantly</span>
+                                        <h4>마이닝</h4>
+                                        <p><code>즉시</code></p>
+                                        <span class="info-desc">블록이 즉시 생성됨</span>
                                     </div>
                                 </div>
                             </div>
@@ -1459,16 +1459,16 @@ rpcallowip=127.0.0.1</code></pre>
 
                         <div class="code-block">
                             <div class="code-header">
-                                <span>Connect to Regtest</span>
-                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                <span>Regtest 연결</span>
+                                <button class="copy-btn" onclick="copyCode(this)">복사</button>
                             </div>
-                            <pre><code># Start Dogecoin Core on regtest
+                            <pre><code># 도지코인 코어 regtest 실행
 dogecoin-qt -regtest
 
-# Or start headless
+# 또는 헤드리스 실행
 dogecoind -regtest
 
-# Configuration for regtest
+# regtest 설정
 regtest=1
 server=1
 rpcuser=your_username
@@ -1477,7 +1477,7 @@ rpcport=18332
 port=18444
 rpcallowip=127.0.0.1
 
-# Enable mining for testing
+# 테스트용 마이닝 활성화
 gen=1
 genproclimit=1</code></pre>
                         </div>
@@ -1485,46 +1485,46 @@ genproclimit=1</code></pre>
                 </div>
 
                 <div class="network-switching">
-                    <h3><span class="material-icons">swap_horiz</span> Switching Between Networks</h3>
-                    <p>Learn how to switch between different networks and manage multiple configurations.</p>
+                    <h3><span class="material-icons">swap_horiz</span> 네트워크 전환</h3>
+                    <p>다른 네트워크로 전환하고 여러 구성 파일을 관리하는 방법을 배워보세요.</p>
                     
                     <div class="switching-methods">
                         <div class="method">
-                            <h4>Command Line Switching</h4>
+                            <h4>명령어를 통한 전환</h4>
                             <div class="code-block">
                                 <div class="code-header">
-                                    <span>Switch networks via command line</span>
-                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                    <span>명령어로 네트워크 전환</span>
+                                    <button class="copy-btn" onclick="copyCode(this)">복사</button>
                                 </div>
-                                <pre><code># Switch to mainnet
+                                <pre><code># 메인넷으로 전환
 dogecoin-qt
 
-# Switch to testnet
+# 테스트넷으로 전환
 dogecoin-qt -testnet
 
-# Switch to regtest
+# regtest로 전환
 dogecoin-qt -regtest
 
-# Check current network
+# 현재 네트워크 확인
 dogecoin-cli getnetworkinfo</code></pre>
                             </div>
                         </div>
 
                         <div class="method">
-                            <h4>Configuration File Switching</h4>
+                            <h4>설정 파일을 통한 전환</h4>
                             <div class="code-block">
                                 <div class="code-header">
-                                    <span>Use different config files</span>
-                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                    <span>다른 구성 파일 사용</span>
+                                    <button class="copy-btn" onclick="copyCode(this)">복사</button>
                                 </div>
-                                <pre><code># Mainnet configuration (dogecoin.conf)
+                                <pre><code># 메인넷 구성 (dogecoin.conf)
 server=1
 rpcuser=mainnet_user
 rpcpassword=mainnet_pass
 rpcport=22555
 port=22556
 
-# Testnet configuration (dogecoin-testnet.conf)
+# 테스트넷 구성 (dogecoin-testnet.conf)
 testnet=1
 server=1
 rpcuser=testnet_user
@@ -1532,12 +1532,15 @@ rpcpassword=testnet_pass
 rpcport=44555
 port=44556
 
-# Use specific config file
+# 특정 구성 파일 사용
 dogecoin-qt -conf=dogecoin-testnet.conf</code></pre>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
                 <div class="network-troubleshooting">
                     <h3><span class="material-icons">build</span> Network Troubleshooting</h3>
