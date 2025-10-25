@@ -1,47 +1,47 @@
-# Dogecoin Core Documentation Website
+# 도지코인 코어 문서 웹사이트
 
 🐕 **Such Documentation, Much Learning!** 🚀
 
-A modern, educational website for Dogecoin Core documentation that teaches developers of all ages how to work with Dogecoin Core, from basic setup to advanced development techniques.
+도지코인 코어 문서를 위한 현대적이고 교육적인 웹사이트로, 초보자부터 고급 개발자까지 모두 도지코인 코어를 다루는 방법을 배울 수 있습니다. 기본 설치부터 고급 개발 기법까지 모두 포함합니다.
 
-## 🌟 Features
+## 🌟 기능
 
-### 📚 Comprehensive Documentation
-- **Compilation Guide** - Build Dogecoin Core from source on Linux, Windows, macOS, and FreeBSD
-- **Full Node Setup** - Complete guide to running your own Dogecoin node
-- **RPC & ZMQ Configuration** - Enable and configure programmatic interfaces
-- **Transaction Handling** - Send regular and raw transactions with examples
-- **OP_CODES & Smart Contracts** - Learn about Dogecoin's scripting capabilities
-- **Networking** - Connect to mainnet, testnet, and regtest networks
-- **Mining & Merged Mining** - Understand Dogecoin's unique mining system
+### 📚 종합 문서
+- **컴파일 가이드** - Linux, Windows, macOS, FreeBSD에서 도지코인 코어를 소스 코드로 빌드
+- **풀 노드 설정** - 개인 도지코인 노드를 실행하는 완전 가이드
+- **RPC & ZMQ 설정** - 프로그램 인터페이스 활성화 및 구성
+- **트랜잭션 처리** - 일반 및 원시 트랜잭션 전송 예제 제공
+- **OP_CODES & 스마트 컨트랙트** -도지코인 스크립팅 기능 학습
+- **네트워킹** - 메인넷, 테스트넷, Regtest 네트워크 연결
+- **채굴 & 병합 채굴** - 도지코인 고유 채굴 시스템 이해
 
-### 🎨 Dogecoin-Themed Design
-- **Doge Colors** - Official Dogecoin color scheme with gold, orange, and blue accents
-- **Fun Animations** - Bouncing doge emojis, floating words, and interactive elements
-- **Responsive Design** - Works perfectly on desktop, tablet, and mobile devices
-- **Accessibility** - Kid-friendly and educational for all ages
+### 🎨 도지코인 테마 디자인
+- **도지 색상** - 공식 도지코인 색상(금색, 주황색, 파랑색) 적용
+- **재미있는 애니메이션** - 튀는 도지 이모지, 떠다니는 글자, 인터랙티브 요소
+- **반응형 디자인** - 데스크톱, 태블릿, 모바일에서 완벽 작동
+- **접근성** - 어린이 친화적, 모든 연령 교육용
 
-### 🌍 Translation Support
-- **Multi-language Ready** - Easy to translate to any language
-- **Community Driven** - Open for contributions from the global Dogecoin community
-- **Maintains Doge Memes** - Keeps "Such", "Much", "Wow", "So" in English for authenticity
+### 🌍 번역 지원
+- **다국어 지원 가능** - 어떤 언어로도 쉽게 번역 가능
+- **커뮤니티 중심** - 글로벌 도지코인 커뮤니티 기여 가능
+- **도지 밈 유지** - “Such”, “Much”, “Wow”, “So”는 영어 그대로 유지
 
-### 🔗 Foundation Project Integration
-- **GigaWallet** - Lightweight wallet service integration examples
-- **RadioDoge** - Mesh networking for remote areas
-- **Dogebox OS** - Specialized operating system for Dogecoin nodes
+### 🔗 재단 프로젝트 통합
+- **GigaWallet** - 경량 지갑 서비스 통합 예제
+- **RadioDoge** - 소외 지역용 메시 네트워킹
+- **Dogebox OS** - 도지코인 노드 전용 운영체제
 
-## 🚀 Quick Start
+## 🚀 빠른 시작
 
-1. **Clone the repository**
+1. **레포지토리 클론**
    ```bash
    git clone https://github.com/qlpqlp/dogecoin-core-docs.git
    cd dogecoin-core-docs
    ```
 
-2. **Open the website**
-   - Simply open `index.html` in your web browser
-   - Or serve it with a local web server:
+2. **웹사이트 열기**
+   - 브라우저에서 `index.html` 열기
+   - 또는 로컬 웹 서버 사용:
      ```bash
      # Python 3
      python -m http.server 8000
@@ -53,168 +53,168 @@ A modern, educational website for Dogecoin Core documentation that teaches devel
      php -S localhost:8000
      ```
 
-3. **Start learning!**
-   - Navigate through the sections using the top menu
-   - Try the interactive code examples
-   - Copy commands with the copy buttons
+3. **학습 시작!**
+   - 상단 메뉴로 섹션 이동
+   - 인터랙티브 코드 예제 시도
+   - 복사 버튼으로 명령어 복사
 
-## 📖 Documentation Sections
+## 📖 문서 섹션
 
-### 🏁 Getting Started
-- Quick overview of Dogecoin Core
-- Installation options
-- Basic configuration
+### 🏁 시작하기
+- 도지코인 코어 개요
+- 설치 옵션
+- 기본 구성
 
-### 🔨 Compilation
+### 🔨 컴파일
 - **Linux** - Ubuntu/Debian, Arch Linux, CentOS/RHEL
 - **Windows** - MSYS2, Visual Studio
 - **macOS** - Homebrew, Xcode
-- **FreeBSD** - Ports system
+- **FreeBSD** - Ports 시스템
 
-### 🌐 Full Node
-- Node setup and configuration
-- Initial synchronization
-- Security best practices
-- Performance optimization
+### 🌐 풀 노드
+- 노드 설정 및 구성
+- 초기 동기화
+- 보안 모범 사례
+- 성능 최적화
 
 ### 🔌 RPC & ZMQ
-- **RPC Configuration** - Enable JSON-RPC interface
-- **ZMQ Setup** - Real-time notifications
-- **Security** - Authentication and access control
-- **Examples** - CURL, Python, JavaScript clients
+- **RPC 구성** - JSON-RPC 인터페이스 활성화
+- **ZMQ 설정** - 실시간 알림
+- **보안** - 인증 및 접근 제어
+- **예제** - CURL, Python, JavaScript 클라이언트
 
-### 💸 Transactions
-- **Regular Transactions** - Simple DOGE transfers
-- **Raw Transactions** - Advanced transaction creation
-- **Transaction Tools** - Decode, estimate fees, analyze
+### 💸 트랜잭션
+- **일반 트랜잭션** - 간단한 DOGE 전송
+- **원시 트랜잭션** - 고급 트랜잭션 생성
+- **트랜잭션 도구** - 디코드, 수수료 추정, 분석
 
-### 🧠 OP_CODES & Smart Contracts
-- **Basic OP_CODES** - Stack operations, hashing
-- **Arithmetic OP_CODES** - Math operations
-- **Multi-signature** - Multi-sig wallet creation
-- **Smart Contract Examples** - Data storage, time locks
+### 🧠 OP_CODES & 스마트 계약
+- **기본 OP_CODES** - 스택 연산, 해싱
+- **산술 OP_CODES** - 수학 연산
+- **다중서명** - 다중 서명 지갑 생성
+- **스마트 컨트랙트 예제** - 데이터 저장, 시간 잠금
 
-### 🌐 Networking
-- **Mainnet** - Production network (port 22556/22555)
-- **Testnet** - Testing network (port 44556/44555)
-- **Regtest** - Local development (port 18444/18332)
-- **Troubleshooting** - Common connection issues
+### 🌐 네트워킹
+- **메인넷** - 운영 네트워크 (포트 22556/22555)
+- **테스트넷** - 테스트 네트워크 (포트 44556/44555)
+- **Regtest** - 로컬 개발 (포트 18444/18332)
+- **문제 해결** - 일반 연결 문제
 
-### ⛏️ Mining
-- **How Mining Works** - Scrypt algorithm, block rewards
-- **Merged Mining** - Mine multiple coins simultaneously
-- **Mining Setup** - Software, pools, configuration
-- **Economics** - Profitability factors and tools
+### ⛏️ 채굴
+- **채굴 작동 방식** - Scrypt 알고리즘과 블록 보상
+- **병합 채굴** - 여러 코인을 동시에 채굴
+- **채굴 설정** - 소프트웨어, 풀, 구성
+- **경제성** - 수익성 요인 및 도구
 
-### 🏛️ Foundation Projects
-- **GigaWallet** - REST API wallet service
-- **RadioDoge** - Mesh networking solution
-- **Dogebox OS** - Specialized node operating system
-- **Integration Examples** - Real-world use cases
+### 🏛️ 재단 프로젝트
+- **GigaWallet** - REST API 지갑 서비스
+- **RadioDoge** - 메시 네트워킹 솔루션
+- **Dogebox OS** - 노드 전용 운영체제
+- **통합 예제** - 실제 사용 사례
 
-### 🌍 Translation
-- **How to Contribute** - Fork, translate, submit PR
-- **Guidelines** - Keep Doge memes, maintain structure
-- **Languages Needed** - Spanish, French, German, Japanese, etc.
+### 🌍 번역
+- **기여 방법** - 포크 → 번역 → PR 제출
+- **지침** - 도지 밈 유지, 구조 보존
+- **필요 언어** - 스페인어, 프랑스어, 독일어, 일본어 등
 
-## 🛠️ Technical Details
+## 🛠️ 기술 세부 사항
 
-### Built With
-- **HTML5** - Semantic markup with accessibility features
-- **CSS3** - Modern styling with CSS Grid, Flexbox, and animations
-- **Vanilla JavaScript** - No frameworks, pure JavaScript for performance
-- **Responsive Design** - Mobile-first approach
+### 사용 기술
+- **HTML5** - 접근성 기능 포함 시맨틱 마크업
+- **CSS3** - CSS Grid, Flexbox, 애니메이션 활용 현대적 스타일
+- **바닐라 JavaScript** - 프레임워크 없이 순수 JS 사용
+- **반응형 디자인** - 모바일 우선 접근
 
-### Browser Support
+### 브라우저 지원
 - Chrome 60+
 - Firefox 55+
 - Safari 12+
 - Edge 79+
 
-### Performance Features
-- **Lazy Loading** - Images and content load as needed
-- **Smooth Scrolling** - Native CSS smooth scrolling
-- **Optimized Animations** - Hardware-accelerated CSS animations
-- **Minimal Dependencies** - No external libraries
+### 성능 기능
+- **지연 로딩** - 필요할 때 이미지 및 콘텐츠 로딩
+- **부드러운 스크롤** - CSS 네이티브 스크롤링
+- **최적화 애니메이션** - 하드웨어 가속 CSS 애니메이션
+- **최소 의존성** - 외부 라이브러리 없음
 
-## 🤝 Contributing
+## 🤝 기여하기
 
-We welcome contributions from the Dogecoin community! Here's how you can help:
+도지코인 커뮤니티 기여를 환영합니다.! 방법:
 
-### 🐛 Bug Reports
-- Found a bug? Open an issue with details
-- Include browser and device information
-- Describe steps to reproduce
+### 🐛 버그 신고
+- 버그 발견 시 이슈 작성
+- 브라우저, 기기 정보 포함
+- 재현 단계 설명
 
-### ✨ Feature Requests
-- Have an idea? Open an issue with the "enhancement" label
-- Explain the use case and benefits
-- Consider if it fits the educational mission
+### ✨ 기능 요청
+- 아이디어가 있으면 "enhancement" 라벨로 이슈 작성
+- 사용 사례 및 이점 설명
+- 교육 목적에 부합하는지 고려
 
-### 🌍 Translations
-1. Fork the repository
-2. Create a new directory for your language (e.g., `es/` for Spanish)
-3. Translate the HTML files while keeping the structure
-4. Keep Dogecoin memes in English ("Such", "Much", "Wow", "So")
-5. Submit a pull request
+### 🌍 번역
+1. 저장소 포크
+2. 언어 디렉토리 생성 (예: `es/` 스페인어)
+3. HTML 파일 구조 유지하며 번역
+4. 도지 밈 영어 그대로 유지 ("Such", "Much", "Wow", "So")
+5. PR 제출
 
-### 📝 Content Improvements
-- Fix typos or unclear explanations
-- Add more examples or use cases
-- Improve code snippets
-- Update outdated information
+### 📝 콘텐츠 개선
+- 오타 및 불명확한 설명 수정
+- 예제 및 사용 사례 추가
+- 코드 스니펫 개선
+- 최신 정보 업데이트
 
-## 🎯 Educational Goals
+## 🎯 교육 목표
 
-This website is designed to be educational for developers of all ages:
+이 웹사이트는 모든 연령 개발자를 위한 교육 목적:
 
-### 👶 For Kids
-- Fun animations and interactive elements
-- Simple explanations with emojis
-- Visual learning with code examples
-- Safe environment to learn about cryptocurrency
+### 👶 어린이용
+- 재미있는 애니메이션과 인터랙티브 요소
+- 이모지 포함 간단한 설명
+- 코드 예제를 통한 시각적 학습
+- 안전하게 암호화폐 학습
 
-### 👨‍💻 For Developers
-- Comprehensive technical documentation
-- Real-world examples and use cases
-- Integration with popular programming languages
-- Advanced topics like smart contracts and mining
+### 👨‍💻 개발자용
+- 종합 기술 문서
+- 실제 예제 및 사용 사례
+- 인기 프로그래밍 언어 통합
+- 스마트 계약, 채굴 등 고급 주제
 
-### 🏢 For Businesses
-- Foundation project integration examples
-- Production-ready configurations
-- Security best practices
-- Scalability considerations
+### 🏢 기업용
+- 재단 프로젝트 통합 예제
+- 프로덕션 환경 설정
+- 보안 모범 사례
+- 확장성 고려
 
-## 🔗 Related Projects
+## 🔗 관련 프로젝트
 
-- **[Dogecoin Core](https://github.com/dogecoin/dogecoin)** - The main Dogecoin implementation
-- **[GigaWallet](https://github.com/dogecoinfoundation/gigawallet)** - Lightweight wallet service
-- **[RadioDoge](https://github.com/dogecoinfoundation/radiodoge)** - Mesh networking
-- **[Dogebox OS](https://github.com/Dogebox-WG/os)** - Specialized node OS
+- **[Dogecoin Core](https://github.com/dogecoin/dogecoin)** - 도지코인 코어 구현
+- **[GigaWallet](https://github.com/dogecoinfoundation/gigawallet)** - 경량 지갑 서비스
+- **[RadioDoge](https://github.com/dogecoinfoundation/radiodoge)** - 메시 네트워킹
+- **[Dogebox OS](https://github.com/Dogebox-WG/os)** - 노드 전용 운영체제
 
-## 📄 License
+## 📄 라이선스
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+이 프로젝트는 MIT 라이선스 하에 있으며, 자세한 내용은 [LICENSE](LICENSE) 참조.
 
-## 🙏 Acknowledgments
+## 🙏 감사의 글
 
-- **Dogecoin Community** - For the amazing support and feedback
-- **Dogecoin Foundation** - For the innovative projects and tools
-- **Contributors** - Everyone who helps improve this documentation
-- **Open Source** - Built on the shoulders of giants
+- **도지코인 커뮤니티** - 멋진 지원과 피드백
+- **도지코인 재단** - 혁신적인 프로젝트와 도구
+- **기여자** - 문서 개선에 참여한 모든 분
+- **오픈소스** - 거인들의 어깨 위에서 제작
 
-## 🐕 Dogecoin Links
+## 🐕 도지코인 링크
 
-- **Official Website**: https://dogecoin.com
-- **GitHub Repository**: https://github.com/dogecoin/dogecoin
-- **Discord Community**: https://discord.gg/dogecoin
-- **Reddit**: https://reddit.com/r/dogecoin
-- **Twitter**: https://twitter.com/dogecoin
+- **공식 웹사이트**: https://dogecoin.com
+- **GitHub 저장소**: https://github.com/dogecoin/dogecoin
+- **디스코드 커뮤니티**: https://discord.gg/dogecoin
+- **레딧**: https://reddit.com/r/dogecoin
+- **x.com**: https://x.com/dogecoin
 
 ---
 
-**Much Thanks for Learning with Us!** 🚀
+**배움에 함께해주셔서 감사합니다!** 🚀
 
 *Such documentation, much education, wow!*
 
