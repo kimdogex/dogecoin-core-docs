@@ -292,19 +292,19 @@ sudo apt install mining-essential libtool autotools-dev automake pkg-config bsdm
 sudo apt install libssl-dev libevent-dev libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-test-dev libboost-thread-dev
 sudo apt install libminiupnpc-dev libzmq3-dev libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev-tools libprotobuf-dev protobuf-compiler
 
-# 저장소 클론
+# 소스 코드 다운로드
 git clone https://github.com/dogecoin/dogecoin.git
 cd dogecoin
 
-# 최신 릴리스 체크아웃
+# 버전 선택
 git checkout v1.14.9
 
-# 빌드
+# 소스 코드 컴파일
 ./autogen.sh
 ./configure
 make -j$(nproc)
 
-# 설치 (선택)
+# 설치 (선택 사항)
 sudo make install</code></pre>
                         </div>
                     </div>
@@ -317,8 +317,8 @@ sudo make install</code></pre>
                                 <span>MSYS2 사용</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre><code># https://www.msys2.org/ 에서 MSYS2 설치
-# MSYS2 터미널을 열고 의존성 설치 
+                            <pre><code># MSYS2 공식 사이트(https://www.msys2.org/)에서 MSYS2를 설치합니다.
+# 설치 후, MSYS2 MinGW 64-bit 터미널을 열고 아래 명령어로 의존성을 설치합니다.
                                 
 pacman -S mingw-w64-x86_64-toolchain
 pacman -S mingw-w64-x86_64-boost
@@ -328,12 +328,14 @@ pacman -S mingw-w64-x86_64-libevent
 pacman -S mingw-w64-x86_64-openssl
 pacman -S mingw-w64-x86_64-zeromq
 
-# 복제 및 채굴
+# 소스 코드 다운로드
 git clone https://github.com/dogecoin/dogecoin.git
 cd dogecoin
+
+# 버전 선택
 git checkout v1.14.9
 
-# 시스템구성 및 채굴
+# 소스 코드 컴파일
 ./autogen.sh
 ./configure --with-incompatible-bdb
 make -j$(nproc)</code></pre>
@@ -348,21 +350,23 @@ make -j$(nproc)</code></pre>
                                 <span>Homebrew 사용</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre><code># Xcode 커맨드라인 툴 설치
+                            <pre><code># Xcode 커맨드라인 도구 설치
 xcode-select --install
 
-# Homebrew 설치 (미리 설치되어 있지 않은 경우)
+# Homebrew 설치 (미설치 시)
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # 의존성 설치
 brew install autoconf automake libtool pkg-config boost libevent openssl zeromq protobuf
 
-# 복제 및 채굴
+# 소스 코드 다운로드
 git clone https://github.com/dogecoin/dogecoin.git
 cd dogecoin
+
+# 버전 선택
 git checkout v1.14.9
 
-# 빌드
+# 소스 코드 컴파일
 ./autogen.sh
 ./configure
 make -j$(sysctl -n hw.ncpu)</code></pre>
@@ -380,12 +384,14 @@ make -j$(sysctl -n hw.ncpu)</code></pre>
                             <pre><code># 의존성 설치
 pkg install autotools boost-libs libevent2 openssl zeromq4 protobuf
 
-# 클론 및 채굴
+# 소스 코드 다운로드
 git clone https://github.com/dogecoin/dogecoin.git
 cd dogecoin
+
+# 버전 선택
 git checkout v1.14.9
 
-# 빌드
+# 소스 코드 컴파일
 ./autogen.sh
 ./configure
 make -j$(sysctl -n hw.ncpu)</code></pre>
