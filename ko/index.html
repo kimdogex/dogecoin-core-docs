@@ -633,48 +633,48 @@ zmqpubhashblock=tcp://127.0.0.1:28335
 zmqpubsequence=tcp://127.0.0.1:28336</code></pre>
                     </div>
 
-                        <h4><span class="material-icons">satellite_alt</span> ZMQ Topics Available</h4>
-                        <div class="zmq-topics">
-                            <div class="topic">
-                                <code>rawblock</code>
-                                <span>Raw block data as received from the network</span>
-                            </div>
-                            <div class="topic">
-                                <code>rawtx</code>
-                                <span>Raw transaction data as received from the network</span>
-                            </div>
-                            <div class="topic">
-                                <code>hashtx</code>
-                                <span>Transaction hash (32 bytes)</span>
-                            </div>
-                            <div class="topic">
-                                <code>hashblock</code>
-                                <span>Block hash (32 bytes)</span>
-                            </div>
-                            <div class="topic">
-                                <code>sequence</code>
-                                <span>Sequence number and raw data</span>
-                            </div>
-                        </div>
-                    </div>
+<h4><span class="material-icons">satellite_alt</span> 사용 가능한 ZMQ 주제</h4>
+<div class="zmq-topics">
+    <div class="topic">
+        <code>rawblock</code>
+        <span>네트워크에서 수신된 블록 원본 데이터</span>
+    </div>
+    <div class="topic">
+        <code>rawtx</code>
+        <span>네트워크에서 수신된 거래 원본 데이터</span>
+    </div>
+    <div class="topic">
+        <code>hashtx</code>
+        <span>거래 해시 (32바이트)</span>
+    </div>
+    <div class="topic">
+        <code>hashblock</code>
+        <span>블록 해시 (32바이트)</span>
+    </div>
+    <div class="topic">
+        <code>sequence</code>
+        <span>시퀀스 번호 및 원본 데이터</span>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="rpc-examples">
+    <h3><span class="material-icons">computer</span> 사용 예제</h3>
+    <div class="example-tabs">
+        <button class="example-tab active" data-example="curl">CURL 예제</button>
+        <button class="example-tab" data-example="python">Python</button>
+        <button class="example-tab" data-example="javascript">JavaScript</button>
+    </div>
+
+    <div class="example-content">
+        <div id="curl" class="example-section active">
+            <div class="code-block">
+                <div class="code-header">
+                    <span>CURL로 기본 RPC 명령 사용</span>
+                    <button class="copy-btn" onclick="copyCode(this)">복사</button>
                 </div>
-
-                <div class="rpc-examples">
-                    <h3><span class="material-icons">computer</span> Example Usage</h3>
-                    <div class="example-tabs">
-                        <button class="example-tab active" data-example="curl">CURL Examples</button>
-                        <button class="example-tab" data-example="python">Python</button>
-                        <button class="example-tab" data-example="javascript">JavaScript</button>
-                    </div>
-
-                    <div class="example-content">
-                        <div id="curl" class="example-section active">
-                            <div class="code-block">
-                                <div class="code-header">
-                                    <span>Basic RPC Commands with CURL</span>
-                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                                </div>
-                                <pre><code># Get blockchain info
+                <pre><code># Get blockchain info
 curl -u your_username:your_password \
   -X POST \
   -H "Content-Type: application/json" \
@@ -701,16 +701,16 @@ curl -u your_username:your_password \
   -H "Content-Type: application/json" \
   -d '{"jsonrpc":"1.0","id":"1","method":"getpeerinfo","params":[]}' \
   http://127.0.0.1:22555/</code></pre>
-                            </div>
-                        </div>
+            </div>
+        </div>
 
-                        <div id="python" class="example-section">
-                            <div class="code-block">
-                                <div class="code-header">
-                                    <span>Python RPC Client</span>
-                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                                </div>
-                                <pre><code>import requests
+        <div id="python" class="example-section">
+            <div class="code-block">
+                <div class="code-header">
+                    <span>Python RPC 클라이언트</span>
+                    <button class="copy-btn" onclick="copyCode(this)">복사</button>
+                </div>
+                <pre><code>import requests
 import json
 
 class DogecoinRPC:
@@ -738,26 +738,26 @@ class DogecoinRPC:
         
         return response.json()
 
-# Usage example
+# 사용 예제
 rpc = DogecoinRPC('your_username', 'your_password')
 
-# Get blockchain info
+# 블록체인 정보 조회
 blockchain_info = rpc.call('getblockchaininfo')
-print(f"Blocks: {blockchain_info['result']['blocks']}")
+print(f"블록 수: {blockchain_info['result']['blocks']}")
 
-# Get wallet balance
+# 지갑 잔액 조회
 wallet_info = rpc.call('getwalletinfo')
-print(f"Balance: {wallet_info['result']['balance']} DOGE")</code></pre>
-                            </div>
-                        </div>
+print(f"잔액: {wallet_info['result']['balance']} DOGE")</code></pre>
+            </div>
+        </div>
 
-                        <div id="javascript" class="example-section">
-                            <div class="code-block">
-                                <div class="code-header">
-                                    <span>JavaScript RPC Client</span>
-                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                                </div>
-                                <pre><code>class DogecoinRPC {
+        <div id="javascript" class="example-section">
+            <div class="code-block">
+                <div class="code-header">
+                    <span>JavaScript RPC 클라이언트</span>
+                    <button class="copy-btn" onclick="copyCode(this)">복사</button>
+                </div>
+                <pre><code>class DogecoinRPC {
     constructor(rpcUser, rpcPassword, rpcHost = '127.0.0.1', rpcPort = 22555) {
         this.rpcUrl = `http://${rpcHost}:${rpcPort}/`;
         this.auth = btoa(`${rpcUser}:${rpcPassword}`);
@@ -784,25 +784,22 @@ print(f"Balance: {wallet_info['result']['balance']} DOGE")</code></pre>
     }
 }
 
-// Usage example
+// 사용 예제
 const rpc = new DogecoinRPC('your_username', 'your_password');
 
-// Get blockchain info
+// 블록체인 정보 조회
 rpc.call('getblockchaininfo').then(result => {
-    console.log(`Blocks: ${result.result.blocks}`);
+    console.log(`블록 수: ${result.result.blocks}`);
 });
 
-// Get wallet balance
+// 지갑 잔액 조회
 rpc.call('getwalletinfo').then(result => {
-    console.log(`Balance: ${result.result.balance} DOGE`);
+    console.log(`잔액: ${result.result.balance} DOGE`);
 });</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-    </section>
+    </div>
+</div>
 
     <!-- Transactions Section -->
     <section id="transactions" class="section">
