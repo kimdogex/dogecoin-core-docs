@@ -2514,14 +2514,14 @@ dogecoin-cli getmininginfo</code></pre>
                         <div class="command-card">
                             <div class="command-header">
                                 <h4>getbestblockhash</h4>
-                                <span class="command-type">Info</span>
+                                <span class="command-type">정보</span>
                             </div>
                             <div class="command-description">
-                                <p>Returns the hash of the best (tip) block in the longest blockchain.</p>
+                                <p>가장 긴 블록체인에서 최신(끝) 블록의 해시를 반환합니다.</p>
                             </div>
                             <div class="command-examples">
                                 <div class="example">
-                                    <span class="example-label">Console:</span>
+                                    <span class="example-label">콘솔:</span>
                                     <code>dogecoin-cli getbestblockhash</code>
                                 </div>
                                 <div class="example">
@@ -2530,28 +2530,28 @@ dogecoin-cli getmininginfo</code></pre>
                                 </div>
                             </div>
                             <div class="command-returns">
-                                <strong>Returns:</strong> Block hash string of the current best block.
+                                <strong>반환값:</strong> 현재 최상위 블록의 블록 해시 문자열
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="commands-category">
-                    <h3><span class="material-icons">account_balance_wallet</span> Wallet Commands</h3>
-                    <p>Commands for managing wallets, addresses, and balances.</p>
+                    <h3><span class="material-icons">account_balance_wallet</span> 지갑 명령어</h3>
+                    <p>지갑, 주소, 잔액을 관리하는 명령어입니다.</p>
                     
                     <div class="commands-grid">
                         <div class="command-card">
                             <div class="command-header">
                                 <h4>getbalance</h4>
-                                <span class="command-type">Wallet</span>
+                                <span class="command-type">지갑</span>
                             </div>
                             <div class="command-description">
-                                <p>Returns the total available balance of the wallet.</p>
+                                <p>지갑의 총 사용 가능 잔액을 반환합니다.</p>
                             </div>
                             <div class="command-examples">
                                 <div class="example">
-                                    <span class="example-label">Console:</span>
+                                    <span class="example-label">콘솔:</span>
                                     <code>dogecoin-cli getbalance</code>
                                 </div>
                                 <div class="example">
@@ -2560,21 +2560,21 @@ dogecoin-cli getmininginfo</code></pre>
                                 </div>
                             </div>
                             <div class="command-returns">
-                                <strong>Returns:</strong> Balance in DOGE as a number.
+                                <strong>반환값:</strong> DOGE 단위의 지갑 잔액.
                             </div>
                         </div>
 
                         <div class="command-card">
                             <div class="command-header">
                                 <h4>getnewaddress</h4>
-                                <span class="command-type">Wallet</span>
+                                <span class="command-type">지갑</span>
                             </div>
                             <div class="command-description">
-                                <p>Generates a new Dogecoin address for receiving payments.</p>
+                                <p>새로운 도지코인 수신용 주소를 생성합니다.</p>
                             </div>
                             <div class="command-examples">
                                 <div class="example">
-                                    <span class="example-label">Console:</span>
+                                    <span class="example-label">콘솔:</span>
                                     <code>dogecoin-cli getnewaddress</code>
                                 </div>
                                 <div class="example">
@@ -2583,21 +2583,21 @@ dogecoin-cli getmininginfo</code></pre>
                                 </div>
                             </div>
                             <div class="command-returns">
-                                <strong>Returns:</strong> New Dogecoin address string.
+                                <strong>반환값:</strong> 새로 생성된 도지코인 주소 문자열.
                             </div>
                         </div>
 
                         <div class="command-card">
                             <div class="command-header">
                                 <h4>sendtoaddress</h4>
-                                <span class="command-type">Wallet</span>
+                                <span class="command-type">지갑</span>
                             </div>
                             <div class="command-description">
-                                <p>Sends DOGE to a specified address.</p>
+                                <p>지정한 주소로 DOGE를 전송합니다.</p>
                             </div>
                             <div class="command-examples">
                                 <div class="example">
-                                    <span class="example-label">Console:</span>
+                                    <span class="example-label">콘솔:</span>
                                     <code>dogecoin-cli sendtoaddress "address" 10.5</code>
                                 </div>
                                 <div class="example">
@@ -2606,21 +2606,21 @@ dogecoin-cli getmininginfo</code></pre>
                                 </div>
                             </div>
                             <div class="command-returns">
-                                <strong>Returns:</strong> Transaction ID (txid) of the sent transaction.
+                                <strong>반환값:</strong> 전송된 트랜잭션의 트랜잭션 ID(txid).
                             </div>
                         </div>
 
                         <div class="command-card">
                             <div class="command-header">
                                 <h4>listtransactions</h4>
-                                <span class="command-type">Wallet</span>
+                                <span class="command-type">지갑</span>
                             </div>
                             <div class="command-description">
-                                <p>Returns the most recent transactions for the wallet.</p>
+                                <p>지갑의 최근 트랜잭션 목록을 반환합니다.</p>
                             </div>
                             <div class="command-examples">
                                 <div class="example">
-                                    <span class="example-label">Console:</span>
+                                    <span class="example-label">콘솔:</span>
                                     <code>dogecoin-cli listtransactions</code>
                                 </div>
                                 <div class="example">
@@ -2629,28 +2629,28 @@ dogecoin-cli getmininginfo</code></pre>
                                 </div>
                             </div>
                             <div class="command-returns">
-                                <strong>Returns:</strong> Array of transaction objects with details.
+                                <strong>반환값:</strong> 각 트랜잭션의 세부 정보가 포함된 트랜잭션 배열.
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="commands-category">
-                    <h3><span class="material-icons">network_check</span> Network Commands</h3>
-                    <p>Commands for network information, peer management, and connectivity.</p>
+                    <h3><span class="material-icons">network_check</span> 네트워크 명령어</h3>
+                    <p>네트워크 정보, 피어 관리 및 연결 상태 관련 명령어입니다.</p>
                     
                     <div class="commands-grid">
                         <div class="command-card">
                             <div class="command-header">
                                 <h4>getnetworkinfo</h4>
-                                <span class="command-type">Network</span>
+                                <span class="command-type">네트워크</span>
                             </div>
                             <div class="command-description">
-                                <p>Returns information about the node's network state and configuration.</p>
+                                <p>노드의 네트워크 상태 및 구성 정보를 반환합니다.</p>
                             </div>
                             <div class="command-examples">
                                 <div class="example">
-                                    <span class="example-label">Console:</span>
+                                    <span class="example-label">콘솔:</span>
                                     <code>dogecoin-cli getnetworkinfo</code>
                                 </div>
                                 <div class="example">
@@ -2659,21 +2659,21 @@ dogecoin-cli getmininginfo</code></pre>
                                 </div>
                             </div>
                             <div class="command-returns">
-                                <strong>Returns:</strong> Network version, connections, local services, etc.
+                                <strong>반환값:</strong> 네트워크 버전, 연결 수, 로컬 서비스 등.
                             </div>
                         </div>
 
                         <div class="command-card">
                             <div class="command-header">
                                 <h4>getpeerinfo</h4>
-                                <span class="command-type">Network</span>
+                                <span class="command-type">네트워크</span>
                             </div>
                             <div class="command-description">
-                                <p>Returns data about each connected peer.</p>
+                                <p>연결된 각 피어의 정보를 반환합니다.</p>
                             </div>
                             <div class="command-examples">
                                 <div class="example">
-                                    <span class="example-label">Console:</span>
+                                    <span class="example-label">콘솔:</span>
                                     <code>dogecoin-cli getpeerinfo</code>
                                 </div>
                                 <div class="example">
@@ -2682,21 +2682,21 @@ dogecoin-cli getmininginfo</code></pre>
                                 </div>
                             </div>
                             <div class="command-returns">
-                                <strong>Returns:</strong> Array of peer objects with connection details.
+                                <strong>반환값:</strong> 연결 정보가 포함된 피어 객체 배열.
                             </div>
                         </div>
 
                         <div class="command-card">
                             <div class="command-header">
                                 <h4>getconnectioncount</h4>
-                                <span class="command-type">Network</span>
+                                <span class="command-type">네트워크</span>
                             </div>
                             <div class="command-description">
-                                <p>Returns the number of connections to other nodes.</p>
+                                <p>다른 노드와의 연결 수를 반환합니다.</p>
                             </div>
                             <div class="command-examples">
                                 <div class="example">
-                                    <span class="example-label">Console:</span>
+                                    <span class="example-label">콘솔:</span>
                                     <code>dogecoin-cli getconnectioncount</code>
                                 </div>
                                 <div class="example">
@@ -2705,21 +2705,21 @@ dogecoin-cli getmininginfo</code></pre>
                                 </div>
                             </div>
                             <div class="command-returns">
-                                <strong>Returns:</strong> Number of active connections.
+                                <strong>반환값:</strong> 활성 연결 수.
                             </div>
                         </div>
 
                         <div class="command-card">
                             <div class="command-header">
                                 <h4>addnode</h4>
-                                <span class="command-type">Network</span>
+                                <span class="command-type">네트워크</span>
                             </div>
                             <div class="command-description">
-                                <p>Adds or removes a node from the addnode list.</p>
+                                <p>addnode 목록에 노드를 추가하거나 제거합니다.</p>
                             </div>
                             <div class="command-examples">
                                 <div class="example">
-                                    <span class="example-label">Console:</span>
+                                    <span class="example-label">콘솔:</span>
                                     <code>dogecoin-cli addnode "node:port" "add"</code>
                                 </div>
                                 <div class="example">
@@ -2728,28 +2728,28 @@ dogecoin-cli getmininginfo</code></pre>
                                 </div>
                             </div>
                             <div class="command-returns">
-                                <strong>Returns:</strong> null (success) or error message.
+                                <strong>반환값:</strong> null (성공) 또는 오류 메시지.
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="commands-category">
-                    <h3><span class="material-icons">build</span> Mining Commands</h3>
-                    <p>Commands for mining operations and block generation.</p>
+                    <h3><span class="material-icons">build</span> 채굴 명령어</h3>
+                    <p>채굴 작업과 블록 생성 관련 명령어입니다.</p>
                     
                     <div class="commands-grid">
                         <div class="command-card">
                             <div class="command-header">
                                 <h4>getmininginfo</h4>
-                                <span class="command-type">Mining</span>
+                                <span class="command-type">채굴</span>
                             </div>
                             <div class="command-description">
-                                <p>Returns mining-related information including hashrate and difficulty.</p>
+                                <p>해시레이트, 난이도 등 채굴 관련 정보를 반환합니다.</p>
                             </div>
                             <div class="command-examples">
                                 <div class="example">
-                                    <span class="example-label">Console:</span>
+                                    <span class="example-label">콘솔:</span>
                                     <code>dogecoin-cli getmininginfo</code>
                                 </div>
                                 <div class="example">
@@ -2758,21 +2758,21 @@ dogecoin-cli getmininginfo</code></pre>
                                 </div>
                             </div>
                             <div class="command-returns">
-                                <strong>Returns:</strong> Mining status, hashrate, difficulty, blocks, etc.
+                                <strong>반환값:</strong> 채굴 상태, 해시레이트, 난이도, 블록 수 등
                             </div>
                         </div>
 
                         <div class="command-card">
                             <div class="command-header">
                                 <h4>generate</h4>
-                                <span class="command-type">Mining</span>
+                                <span class="command-type">채굴</span>
                             </div>
                             <div class="command-description">
-                                <p>Mines blocks immediately (regtest only).</p>
+                                <p>즉시 블록을 채굴합니다 (regtest 전용).</p>
                             </div>
                             <div class="command-examples">
                                 <div class="example">
-                                    <span class="example-label">Console:</span>
+                                    <span class="example-label">콘솔:</span>
                                     <code>dogecoin-cli generate 1</code>
                                 </div>
                                 <div class="example">
@@ -2781,21 +2781,21 @@ dogecoin-cli getmininginfo</code></pre>
                                 </div>
                             </div>
                             <div class="command-returns">
-                                <strong>Returns:</strong> Array of block hashes generated.
+                                <strong>반환값:</strong> 생성된 블록 해시 배열.
                             </div>
                         </div>
 
                         <div class="command-card">
                             <div class="command-header">
                                 <h4>getblocktemplate</h4>
-                                <span class="command-type">Mining</span>
+                                <span class="command-type">채굴</span>
                             </div>
                             <div class="command-description">
-                                <p>Returns data needed to construct a block to work on.</p>
+                                <p>채굴할 블록을 구성하는 데 필요한 데이터를 반환합니다.</p>
                             </div>
                             <div class="command-examples">
                                 <div class="example">
-                                    <span class="example-label">Console:</span>
+                                    <span class="example-label">콘솔:</span>
                                     <code>dogecoin-cli getblocktemplate</code>
                                 </div>
                                 <div class="example">
@@ -2804,28 +2804,28 @@ dogecoin-cli getmininginfo</code></pre>
                                 </div>
                             </div>
                             <div class="command-returns">
-                                <strong>Returns:</strong> Block template data for mining.
+                                <strong>반환값:</strong> 채굴용 블록 템플릿 데이터.
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="commands-category">
-                    <h3><span class="material-icons">settings</span> Utility Commands</h3>
-                    <p>General utility commands for node management and debugging.</p>
+                    <h3><span class="material-icons">settings</span> 유틸리티 명령어</h3>
+                    <p>노드 관리 및 디버깅용 일반 유틸리티 명령어입니다.</p>
                     
                     <div class="commands-grid">
                         <div class="command-card">
                             <div class="command-header">
                                 <h4>help</h4>
-                                <span class="command-type">Utility</span>
+                                <span class="command-type">유틸리티</span>
                             </div>
                             <div class="command-description">
-                                <p>Lists all available RPC commands or shows help for a specific command.</p>
+                                <p>사용 가능한 모든 RPC 명령어를 나열하거나 특정 명령어의 도움말을 표시합니다.</p>
                             </div>
                             <div class="command-examples">
                                 <div class="example">
-                                    <span class="example-label">Console:</span>
+                                    <span class="example-label">콘솔:</span>
                                     <code>dogecoin-cli help</code>
                                 </div>
                                 <div class="example">
@@ -2834,21 +2834,21 @@ dogecoin-cli getmininginfo</code></pre>
                                 </div>
                             </div>
                             <div class="command-returns">
-                                <strong>Returns:</strong> List of available commands or command help.
+                                <strong>반환값:</strong> 사용 가능한 명령어 목록 또는 특정 명령어 도움말.
                             </div>
                         </div>
 
                         <div class="command-card">
                             <div class="command-header">
                                 <h4>stop</h4>
-                                <span class="command-type">Utility</span>
+                                <span class="command-type">유틸리티</span>
                             </div>
                             <div class="command-description">
-                                <p>Stops the Dogecoin Core daemon.</p>
+                                <p>Dogecoin Core 데몬을 종료합니다.</p>
                             </div>
                             <div class="command-examples">
                                 <div class="example">
-                                    <span class="example-label">Console:</span>
+                                    <span class="example-label">콘솔:</span>
                                     <code>dogecoin-cli stop</code>
                                 </div>
                                 <div class="example">
@@ -2857,21 +2857,21 @@ dogecoin-cli getmininginfo</code></pre>
                                 </div>
                             </div>
                             <div class="command-returns">
-                                <strong>Returns:</strong> "Dogecoin Core stopping..." message.
+                                <strong>반환값:</strong> "Dogecoin Core 종료 중..." 메세지.
                             </div>
                         </div>
 
                         <div class="command-card">
                             <div class="command-header">
                                 <h4>uptime</h4>
-                                <span class="command-type">Utility</span>
+                                <span class="command-type">유틸리티</span>
                             </div>
                             <div class="command-description">
-                                <p>Returns the total uptime of the server.</p>
+                                <p>서버의 총 가동 시간을 반환합니다.</p>
                             </div>
                             <div class="command-examples">
                                 <div class="example">
-                                    <span class="example-label">Console:</span>
+                                    <span class="example-label">콘솔:</span>
                                     <code>dogecoin-cli uptime</code>
                                 </div>
                                 <div class="example">
@@ -2880,21 +2880,21 @@ dogecoin-cli getmininginfo</code></pre>
                                 </div>
                             </div>
                             <div class="command-returns">
-                                <strong>Returns:</strong> Server uptime in seconds.
+                                <strong>반환값:</strong> 서버 가동 시간(초 단위).
                             </div>
                         </div>
 
                         <div class="command-card">
                             <div class="command-header">
                                 <h4>getmemoryinfo</h4>
-                                <span class="command-type">Utility</span>
+                                <span class="command-type">유틸리티</span>
                             </div>
                             <div class="command-description">
-                                <p>Returns information about memory usage.</p>
+                                <p>메모리 사용 정보 반환.</p>
                             </div>
                             <div class="command-examples">
                                 <div class="example">
-                                    <span class="example-label">Console:</span>
+                                    <span class="example-label">콘솔:</span>
                                     <code>dogecoin-cli getmemoryinfo</code>
                                 </div>
                                 <div class="example">
@@ -2903,7 +2903,7 @@ dogecoin-cli getmininginfo</code></pre>
                                 </div>
                             </div>
                             <div class="command-returns">
-                                <strong>Returns:</strong> Memory usage statistics.
+                                <strong>반환값:</strong> 메모리 사용 통계.
                             </div>
                         </div>
                     </div>
@@ -2914,13 +2914,13 @@ dogecoin-cli getmininginfo</code></pre>
                 <div class="footer-note">
                     <span class="material-icons">info</span>
                     <div class="note-content">
-                        <h4>Command Usage Tips</h4>
+                        <h4>명령어 사용 팁</h4>
                         <ul>
-                            <li><strong>Console:</strong> Use <code>dogecoin-cli</code> for direct command execution</li>
-                            <li><strong>RPC:</strong> Use HTTP POST requests with JSON-RPC format</li>
-                            <li><strong>Parameters:</strong> Most commands accept additional parameters for customization</li>
-                            <li><strong>Help:</strong> Use <code>dogecoin-cli help [command]</code> for detailed information</li>
-                            <li><strong>Security:</strong> Always use proper authentication for RPC calls</li>
+                            <li><strong>콘솔:</strong> <code>dogecoin-cli</code>로 직접 명령어 실행</li>
+                            <li><strong>RPC:</strong> JSON-RPC 형식의 HTTP POST 요청 사용</li>
+                            <li><strong>파라미터:</strong> 대부분 명령어는 추가 파라미터를 지원합니다</li>
+                            <li><strong>도움말:</strong> <code>dogecoin-cli help [command]</code>로 상세 정보 확인</li>
+                            <li><strong>보안:</strong> RPC 호출 시 항상 인증 사용</li>
                         </ul>
                     </div>
                 </div>
@@ -2932,18 +2932,18 @@ dogecoin-cli getmininginfo</code></pre>
     <section id="foundation" class="section bg-alt">
         <div class="container">
             <h2 class="section-title">
-                Dogecoin Foundation Projects
+                도지코인 재단 프로젝트
                 <span class="doge-word">Such Integration!</span>
             </h2>
             
             <div class="foundation-content">
                 <div class="foundation-intro">
-                    <p>The Dogecoin Foundation develops essential tools and projects that integrate seamlessly with Dogecoin Core. Such innovation, much ecosystem! Each project serves a unique purpose in the Dogecoin ecosystem.</p>
+                    <p>도지코인 재단은 Dogecoin Core와 원활하게 통합되는 필수 도구와 프로젝트를 개발합니다. Such innovation, much ecosystem! 각 프로젝트는 도지코인 생태계에서 고유한 목적을 수행합니다.</p>
                 </div>
 
                 <div class="projects-overview">
-                    <h3><span class="material-icons">apps</span> Some Foundation Projects</h3>
-                    <p>A list of some official Dogecoin Foundation projects with GitHub links and documentation.</p>
+                    <h3><span class="material-icons">apps</span> 재단의 일부 프로젝트</h3>
+                    <p>GitHub 링크와 문서가 포함된 공식 도지코인 재단 프로젝트 목록입니다.</p>
                     
                     <div class="projects-grid">
                         <div class="project-card">
@@ -2953,26 +2953,26 @@ dogecoin-cli getmininginfo</code></pre>
                                 </div>
                                 <div class="project-title">
                                     <h4>GigaWallet</h4>
-                                    <span class="project-status">Active</span>
+                                    <span class="project-status">활성</span>
                                 </div>
                             </div>
                             <div class="project-description">
-                                <p>Lightweight wallet service API for developers. Provides wallet functionality without requiring a full Dogecoin node.</p>
+                                <p>개발자를 위한 경량 지갑 서비스 API입니다. 전체 도지코인 노드를 필요로 하지 않고 지갑 기능을 제공합니다.</p>
                             </div>
                             <div class="project-links">
                                 <a href="https://github.com/dogecoinfoundation/gigawallet" target="_blank" class="project-link github">
                                     <span class="material-icons">code</span>
-                                    GitHub Repository
+                                    GitHub 저장소
                                 </a>
                                 <a href="#gigawallet-docs" class="project-link docs">
                                     <span class="material-icons">description</span>
-                                    Documentation
+                                    문서
                                 </a>
                             </div>
                             <div class="project-features">
                                 <span class="feature-tag">REST API</span>
-                                <span class="feature-tag">Lightweight</span>
-                                <span class="feature-tag">Developer Tools</span>
+                                <span class="feature-tag">경량</span>
+                                <span class="feature-tag">개발자 도구</span>
                             </div>
                         </div>
 
@@ -2983,26 +2983,26 @@ dogecoin-cli getmininginfo</code></pre>
                                 </div>
                                 <div class="project-title">
                                     <h4>RadioDoge</h4>
-                                    <span class="project-status">Active</span>
+                                    <span class="project-status">활성</span>
                                 </div>
                             </div>
                             <div class="project-description">
-                                <p>Mesh networking solution for Dogecoin transactions. Enables connectivity in areas with limited internet access.</p>
+                                <p>도지코인 거래를 위한 메시 네트워킹 솔루션입니다. 인터넷 연결이 제한된 지역에서도 연결성을 제공합니다.</p>
                             </div>
                             <div class="project-links">
                                 <a href="https://github.com/dogecoinfoundation/radiodoge" target="_blank" class="project-link github">
                                     <span class="material-icons">code</span>
-                                    GitHub Repository
+                                    GitHub 저장소
                                 </a>
                                 <a href="#radiodoge-docs" class="project-link docs">
                                     <span class="material-icons">description</span>
-                                    Documentation
+                                    문서
                                 </a>
                             </div>
                             <div class="project-features">
-                                <span class="feature-tag">Mesh Network</span>
-                                <span class="feature-tag">Offline Support</span>
-                                <span class="feature-tag">Resilient</span>
+                                <span class="feature-tag">메시 네트워크</span>
+                                <span class="feature-tag">오프라인 지원</span>
+                                <span class="feature-tag">내구성</span>
                             </div>
                         </div>
 
@@ -3013,26 +3013,26 @@ dogecoin-cli getmininginfo</code></pre>
                                 </div>
                                 <div class="project-title">
                                     <h4>Dogebox OS</h4>
-                                    <span class="project-status">Active</span>
+                                    <span class="project-status">활성</span>
                                 </div>
                             </div>
                             <div class="project-description">
-                                <p>Specialized operating system for running Dogecoin Core efficiently on dedicated hardware. Plug-and-play solution.</p>
+                                <p>전용 하드웨어에서 Dogecoin Core를 효율적으로 실행하기 위한 특화 운영체제입니다. 플러그 앤 플레이 솔루션 제공.</p>
                             </div>
                             <div class="project-links">
                                 <a href="https://github.com/Dogebox-WG/os" target="_blank" class="project-link github">
                                     <span class="material-icons">code</span>
-                                    GitHub Repository
+                                    GitHub 저장소
                                 </a>
                                 <a href="#dogebox-docs" class="project-link docs">
                                     <span class="material-icons">description</span>
-                                    Documentation
+                                    문서
                                 </a>
                             </div>
                             <div class="project-features">
-                                <span class="feature-tag">Operating System</span>
-                                <span class="feature-tag">Optimized</span>
-                                <span class="feature-tag">Plug & Play</span>
+                                <span class="feature-tag">운영체제</span>
+                                <span class="feature-tag">최적화됨</span>
+                                <span class="feature-tag">플러그 앤 플레이</span>
                             </div>
                         </div>
 
@@ -3043,105 +3043,105 @@ dogecoin-cli getmininginfo</code></pre>
                                 </div>
                                 <div class="project-title">
                                     <h4>Libdogecoin</h4>
-                                    <span class="project-status">Active</span>
+                                    <span class="project-status">활성</span>
                                 </div>
                             </div>
                             <div class="project-description">
-                                <p>Low-level C library for building compliant Dogecoin nodes and wallets. Provides essential cryptographic functions and transaction handling.</p>
+                                <p>호환 가능한 도지코인 노드와 지갑을 구축하기 위한 저수준 C 라이브러리입니다. 필수 암호화 함수와 트랜잭션 처리 기능 제공.</p>
                             </div>
                             <div class="project-links">
                                 <a href="https://github.com/dogecoinfoundation/libdogecoin" target="_blank" class="project-link github">
                                     <span class="material-icons">code</span>
-                                    GitHub Repository
+                                    GitHub 저장소
                                 </a>
                                 <a href="https://github.com/dogecoinfoundation/libdogecoin/blob/0.1.5-dev/doc/getting_started.md" target="_blank" class="project-link docs">
                                     <span class="material-icons">description</span>
-                                    Documentation
+                                    문서
                                 </a>
                             </div>
                             <div class="project-features">
-                                <span class="feature-tag">C Library</span>
-                                <span class="feature-tag">Cryptography</span>
-                                <span class="feature-tag">Developer Tools</span>
+                                <span class="feature-tag">C 라이브러리</span>
+                                <span class="feature-tag">암호화</span>
+                                <span class="feature-tag">개발자 도구</span>
                             </div>
                         </div>
 
                 </div>
 
                 <div class="foundation-integration">
-                    <h3>🔗 Integration Examples</h3>
-                    <p>Here are practical examples of how to integrate these Foundation projects with your Dogecoin Core setup:</p>
+                    <h3>🔗 통합 예시</h3>
+                    <p>다음은 이러한 재단 프로젝트를 Dogecoin Core 환경과 통합하는 실제 예시입니다:</p>
                     
                     <div class="integration-scenarios">
                         <div class="scenario">
-                            <h4>E-commerce Integration</h4>
-                            <p>Use GigaWallet + Dogecoin Core for online payments</p>
+                            <h4>전자상거래 통합</h4>
+                            <p>온라인 결제를 위해 GigaWallet + Dogecoin Core 사용</p>
                             <div class="code-block">
                                 <div class="code-header">
-                                    <span>Payment flow example</span>
-                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                    <span>결제 흐름 예시</span>
+                                    <button class="copy-btn" onclick="copyCode(this)">복사</button>
                                 </div>
-                                <pre><code># 1. Customer initiates payment
+                                <pre><code># 1. 고객이 결제 시작
 POST /api/v1/wallets/{wallet_id}/addresses
 {
-  "label": "Payment for Order #12345"
+  "label": "주문 #12345 결제"
 }
 
-# 2. GigaWallet creates address and monitors via Dogecoin Core
-# 3. Customer sends DOGE to the address
-# 4. GigaWallet detects payment via Dogecoin Core RPC
-# 5. Payment is confirmed and order is processed
+# 2. GigaWallet이 주소 생성 및 Dogecoin Core로 모니터링
+# 3. 고객이 DOGE를 해당 주소로 전송
+# 4. GigaWallet이 Dogecoin Core RPC를 통해 결제 감지
+# 5. 결제 확인 후 주문 처리
 
-# GigaWallet uses Dogecoin Core for:
-# - Address generation
-# - Transaction monitoring
-# - Balance verification
-# - Confirmation counting</code></pre>
+# GigaWallet이 Dogecoin Core를 사용하는 기능:
+# - 주소 생성
+# - 트랜잭션 모니터링
+# - 잔액 확인
+# - 확인 수 계산</code></pre>
                             </div>
                         </div>
 
                         <div class="scenario">
-                            <h4>Remote Area Deployment</h4>
-                            <p>Use RadioDoge + Dogecoin Core for offline transactions</p>
+                            <h4>원격 지역 배포</h4>
+                            <p>오프라인 트랜잭션을 위해 RadioDoge + Dogecoin Core 사용</p>
                             <div class="code-block">
                                 <div class="code-header">
-                                    <span>Mesh network setup</span>
-                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                    <span>메시 네트워크 설정</span>
+                                    <button class="copy-btn" onclick="copyCode(this)">복사</button>
                                 </div>
-                                <pre><code># 1. Deploy Dogecoin Core on central node with internet
-# 2. Deploy RadioDoge on mesh network nodes
-# 3. RadioDoge forwards transactions to Dogecoin Core
-# 4. Users can send DOGE over mesh network
-# 5. Transactions are eventually broadcast to main network
+                                <pre><code># 1. 중앙 노드에 Dogecoin Core 배포 및 인터넷 연결
+# 2. 메시 네트워크 노드에 RadioDoge 배포
+# 3. RadioDoge가 트랜잭션을 Dogecoin Core로 전달
+# 4. 사용자는 메시 네트워크를 통해 DOGE 전송 가능
+# 5. 트랜잭션은 최종적으로 메인 네트워크에 브로드캐스트
 
-# RadioDoge uses Dogecoin Core for:
-# - Transaction validation
-# - Network synchronization
-# - Block verification
-# - Peer management</code></pre>
+# RadioDoge가 Dogecoin Core를 사용하는 기능:
+# - 트랜잭션 검증
+# - 네트워크 동기화
+# - 블록 검증
+# - 피어 관리</code></pre>
                             </div>
                         </div>
 
                         <div class="scenario">
-                            <h4>Home Node Setup</h4>
-                            <p>Use Dogebox OS for easy home node deployment</p>
+                            <h4>홈 노드 설정</h4>
+                            <p>간편한 홈 노드 배포를 위해 Dogebox OS 사용</p>
                             <div class="code-block">
                                 <div class="code-header">
-                                    <span>Home node configuration</span>
-                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                    <span>홈 노드 구성</span>
+                                    <button class="copy-btn" onclick="copyCode(this)">복사</button>
                                 </div>
-                                <pre><code># 1. Flash Dogebox OS to SD card
-# 2. Insert into Raspberry Pi or similar device
-# 3. Connect to network and power on
-# 4. Access web dashboard at http://dogebox.local
-# 5. Configure RPC access for your applications
+                                <pre><code># 1. SD 카드에 Dogebox OS 플래시
+# 2. Raspberry Pi 또는 유사 기기에 삽입
+# 3. 네트워크 연결 후 전원 켜기
+# 4. 웹 대시보드 접속: http://dogebox.local
+# 5. 애플리케이션용 RPC 접근 구성
 
-# Dogebox OS provides:
-# - Pre-configured Dogecoin Core
-# - Web-based management interface
-# - Automatic updates
-# - Resource monitoring
-# - Easy RPC configuration</code></pre>
+# Dogebox OS 제공 기능:
+# - 사전 구성된 Dogecoin Core
+# - 웹 기반 관리 인터페이스
+# - 자동 업데이트
+# - 리소스 모니터링
+# - 간편한 RPC 설정</code></pre>
                             </div>
                         </div>
                     </div>
@@ -3154,100 +3154,100 @@ POST /api/v1/wallets/{wallet_id}/addresses
     <section id="translate" class="section">
         <div class="container">
             <h2 class="section-title">
-                Help Translate
+                번역 참여하기
                 <span class="doge-word">Such Global!</span>
             </h2>
             
             <div class="translation-content">
                 <div class="translation-intro">
-                    <p>Help make Dogecoin Core documentation accessible to everyone around the world! Such community, much global!</p>
+                    <p>Dogecoin Core 문서를 전 세계 누구나 접근할 수 있도록 번역해 주세요! Such community, much global!</p>
                 </div>
 
                 <div class="translation-info">
                     <div class="translation-steps">
-                        <h3><span class="material-icons">public</span> How to Contribute Translations</h3>
+                        <h3><span class="material-icons">public</span> 번역 참여 방법</h3>
                         <div class="step">
                             <div class="step-number">1</div>
                             <div class="step-content">
-                                <h4>Fork the Repository</h4>
-                                <p>Fork the <a href="https://github.com/qlpqlp/dogecoin-core-docs" target="_blank">dogecoin-core-docs</a> repository to your GitHub account.</p>
+                                <h4>저장소 Fork</h4>
+                                <p>Fork the <a href="https://github.com/qlpqlp/dogecoin-core-docs" target="_blank">dogecoin-core-docs</a> 저장소를 GitHub 계정으로 Fork 합니다.</p>
                             </div>
                         </div>
                         <div class="step">
                             <div class="step-number">2</div>
                             <div class="step-content">
-                                <h4>Create Language Directory</h4>
-                                <p>Create a new directory for your language (e.g., <code>es/</code> for Spanish, <code>fr/</code> for French).</p>
+                                <h4>언어 디렉토리 생성</h4>
+                                <p>번역할 언어용 새 디렉토리를 생성합니다 (예: <code>es/</code> 스페인어, <code>fr/</code> 프랑스어).</p>
                             </div>
                         </div>
                         <div class="step">
                             <div class="step-number">3</div>
                             <div class="step-content">
-                                <h4>Translate Content</h4>
-                                <p>Translate the HTML files while keeping the structure and Dogecoin memes intact!</p>
+                                <h4>내용 번역</h4>
+                                <p>HTML 파일을 구조와 Dogecoin 밈을 유지하며 번역합니다!</p>
                             </div>
                         </div>
                         <div class="step">
                             <div class="step-number">4</div>
                             <div class="step-content">
-                                <h4>Submit Pull Request</h4>
-                                <p>Submit a pull request with your translations for review and inclusion.</p>
+                                <h4>풀 리퀘스트 제출</h4>
+                                <p>번역한 내용을 검토 및 포함을 위해 풀 리퀘스트로 제출합니다.</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="translation-guidelines">
-                        <h3><span class="material-icons">notes</span> Translation Guidelines</h3>
+                        <h3><span class="material-icons">notes</span> 번역 가이드라인</h3>
                         <ul>
-                            <li><span class="material-icons">mood</span><strong>Such Memes:</strong> Keep Dogecoin memes like "Such", "Much", "Wow", "So" in English</li>
-                            <li><span class="material-icons">translate</span><strong>Much Technical:</strong> Translate technical terms appropriately for your language</li>
-                            <li><span class="material-icons">code</span><strong>So Structure:</strong> Maintain the HTML structure and CSS classes</li>
-                            <li><span class="material-icons">celebration</span><strong>Wow Fun:</strong> Keep the playful and educational tone</li>
+                            <li><span class="material-icons">mood</span><strong>Such Memes:</strong> Dogecoin 밈("Such", "Much", "Wow", "So")은 영어 그대로 유지</li>
+                            <li><span class="material-icons">translate</span><strong>Much Technical:</strong> 기술 용어는 적절히 번역</li>
+                            <li><span class="material-icons">code</span><strong>So Structure:</strong> HTML 구조와 CSS 클래스 유지</li>
+                            <li><span class="material-icons">celebration</span><strong>Wow Fun:</strong> 교육적이고 친근한 톤 유지</li>
                         </ul>
                     </div>
 
                     <div class="translation-languages">
-                        <h3><span class="material-icons">translate</span> Languages We Need</h3>
+                        <h3><span class="material-icons">translate</span> 필요한 언어</h3>
                         <div class="languages-grid">
                             <div class="language">
                                 <span class="material-icons">language</span>
-                                <span class="language-name">Spanish</span>
-                                <span class="status needed">Needed</span>
+                                <span class="language-name">스페인어</span>
+                                <span class="status needed">필요</span>
                             </div>
                             <div class="language">
                                 <span class="material-icons">language</span>
-                                <span class="language-name">French</span>
-                                <span class="status needed">Needed</span>
+                                <span class="language-name">프랑스어</span>
+                                <span class="status needed">필요</span>
                             </div>
                             <div class="language">
                                 <span class="material-icons">language</span>
-                                <span class="language-name">German</span>
-                                <span class="status needed">Needed</span>
+                                <span class="language-name">독일어</span>
+                                <span class="status needed">필요</span>
                             </div>
                             <div class="language">
                                 <span class="material-icons">language</span>
-                                <span class="language-name">Japanese</span>
-                                <span class="status needed">Needed</span>
+                                <span class="language-name">일본어</span>
+                                <span class="status needed">필요</span>
                             </div>
                             <div class="language">
                                 <span class="material-icons">language</span>
-                                <span class="language-name">Chinese</span>
-                                <span class="status needed">Needed</span>
+                                <span class="language-name">중국어</span>
+                                <span class="status needed">필요</span>
                             </div>
                             <div class="language">
                                 <span class="material-icons">language</span>
-                                <span class="language-name">Korean</span>
-                                <span class="status needed">Needed</span>
+                                <span class="language-name">한국어</span>
+                                <span class="status needed">필요</span>
                             </div>
                             <div class="language">
                                 <span class="material-icons">language</span>
-                                <span class="language-name">Portuguese</span>
-                                <span class="status needed">Needed</span>
+                                <span class="language-name">포르투갈어</span>
+                                <span class="status needed">필요</span>
                             </div>
                             <div class="language">
                                 <span class="material-icons">language</span>
-                                <span class="language-name">Russian</span>
-                                <span class="status needed">Needed</span>
+                                <span class="language-name">러시아어</span>
+                                <span class="status needed">필요</span>
                             </div>
                         </div>
                     </div>
@@ -3267,31 +3267,31 @@ POST /api/v1/wallets/{wallet_id}/addresses
                     <h3>Dogecoin Core</h3>
                     <p>Such documentation, much learning!</p>
                     <div class="footer-links">
-                        <a href="https://github.com/dogecoin/dogecoin" target="_blank">Source Code</a>
-                        <a href="https://dogecoin.com" target="_blank">Website</a>
-                        <a href="https://github.com/dogecoin/dogecoin/releases" target="_blank">Releases</a>
+                        <a href="https://github.com/dogecoin/dogecoin" target="_blank">소스 코드</a>
+                        <a href="https://dogecoin.com" target="_blank">웹사이트</a>
+                        <a href="https://github.com/dogecoin/dogecoin/releases" target="_blank">릴리스</a>
                     </div>
                 </div>
                 <div class="footer-section">
-                    <h3>Documentation</h3>
+                    <h3>문서</h3>
                     <div class="footer-links">
-                        <a href="https://github.com/qlpqlp/dogecoin-core-docs" target="_blank">Edit This Site</a>
-                        <a href="#translate">Help Translate</a>
-                        <a href="https://github.com/qlpqlp/dogecoin-core-docs/issues" target="_blank">Report Issues</a>
+                        <a href="https://github.com/qlpqlp/dogecoin-core-docs" target="_blank">사이트 편집</a>
+                        <a href="#translate">번역 참여</a>
+                        <a href="https://github.com/qlpqlp/dogecoin-core-docs/issues" target="_blank">이슈 보고</a>
                     </div>
                 </div>
                 <div class="footer-section">
-                    <h3>Community</h3>
+                    <h3>커뮤니티</h3>
                     <div class="footer-links">
-                        <a href="https://x.com/dogecoin" target="_blank">X</a>                        
-                        <a href="https://discord.gg/dogecoin" target="_blank">Discord</a>
-                        <a href="https://reddit.com/r/dogecoin" target="_blank">Reddit</a>
+                        <a href="https://x.com/dogecoin" target="_blank">엑스</a>                        
+                        <a href="https://discord.gg/dogecoin" target="_blank">디스코드</a>
+                        <a href="https://reddit.com/r/dogecoin" target="_blank">레딧</a>
                     </div>
                 </div>
                 <div class="footer-section">
-                    <h3>Foundation</h3>
+                    <h3>재단</h3>
                     <div class="footer-links">
-                        <a href="https://dogecoin.org" target="_blank">Website</a>
+                        <a href="https://dogecoin.org" target="_blank">웹사이트</a>
                         <a href="https://github.com/dogecoinfoundation/gigawallet" target="_blank">GigaWallet</a>
                         <a href="https://github.com/dogecoinfoundation/radiodoge" target="_blank">RadioDoge</a>
                         <a href="https://github.com/Dogebox-WG/os" target="_blank">Dogebox OS</a>
@@ -3300,8 +3300,8 @@ POST /api/v1/wallets/{wallet_id}/addresses
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Dogecoin Core Documentation. Such open source!</p>
-                <p class="doge-footer">Much thanks for learning with us!</p>
+                <p>&copy; 2025 도지코인 코어 문서. Such open source!</p>
+                <p class="doge-footer">함께 학습해 주셔서 감사합니다!</p>
             </div>
         </div>
     </footer>
