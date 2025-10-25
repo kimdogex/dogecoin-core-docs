@@ -371,21 +371,21 @@ make -j$(sysctl -n hw.ncpu)</code></pre>
 
                     <!-- FreeBSD -->
                     <div id="freebsd" class="platform-section">
-                        <h3><span class="material-icons">computer</span> FreeBSD Compilation</h3>
+                        <h3><span class="material-icons">computer</span> FreeBSD 컴파일</h3>
                         <div class="code-block">
                             <div class="code-header">
-                                <span>Using pkg</span>
-                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                <span>pkg 사용</span>
+                                <button class="copy-btn" onclick="copyCode(this)">복사</button>
                             </div>
-                            <pre><code># Install dependencies
+                            <pre><code># 의존성 설치
 pkg install autotools boost-libs libevent2 openssl zeromq4 protobuf
 
-# Clone and mining
+# 클론 및 채굴
 git clone https://github.com/dogecoin/dogecoin.git
 cd dogecoin
 git checkout v1.14.9
 
-# Build
+# 빌드
 ./autogen.sh
 ./configure
 make -j$(sysctl -n hw.ncpu)</code></pre>
