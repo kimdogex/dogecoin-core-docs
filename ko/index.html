@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dogecoin Core Documentation - Much Wow! Such Learn!</title>
-    <meta name="description" content="Complete guide to Dogecoin Core - Learn to compile, run nodes, mine, and develop with DOGE! Such education, much knowledge!">
+    <title>도지코인 코어 문서 - 매우 와우! 놀라운 배움!</title>
+    <meta name="description" content="도지코인 코어 완전 가이드 - 도지 컴파일, 노드실행, 채굴 그리고 개발까지 배우기! 놀라운 교육, 풍부한 지식!">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -14,12 +14,12 @@
     <!-- Top Navigation Bar -->
     <nav class="top-navbar">
         <div class="top-nav-container">
-            <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle sidebar">
+            <button class="sidebar-toggle" id="sidebarToggle" aria-label="사이드바 토글">
                 <span class="material-icons">menu</span>
             </button>
             <div class="top-nav-logo">
                 <img src="images/dogecoin.svg" alt="Dogecoin" class="logo-icon">
-                <span class="logo-text">Dogecoin Core Documentation</span>
+                <span class="logo-text">도지코인 코어 문서</span>
             </div>
             <div class="top-nav-actions">
                 <a href="https://github.com/dogecoin/dogecoin" target="_blank" class="top-nav-link" title="View Source Code">
@@ -37,9 +37,9 @@
         <div class="sidebar-header">
             <div class="sidebar-logo">
                 <span class="material-icons">pets</span>
-                <span>Dogecoin Core</span>
+                <span>도지코인 코어</span>
             </div>
-            <button class="sidebar-close" id="sidebarClose" aria-label="Close sidebar">
+            <button class="sidebar-close" id="sidebarClose" aria-label="사이드바 닫기">
                 <span class="material-icons">close</span>
             </button>
         </div>
@@ -47,44 +47,44 @@
         <div class="sidebar-search">
             <div class="search-container">
                 <span class="material-icons search-icon">search</span>
-                <input type="text" id="sidebarSearch" placeholder="Search documentation..." class="search-input">
+                <input type="text" id="sidebarSearch" placeholder="문서 검색..." class="search-input">
             </div>
         </div>
 
         <nav class="sidebar-nav">
             <div class="nav-section">
-                <div class="nav-section-title">Getting Started</div>
+                <div class="nav-section-title">시작하기</div>
                 <a href="#getting-started" class="nav-link">
                     <span class="material-icons">rocket_launch</span>
-                    <span>Quick Start</span>
+                    <span>빠른 시작</span>
                 </a>
             </div>
 
             <div class="nav-section">
-                <div class="nav-section-title">Setup & Installation</div>
+                <div class="nav-section-title">설치 및 설정</div>
                 <a href="#compilation" class="nav-link">
                     <span class="material-icons">build</span>
-                    <span>Compilation</span>
+                    <span>컴파일</span>
                 </a>
                 <a href="#full-node" class="nav-link">
                     <span class="material-icons">dns</span>
-                    <span>Full Node</span>
+                    <span>풀 노드</span>
                 </a>
                 <a href="#networking" class="nav-link">
                     <span class="material-icons">network_check</span>
-                    <span>Networking</span>
+                    <span>네트워킹</span>
                 </a>
             </div>
 
             <div class="nav-section">
-                <div class="nav-section-title">Development</div>
+                <div class="nav-section-title">개발</div>
                 <a href="#rpc-zmq" class="nav-link">
                     <span class="material-icons">api</span>
                     <span>RPC & ZMQ</span>
                 </a>
                 <a href="#transactions" class="nav-link">
                     <span class="material-icons">swap_horiz</span>
-                    <span>Transactions</span>
+                    <span>트랜잭션</span>
                 </a>
                 <a href="#opcodes" class="nav-link">
                     <span class="material-icons">code</span>
@@ -93,30 +93,30 @@
             </div>
 
             <div class="nav-section">
-                <div class="nav-section-title">Advanced Topics</div>
+                <div class="nav-section-title">고급 주제</div>
                 <a href="#mining" class="nav-link">
                     <span class="material-icons">build</span>
-                    <span>Mining</span>
+                    <span>채굴</span>
                 </a>
                 <a href="#console-commands" class="nav-link">
                     <span class="material-icons">terminal</span>
-                    <span>Console Commands</span>
+                    <span>콘솔 명령어</span>
                 </a>
                 <a href="#foundation" class="nav-link">
                     <span class="material-icons">foundation</span>
-                    <span>Foundation Projects</span>
+                    <span>재단 프로젝트</span>
                 </a>
             </div>
 
             <div class="nav-section">
-                <div class="nav-section-title">Community</div>
+                <div class="nav-section-title">커뮤니티</div>
                 <a href="#translate" class="nav-link">
                     <span class="material-icons">translate</span>
-                    <span>Help Translate</span>
+                    <span>번역 기여</span>
                 </a>
                 <a href="https://github.com/qlpqlp/dogecoin-core-docs/issues" target="_blank" class="nav-link">
                     <span class="material-icons">bug_report</span>
-                    <span>Report Issues</span>
+                    <span>버그 리포트</span>
                 </a>
             </div>
         </nav>
@@ -125,11 +125,11 @@
             <div class="sidebar-links">
                 <a href="https://dogecoin.com" target="_blank" class="footer-link">
                     <span class="material-icons">language</span>
-                    <span>Official Website</span>
+                    <span>공식 웹사이트</span>
                 </a>
                 <a href="https://dogecoin.org" target="_blank" class="footer-link">
                     <span class="material-icons">account_balance</span>
-                    <span>Dogecoin Foundation</span>
+                    <span>도지코인 재단</span>
                 </a>
                 <a href="https://x.com/dogecoin" target="_blank" class="footer-link">
                     <span class="material-icons">pets</span>
@@ -137,7 +137,7 @@
                 </a>
                 <a href="https://discord.gg/dogecoin" target="_blank" class="footer-link">
                     <span class="material-icons">chat</span>
-                    <span>Discord</span>
+                    <span>디스코드</span>
                 </a>
             </div>
         </div>
@@ -154,24 +154,24 @@
                 <div class="hero-content">
                     <div class="hero-badge">
                         <span class="material-icons">pets</span>
-                        <span>Much Fun Learning</span>
+                        <span>매우 재밌는 학습</span>
                     </div>
                     <h1 class="hero-title">
-                        Dogecoin Core Documentation
-                        <span class="doge-accent">Such Learn!</span>
+                        도지코인 코어 문서
+                        <span class="doge-accent">배움 가득!</span>
                     </h1>
                     <p class="hero-subtitle">
-                        Complete guide to mininging, running, and developing with Dogecoin Core. 
-                        <span class="doge-word">Much education</span> for developers of all ages!
+                        도지코인 코어를 채굴하고, 실행하며, 개발하는 완벽 가이드.
+                        <span class="doge-word">엄청난 배움!</span> 누구나 즐기는 개발 학습!
                     </p>
                     <div class="hero-buttons">
                         <a href="#getting-started" class="btn btn-primary">
                             <span class="material-icons">school</span>
-                            Start Learning
+                            학습 시작
                         </a>
                         <a href="https://github.com/dogecoin/dogecoin" target="_blank" class="btn btn-secondary">
                             <span class="material-icons">code</span>
-                            View Source
+                            소스 보기
                         </a>
                     </div>
                 </div>
@@ -179,7 +179,7 @@
                     <div class="hero-card">
                         <div class="card-header">
                             <span class="material-icons">terminal</span>
-                            <span>Quick Start</span>
+                            <span>빠른 시작</span>
                         </div>
                         <div class="card-content">
                             <div class="code-line">
@@ -199,15 +199,15 @@
                     <div class="hero-stats">
                         <div class="stat">
                             <span class="stat-number">1.14.9</span>
-                            <span class="stat-label">Latest Version</span>
+                            <span class="stat-label">최신 버전</span>
                         </div>
                         <div class="stat">
                             <span class="stat-number">15.1k</span>
-                            <span class="stat-label">GitHub Stars</span>
+                            <span class="stat-label">깃허브 스타</span>
                         </div>
                         <div class="stat">
                             <span class="stat-number">MIT</span>
-                            <span class="stat-label">License</span>
+                            <span class="stat-label">라이센스</span>
                         </div>
                     </div>
                 </div>
