@@ -437,7 +437,7 @@ make -j$(sysctl -n hw.ncpu)</code></pre>
                         <div class="step-number">2</div>
                         <div class="step-content">
                             <h3>초기 동기화</h3>
-                            <p>도지코인 코어를 실행하고 네트워크와 동기화해요 첫 실행 시 몇 시간이 걸릴 수 있으니, 느긋하게 기다려 주세요</p>
+                            <p>도지코인 코어를 실행하고 네트워크와 동기화해요<br>첫 실행 시 몇 시간이 걸릴 수 있으니, 느긋하게 기다려 주세요</p>
                             <div class="code-block">
                                 <div class="code-header">
                                     <span>도지코인 코어 시작</span>
@@ -491,7 +491,7 @@ prune=550</code></pre>
                             <div class="code-block">
                                 <div class="code-header">
                                     <span>노드 상태 확인</span>
-                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                    <button class="copy-btn" onclick="copyCode(this)">복사</button>
                                 </div>
                                 <pre><code># 노드 실행 확인
 dogecoin-cli getinfo
@@ -510,7 +510,7 @@ dogecoin-cli getpeerinfo</code></pre>
                 </div>
 
                 <div class="node-benefits">
-                    <h3><span class="material-icons">star</span> 풀 노드는 혼자만의 힘이 아니에요! 도지코인 친구들과 함께 네트워크를 안전하게 지키는 슈퍼 힘이에요!</h3>
+                    <h3><span class="material-icons">star</span> 풀 노드는 혼자만의 힘이 아니에요!<br>도지코인 친구들과 함께 네트워크를 안전하게 지키는 슈퍼 힘이에요!</h3>
                     <p class="benefits-intro">Such community spirit, much network support!</p>
                     <div class="benefits-grid">
                         <div class="benefit">
@@ -524,7 +524,7 @@ dogecoin-cli getpeerinfo</code></pre>
                             <div class="benefit-icon">
                                 <span class="material-icons">people</span>
                             </div>
-                            <h4>신규 사용자의 동기화 지원</h4>
+                            <h4>새로운 사용자의 동기화 지원</h4>
                             <p>노드를 켜면 새로운 시베가 블록체인 데이터를 빠르게 받아볼 수 있어요</p>
                         </div>
                         <div class="benefit">
@@ -873,7 +873,7 @@ curl -u your_username:your_password \
                                         <code>comment</code>
                                     </div>
                                     <div class="parameter-description">
-                                        선택 사항: 본인 기록용 코멘트 (블록체인에 저장되지 않아요)
+                                        본인 기록용 코멘트 (선택사항: 블록체인에 저장되지 않아요)
                                     </div>
                                 </div>
                                 <div class="parameter-item">
@@ -881,7 +881,7 @@ curl -u your_username:your_password \
                                         <code>comment_to</code>
                                     </div>
                                     <div class="parameter-description">
-                                        선택 사항: 수신자에게 표시될 코멘트 (블록체인에 저장되지 않아요)
+                                        수신자에게 표시될 코멘트 (선택사항: 블록체인에 저장되지 않아요)
                                     </div>
                                 </div>
                             </div>
@@ -1049,7 +1049,7 @@ curl -u your_username:your_password \
             
             <div class="opcodes-content">
                 <div class="opcodes-intro">
-                    <p>도지코인은 OP_CODES를 이용한 스크립트 언어를 지원해요.<br>이를 통해 스마트 컨트랙트처럼 조건부 지출, 멀티시그 지갑, 고급 기능을 구현할 수 있답니다.<br>Much scripting, so programmable!</p>
+                    <p>도지코인은 OP_CODES를 이용한 스크립트 언어를 지원해요<br>이를 통해 스마트 컨트랙트처럼 조건부 지출, 멀티시그 지갑, 고급 기능을 구현할 수 있어요<br>Much scripting, so programmable!</p>
                 </div>
 
                 <div class="opcodes-explanation">
@@ -1275,12 +1275,12 @@ curl -u your_username:your_password \
             
             <div class="networking-content">
                 <div class="networking-intro">
-                    <p>도지코인 메인넷(실제거래)과 테스트넷(연습용) 중 원하는 네트워크에 연결할 수 있어요<br>Such networks, much choice!</p>
+                    <p>도지코인 메인넷과 테스트넷 중 원하는 네트워크에 연결할 수 있어요<br>Such networks, much choice!</p>
                 </div>
 
                 <div class="network-types">
                     <div class="network-type">
-                        <h3><span class="material-icons">public</span> 공개 메인넷 (실거래 네트워크)</h3>
+                        <h3><span class="material-icons">public</span> 공개 메인넷 (실제거래 네트워크)</h3>
                         <p>실제 DOGE 거래가 이루어지는 메인 도지코인 네트워크예요<br>Such real, much value!</p>
                         
                         <div class="network-details">
@@ -1391,7 +1391,7 @@ rpcallowip=127.0.0.1</code></pre>
                                     </div>
                                     <div class="info-content">
                                         <h4>통화</h4>
-                                        <p><code>DOGE (테스트용)</code></p>
+                                        <p><code>테스트넷 DOGE</code></p>
                                         <span class="info-desc">실제 가치 없음</span>
                                     </div>
                                 </div>
@@ -1819,7 +1819,7 @@ dogecoin-cli getconnectioncount</code>
                             <div class="tool-card">
                                 <span class="material-icons">memory</span>
                                 <h5>성능 모니터링</h5>
-                                <p>노드 성능과 리소스 사용량을 체크할 수 있어요<br>Such Monitoring, Much Insight!</p>
+                                <p>노드 성능과 리소스 사용량을 체크할 수 있어요</p>
                                 <div class="code-snippet">
                                     <code># 블록체인 정보 확인
 dogecoin-cli getblockchaininfo
@@ -1844,7 +1844,7 @@ dogecoin-cli logging '["net","rpc"]'
 
                 <div class="network-monitoring">
                     <h3><span class="material-icons">analytics</span> 네트워크 모니터링</h3>
-                    <p>노드가 잘 연결되어 있는지, 블록체인 상태가 어떤지 한눈에 확인할 수 있어요</p>
+                    <p>노드가 잘 연결되어 있는지, 블록체인 상태가 어떤지 한눈에 확인할 수 있어요<br>Such Monitoring, Much Insight!</p>
                     
                     <div class="monitoring-commands">
                         <div class="command-group">
@@ -2178,28 +2178,28 @@ dogecoin-cli getmininginfo</code></pre>
                             <div class="economic-factor">
                                 <h4><span class="material-icons">trending_up</span> 수익 요인</h4>
                                 <ul>
-                                    <li><img src="images/dogecoin.svg" alt="Dogecoin" class="dogecoin-icon-inline">DOGE</li>
-                                    <li><span class="material-icons">card_giftcard</span>블록 보상: 10,000 DOGE</li>
-                                    <li><span class="material-icons">payments</span>거래 수수료 – 거래를 검증하며 받는 보상</li>
-                                    <li><span class="material-icons">swap_horiz</span>병합 채굴 보상 – 동시에 LTC와 DOGE 보상 획득 가능</li>
+                                    <li><img src="images/dogecoin.svg" alt="Dogecoin" class="dogecoin-icon-inline">도지코인<br>DOGE</li>
+                                    <li><span class="material-icons">card_giftcard</span>블록 보상<br>10,000 DOGE</li>
+                                    <li><span class="material-icons">payments</span>거래 수수료<br>거래를 검증하며 받는 보상</li>
+                                    <li><span class="material-icons">swap_horiz</span>병합 채굴 보상<br>동시에 LTC와 DOGE 보상 획득 가능</li>
                                 </ul>
                             </div>
                             <div class="economic-factor">
                                 <h4><span class="material-icons">trending_down</span> 비용 요인</h4>
                                 <ul>
-                                    <li><span class="material-icons">electrical_services</span>전기 비용 – 채굴 장비에 전기가 필요해요</li>
-                                    <li><span class="material-icons">computer</span>하드웨어 비용 – GPU, ASIC 등 장비 투자</li>
-                                    <li><span class="material-icons">ac_unit</span>냉각 설비 필요 – 장비 과열 방지</li>
-                                    <li><span class="material-icons">wifi</span>인터넷 대역폭 – 네트워크 연결 유지</li>
+                                    <li><span class="material-icons">electrical_services</span>전기 비용<br>채굴 장비에 전기가 필요해요</li>
+                                    <li><span class="material-icons">computer</span>하드웨어 비용<br>GPU, ASIC 등 장비 투자</li>
+                                    <li><span class="material-icons">ac_unit</span>냉각 설비 필요<br>장비 과열 방지</li>
+                                    <li><span class="material-icons">wifi</span>인터넷 대역폭<br>네트워크 연결 유지</li>
                                 </ul>
                             </div>
                             <div class="economic-factor">
                                 <h4><span class="material-icons">assessment</span> 수익성 도구</h4>
                                 <ul>
-                                    <li><span class="material-icons">calculate</span>채굴 계산기 – 예상 수익 계산</li>
-                                    <li><span class="material-icons">analytics</span>풀 통계 – 풀 채굴 성과 확인</li>
-                                    <li><span class="material-icons">track_changes</span>난이도 추적 – 블록 난이도 변화 체크</li>
-                                    <li><span class="material-icons">monitor</span>가격 모니터링 – DOGE 시세 추적</li>
+                                    <li><span class="material-icons">calculate</span>채굴 계산기<br>예상 수익 계산</li>
+                                    <li><span class="material-icons">analytics</span>풀 통계<br>풀 채굴 성과 확인</li>
+                                    <li><span class="material-icons">track_changes</span>난이도 추적<br>블록 난이도 변화 체크</li>
+                                    <li><span class="material-icons">monitor</span>가격 모니터링<br>DOGE 시세 추적</li>
                                 </ul>
                             </div>
                         </div>
