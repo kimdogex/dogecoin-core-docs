@@ -262,12 +262,12 @@
     <section id="compilation" class="section bg-alt">
         <div class="container">
             <h2 class="section-title">
-                도지코인 코어 컴파일
+                도지코인 코어 컴파일하기
                 <span class="doge-word">Much Build!</span>
             </h2>
             <div class="compilation-content">
                 <div class="compilation-intro">
-                    <p>최신 기능을 이용하고 개발에 기여하려면 소스 코드에서 도지코인 코어를 빌드하세요. Such compilation, much control!</p>
+                    <p>최신 기능을 사용하고 개발에 기여하려면 Dogecoin Core를 소스 코드에서 직접 빌드하세요. Such compilation, much control!</p>
                 </div>
                 
                 <div class="platform-tabs">
@@ -284,7 +284,7 @@
                         <div class="code-block">
                             <div class="code-header">
                                 <span>Ubuntu/Debian</span>
-                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                <button class="copy-btn" onclick="copyCode(this)">복사</button>
                             </div>
                             <pre><code># 의존성 설치
 sudo apt update
@@ -315,7 +315,7 @@ sudo make install</code></pre>
                         <div class="code-block">
                             <div class="code-header">
                                 <span>MSYS2 사용</span>
-                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                <button class="copy-btn" onclick="copyCode(this)">복사</button>
                             </div>
                             <pre><code># MSYS2 공식 사이트(https://www.msys2.org/)에서 MSYS2를 설치
 # 설치 후, MSYS2 MinGW 64-bit 터미널을 열고 아래 명령어로 의존성을 설치
@@ -347,7 +347,7 @@ make -j$(nproc)</code></pre>
                         <div class="code-block">
                             <div class="code-header">
                                 <span>Homebrew 사용</span>
-                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                <button class="copy-btn" onclick="copyCode(this)">복사</button>
                             </div>
                             <pre><code># Xcode 커맨드라인 도구 설치
 xcode-select --install
@@ -399,12 +399,12 @@ make -j$(sysctl -n hw.ncpu)</code></pre>
                 </div>
 
                 <div class="compilation-notes">
-                    <h4><span class="material-icons">notes</span> 컴파일 주의사항</h4>
+                    <h4><span class="material-icons">notes</span> 컴파일 관련 주의 사항</h4>
                     <ul>
-                        <li><span class="material-icons">priority_high</span><strong>Such Important:</strong> 항상 안정된 최신 릴리스 버전(현재 v1.14.9)을 사용하세요.</li>
-                        <li><span class="material-icons">memory</span><strong>Much Memory:</strong> 컴파일하려면 최소 4GB RAM이 필요합니다.</li>
-                        <li><span class="material-icons">speed</span><strong>So Fast:</strong> 병렬 컴파일을 위해 <code>-j$(nproc)</code> 사용하세요.</li>
-                        <li><span class="material-icons">bug_report</span><strong>Wow Debug:</strong> 채굴 디버그를 위해 <code>--enable-debug</code> 추가하세요.</li>
+                        <li><span class="material-icons">priority_high</span><strong>Such Important:</strong> 반드시 최신 안정된 릴리스 버전을 사용하세요.(현재 v1.14.9)</li>
+                        <li><span class="material-icons">memory</span><strong>Much Memory:</strong> 컴파일에는 최소 4GB RAM이 필요합니다.</li>
+                        <li><span class="material-icons">speed</span><strong>So Fast:</strong> 병렬 컴파일시 <code>-j$(nproc)</code> 옵션을 사용하세요.</li>
+                        <li><span class="material-icons">bug_report</span><strong>Wow Debug:</strong> 디버그용 컴파일을 위해 <code>--enable-debug</code>옵션을 추가하세요.</li>
                     </ul>
                 </div>
             </div>
@@ -415,13 +415,13 @@ make -j$(sysctl -n hw.ncpu)</code></pre>
     <section id="full-node" class="section">
         <div class="container">
             <h2 class="section-title">
-                풀 노드 실행
+                풀 노드 실행하기
                 <span class="doge-word">Such Support!</span>
             </h2>
             
             <div class="node-content">
                 <div class="node-intro">
-                    <p>풀 노드를 실행하면 Dogecoin 네트워크를 지원하고 블록체인 전체 데이터에 접근할 수 있습니다. Much decentralization, so wow!</p>
+                    <p>풀 노드를 실행하면 도지코인 네트워크를 지원할 수 있으며, 블록체인 데이터를 모두 활용할 수 있습니다. Much decentralization, so wow!</p>
                 </div>
 
                 <div class="node-steps">
@@ -429,7 +429,7 @@ make -j$(sysctl -n hw.ncpu)</code></pre>
                         <div class="step-number">1</div>
                         <div class="step-content">
                             <h3>다운로드 및 설치</h3>
-                            <p>공식 웹사이트에서 도지코인 코어를 다운로드하거나 소스에서 빌드하세요. (위 컴파일 가이드 참조)</p>
+                            <p>공식 웹사이트에서 도지코인 코어를 다운로드하거나, 위의 컴파일 가이드를 참고하여 소스에서 빌드하세요.</p>
                         </div>
                     </div>
 
@@ -437,7 +437,7 @@ make -j$(sysctl -n hw.ncpu)</code></pre>
                         <div class="step-number">2</div>
                         <div class="step-content">
                             <h3>초기 동기화</h3>
-                            <p>도지코인 코어를 시작하고 네트워크와 동기화하세요. 첫 실행시 몇 시간이 걸릴 수 있습니다.</p>
+                            <p>도지코인 코어를 실행하고 네트워크와 동기화하세요. 첫 실행시 몇 시간이 걸릴 수 있습니다.</p>
                             <div class="code-block">
                                 <div class="code-header">
                                     <span>도지코인 코어 시작</span>
@@ -445,7 +445,7 @@ make -j$(sysctl -n hw.ncpu)</code></pre>
                                 <pre><code># GUI로 시작
 dogecoin-qt
 
-# 헤드리스로 시작
+# 헤드리스(콘솔) 모드로 시작
 dogecoind</code></pre>
                             </div>
                         </div>
@@ -455,11 +455,11 @@ dogecoind</code></pre>
                         <div class="step-number">3</div>
                         <div class="step-content">
                             <h3>노드 설정</h3>
-                            <p>최적 성능과 보안을 위해 노드 설정을 커스터마이즈하세요.</p>
+                            <p>성능과 보안을 최적화하기 위해 노드 설정을 커스터마이징하세요.</p>
                             <div class="code-block">
                                 <div class="code-header">
-                                    <span>dogecoin.conf</span>
-                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                    <span>dogecoin.conf 예시</span>
+                                    <button class="copy-btn" onclick="copyCode(this)">복사</button>
                                 </div>
                                 <pre><code># 기본 노드 설정
 server=1
@@ -469,15 +469,15 @@ rpcallowip=127.0.0.1
 rpcport=22555
 port=22556
 
-# 선택 사항 : 실시간 데이터 ZMQ 활성화
+# 선택 사항 : 실시간 데이터용 ZMQ 활성화
 zmqpubrawblock=tcp://127.0.0.1:28332
 zmqpubrawtx=tcp://127.0.0.1:28333
 
-# 선택 사항 : 대역폭 사용량 줄이기
+# 선택 사항 : 대역폭 사용량 제한
 maxconnections=40
 maxuploadtarget=5000
 
-# 선택 사항 : 디스크 공간 절약을 위해 프루닝 활성화
+# 선택 사항 : 디스크 공간 절약용 프루닝
 prune=550</code></pre>
                             </div>
                         </div>
@@ -510,50 +510,50 @@ dogecoin-cli getpeerinfo</code></pre>
                 </div>
 
                 <div class="node-benefits">
-                    <h3><span class="material-icons">star</span> 풀 노드가 다른 사람과 네트워크에 도움되는 방법</h3>
-                    <p class="benefits-intro">풀 노드를 실행하는 것은 개인적인 이득만이 아닙니다 - 전체 도지코인 생태계에 기여하는 것입니다! <br> Such community spirit, much network support!</p>
+                    <h3><span class="material-icons">star</span> 풀 노드가 다른 사용자와 네트워크에 도움되는 방법</h3>
+                    <p class="benefits-intro">풀 노드를 운영하는 것은 개인적인 이득만을 위한 것이 아닙니다 - 도지코인 생태계 전체에 기여하는 것입니다! <br> Such community spirit, much network support!</p>
                     <div class="benefits-grid">
                         <div class="benefit">
                             <div class="benefit-icon">
                                 <span class="material-icons">public</span>
                             </div>
                             <h4>네트워크 탈중앙화 강화</h4>
-                            <p>노드는 전 세계 피어 네트워크에 기여하여 도지코인을 공격과 검열로부터 더 강하게 만듭니다. 모든 노드가 중요합니다!</p>
+                            <p>여러분의 노드는 전 세계 피어 네트워크에 참여하여, 도지코인을 공격과 검열로부터 더욱 강력하게 보호합니다. 모든 노드가 중요합니다!</p>
                         </div>
                         <div class="benefit">
                             <div class="benefit-icon">
                                 <span class="material-icons">people</span>
                             </div>
-                            <h4>신규 사용자 동기화 지원</h4>
-                            <p>신규 사용자는 블록체인 데이터를 당신의 노드에서 다운로드하여 초기 동기화를 더 빠르게 진행할 수 있습니다. 새로운 시베를 돕고 있어요!</p>
+                            <h4>신규 사용자의 동기화 지원</h4>
+                            <p>신규 사용자는 블록체인 데이터를 여러분의 노드에서 다운로드할 수 있어, 초기 동기화가 훨씬 빨라집니다. 새로운 시베를 돕는 일입니다!</p>
                         </div>
                         <div class="benefit">
                             <div class="benefit-icon">
                                 <span class="material-icons">security</span>
                             </div>
                             <h4>다른 사용자를 위한 거래 검증</h4>
-                            <p>노드는 유효한 거래를 검증하고 전달하여 네트워크가 안전하고 올바르게 결제를 처리하도록 돕습니다.</p>
+                            <p>여러분의 노드는 유효한 거래를 검증하고 전파하여, 네트워크가 결제를 정확하고 안전하게 처리하도록 도와줍니다.</p>
                         </div>
                         <div class="benefit">
                             <div class="benefit-icon">
                                 <span class="material-icons">cloud_sync</span>
                             </div>
                             <h4>중복성 및 백업 제공</h4>
-                            <p>다른 노드가 오프라인이 되어도 당신의 노드가 네트워크를 유지합니다. 커뮤니티를 위한 필수 백업 인프라를 제공하는 셈입니다!</p>
+                            <p>다른 노드가 오프라인 상태가 되어도, 여러분의 노드가 네트워크를 유지합니다. 커뮤니티를 위한 필수 백업 인프라 제공!</p>
                         </div>
                         <div class="benefit">
                             <div class="benefit-icon">
                                 <span class="material-icons">developer_mode</span>
                             </div>
-                            <h4>개발자 도구 지원</h4>
-                            <p>개발자는 노드에 연결하여 앱, 지갑, 서비스를 활용할 수 있으며, 이를 통해 도지코인이 더 유용해집니다.</p>
+                            <h4>개발자 도구 활성화</h4>
+                            <p>개발자는 여러분의 노드에 연결하여 마이닝 앱, 지갑, 서비스와 상호작용할 수 있습니다. 도지코인을 모두에게 더 유용하게 만드는 기능!</p>
                         </div>
                         <div class="benefit">
                             <div class="benefit-icon">
                                 <span class="material-icons">trending_up</span>
                             </div>
                             <h4>네트워크 성장 지원</h4>
-                            <p>노드가 많을수록 성능 향상, 지연 시간 감소, 증가하는 사용량을 감당할 수 있는 강력한 네트워크가 됩니다.</p>
+                            <p>더 많은 노드가 존재할수록 성능은 향상되고, 지연은 줄며, 도지코인 사용 증가에도 견딜 수 있는 강력한 네트워크가 만들어집니다.</p>
                         </div>
                     </div>
                     <div class="community-callout">
@@ -561,7 +561,7 @@ dogecoin-cli getpeerinfo</code></pre>
                             <span class="material-icons">favorite</span>
                             <div class="callout-text">
                                 <h4>당신이 변화를 만들고 있습니다!</h4>
-                                <p>모든 풀 노드 운영자는 도지코인 커뮤니티의 영웅입니다. 단순히 소프트웨어를 실행하는 것이 아니라, 수백만 사용자가 의존하는 네트워크를 안전하게 유지하고 성장시키는 데 기여하고 있습니다. Such contribution, much wow! <span class="material-icons">rocket_launch</span></p>
+                                <p>단순히 소프트웨어를 실행하는 것이 아니라, 수백만 사용자가 의존하는 네트워크를 안전하게 지키고 성장시키는 일을 하고 있는 것입니다. Such contribution, much wow! <span class="material-icons">rocket_launch</span></p>
                             </div>
                         </div>
                     </div>
@@ -574,23 +574,23 @@ dogecoin-cli getpeerinfo</code></pre>
     <section id="rpc-zmq" class="section bg-alt">
         <div class="container">
             <h2 class="section-title">
-                RPC & ZMQ 구성
+                RPC & ZMQ 설정
                 <span class="doge-word">Such Interface!</span>
             </h2>
             
             <div class="rpc-content">
                 <div class="rpc-intro">
-                    <p>RPC(원격 프로시저 호출)와 ZMQ(제로MQ) 인터페이스를 활성화하여 도지코인 노드를 프로그램에서 제어할 수 있습니다. Much API, so powerful! </p>
+                    <p>RPC(Remote Procedure Call)와 ZMQ(ZeroMQ) 인터페이스를 활성화하여, 프로그램적으로 도지코인 노드와 상호작용할 수 있습니다. Much API, so powerful! </p>
                 </div>
 
                 <div class="rpc-sections">
                     <div class="rpc-section">
                         <h3><span class="material-icons">settings_ethernet</span> RPC 구성</h3>
-                        <p>RPC를 사용하면 외부 애플리케이션에서 도지코인 노드에 명령을 보낼 수 있습니다.</p>
+                        <p>RPC를 사용하면 외부 애플리케이션에서 도지코인 노드로 명령을 보낼 수 있습니다.</p>
                         
                         <div class="code-block">
                             <div class="code-header">
-                                <span>dogecoin.conf - RPC 설정</span>
+                                <span>dogecoin.conf 예시 - RPC 설정</span>
                                 <button class="copy-btn" onclick="copyCode(this)">복사</button>
                             </div>
                             <pre><code># RPC 서버 활성화
@@ -616,10 +616,10 @@ rpcworkqueue=32</code></pre>
 
                         <h4><span class="material-icons">security</span> 보안 모범 사례</h4>
                         <ul class="security-list">
-                            <li><span class="material-icons">security</span><strong>Such Secure:</strong> RPC에 강력하고 고유한 비밀번호 사용</li>
-                            <li><span class="material-icons">block</span><strong>Much Restrict:</strong> 신뢰할 수 있는 IP에서만 RPC 허용</li>
-                            <li><span class="material-icons">warning</span><strong>So Careful:</strong> RPC를 공용 인터넷에 노출하지 마세요</li>
-                            <li><span class="material-icons">https</span><strong>Wow Encrypt:</strong> 원격 연결 시 가능하면 HTTPS 사용</li>
+                            <li><span class="material-icons">security</span><strong>Such Secure:</strong> RPC에 강력하고 고유한 비밀번호를 사용하세요.</li>
+                            <li><span class="material-icons">block</span><strong>Much Restrict:</strong> 신뢰할 수 있는 IP에서만 RPC를 허용하세요.</li>
+                            <li><span class="material-icons">warning</span><strong>So Careful:</strong> 절대 RPC를 공용 인터넷에 노출하지 마세요.</li>
+                            <li><span class="material-icons">https</span><strong>Wow Encrypt:</strong> 원격 연결 시 가능한 HTTPS를 사용하세요.</li>
                         </ul>
                     </div>
 
