@@ -1808,7 +1808,7 @@ curl -u user:pass -d '{"method":"getblockchaininfo"}' http://127.0.0.1:22555/</c
                             <div class="tool-card">
                                 <span class="material-icons">analytics</span>
                                 <h5>네트워크 진단</h5>
-                                <p>노드의 네트워크 상태와 연결성을 확인</p>
+                                <p>노드의 네트워크 상태와 연결 상태 확인</p>
                                 <div class="code-snippet">
                                     <code># 네트워크 정보 확인
 dogecoin-cli getnetworkinfo
@@ -1818,8 +1818,8 @@ dogecoin-cli getconnectioncount</code>
                             </div>
                             <div class="tool-card">
                                 <span class="material-icons">memory</span>
-                                <h5>성능 모니터</h5>
-                                <p>노드 성능과 자원 사용량 모니터링</p>
+                                <h5>성능 모니터링</h5>
+                                <p>노드 성능과 리소스 사용량 모니터링</p>
                                 <div class="code-snippet">
                                     <code># 블록체인 정보 확인
 dogecoin-cli getblockchaininfo
@@ -1830,11 +1830,11 @@ dogecoin-cli getmininginfo</code>
                             <div class="tool-card">
                                 <span class="material-icons">bug_report</span>
                                 <h5>디버그 모드</h5>
-                                <p>자세한 문제 해결을 위한 디버그 로깅 활성화</p>
+                                <p>자세한 문제 해결을 위해 디버그 로그 활성화</p>
                                 <div class="code-snippet">
-                                    <code># 디버그 로깅 활성화
+                                    <code># 디버그 로그 활성화
 dogecoin-cli logging '["net","rpc"]'
-# 자세한 정보는 debug.log 확인</code>
+# 상세 정보는 debug.log 확인</code>
                                 </div>
                             </div>
                         </div>
@@ -1843,11 +1843,11 @@ dogecoin-cli logging '["net","rpc"]'
 
                 <div class="network-monitoring">
                     <h3><span class="material-icons">analytics</span> 네트워크 모니터링</h3>
-                    <p>노드의 연결 및 성능을 모니터링 하세요.</p>
+                    <p>노드의 연결 상태와 성능을 모니터링하세요.</p>
                     
                     <div class="monitoring-commands">
                         <div class="command-group">
-                            <h4>연결 상태</h4>
+                            <h4>연결 상태 확인</h4>
                             <div class="code-block">
                                 <div class="code-header">
                                     <span>네트워크 상태 확인</span>
@@ -1862,13 +1862,13 @@ dogecoin-cli getpeerinfo
 # 연결 수 확인
 dogecoin-cli getconnectioncount
 
-# 네트워크 총계 확인
+# 네트워크 총량 확인
 dogecoin-cli getnettotals</code></pre>
                             </div>
                         </div>
 
                         <div class="command-group">
-                            <h4>블록체인 상태</h4>
+                            <h4>블록체인 상태 확인</h4>
                             <div class="code-block">
                                 <div class="code-header">
                                     <span>블록체인 상태 확인</span>
@@ -1881,7 +1881,7 @@ dogecoin-cli getblockchaininfo
 dogecoin-cli getblockcount
 dogecoin-cli getbestblockhash
 
-# 멤풀 정보 확인
+# 메모리 풀 정보 확인
 dogecoin-cli getmempoolinfo
 
 # 채굴 정보 확인
@@ -1904,30 +1904,30 @@ dogecoin-cli getmininginfo</code></pre>
             
             <div class="mining-content">
                 <div class="mining-intro">
-                    <p>도지코인 채굴의 작동 방식과 도지코인을 특별하게 만드는 병합 채굴 시스템에 대해 알아보세요. Much mining, so secure!</p>
+                    <p>도지코인 채굴, 작동 방식, 그리고 도지코인을 특별하게 만드는 독특한 병합 채굴 시스템에 대해 알아보세요. Much mining, so secure!</p>
                 </div>
 
                 <div class="mining-sections">
                     <div class="mining-section">
                         <h3><span class="material-icons">build</span> 도지코인 채굴 작동 방식</h3>
-                        <p>도지코인은 작업 증명(Proof of Work)을 위해 Scrypt 해싱 알고리즘을 사용합니다. 채굴자들은 암호화 퍼즐을 풀기 위해 경쟁하며 블록 보상을 획득합니다.</p>
+                        <p>Dogecoin은 Scrypt 해싱 알고리즘을 사용한 작업 증명(Proof of Work)을 사용합니다. 채굴자는 암호화 퍼즐을 해결하여 블록 보상을 획득하기 위해 경쟁합니다.</p>
                         
                         <div class="mining-details">
                             <div class="detail">
-                                <h4><span class="material-icons">build</span> 알고리즘</h4>
-                                <p><strong>Scrypt</strong> - 상당한 RAM이 필요한 메모리 하드 해싱 함수</p>
+                                <h4><span class="material-icons">build</span>알고리즘</h4>
+                                <p><strong>Scrypt</strong> - 메모리 집약적 해싱 함수로 상당한 RAM 필요</p>
                             </div>
                             <div class="detail">
-                                <h4><span class="material-icons">schedule</span> 블록 생성 시간</h4>
-                                <p><strong>1 분</strong> - 매분 새로운 블록 생성</p>
+                                <h4><span class="material-icons">schedule</span>블록 시간</h4>
+                                <p><strong>1 분</strong> - 매 분 새로운 블록 생성</p>
                             </div>
                             <div class="detail">
-                                <h4><img src="images/dogecoin.svg" alt="Dogecoin" class="dogecoin-icon-inline"> Block Reward</h4>
+                                <h4><img src="images/dogecoin.svg" alt="Dogecoin" class="dogecoin-icon-inline">블록 보상</h4>
                                 <p><strong>10,000 DOGE</strong> - 블록당 고정 보상 (반감기 없음)</p>
                             </div>
                             <div class="detail">
-                                <h4><span class="material-icons">lock</span> 난이도</h4>
-                                <p><strong>동적 조정</strong> - 1분 간격 유지를 위해 매 블록마다 조정</p>
+                                <h4><span class="material-icons">lock</span>난이도</h4>
+                                <p><strong>동적 조정</strong> - 1분 간격을 유지하도록 매 블록마다 조정</p>
                             </div>
                         </div>
                     </div>
@@ -1937,7 +1937,7 @@ dogecoin-cli getmininginfo</code></pre>
                         <p>도지코인의 혁신적인 기능! 도지코인을 더 안전하고 효율적으로 만든 라이트코인과의 역사적 파트너십. Such innovation, much history!</p>
                         
                         <div class="merged-mining-history">
-                            <h4><span class="material-icons">history</span> 도지코인-라이트코인 병합 채굴의 역사</h4>
+                            <h4><span class="material-icons">history</span>도지코인-라이트코인 병합 채굴의 역사</h4>
                             <div class="history-timeline">
                                 <div class="timeline-item">
                                     <div class="timeline-date">2013년 12월</div>
@@ -1949,8 +1949,8 @@ dogecoin-cli getmininginfo</code></pre>
                                 <div class="timeline-item">
                                     <div class="timeline-date">2014년 8월</div>
                                     <div class="timeline-content">
-                                        <h5>병합 채굴 구현</h5>
-                                        <p>도지코인은 보조 작업 증명(AuxPoW)을 구현하여 라이트코인과의 병합 채굴을 가능하게 했고, 네트워크 보안이 크게 향상되었습니다.</p>
+                                        <h5>병합 채굴 도입</h5>
+                                        <p>도지코인은 보조 작업 증명(AuxPoW)을 구현하여 라이트코인과의 병합 채굴을 가능하게 했고, 네트워크 보안을 크게 향상시켰습니다.</p>
                                     </div>
                                 </div>
                                 <div class="timeline-item">
@@ -1972,7 +1972,7 @@ dogecoin-cli getmininginfo</code></pre>
                                     </div>
                                     <div class="step-content">
                                         <h5>1. 라이트코인 채굴</h5>
-                                        <p>라이트코인 채굴자들은 Scrypt 기반 작업 증명 퍼즐을 풀어 라이트코인 네트워크를 보호합니다.</p>
+                                        <p>라이트코인 채굴자는 Scrypt 기반 작업 증명 퍼즐을 해결하여 라이트코인 네트워크를 보호합니다.</p>
                                     </div>
                                 </div>
                                 <div class="explanation-step">
@@ -2011,7 +2011,7 @@ dogecoin-cli getmininginfo</code></pre>
                                 <div class="benefit-item">
                                     <span class="material-icons">security</span>
                                     <h5>보안 강화</h5>
-                                    <p>도지코인의 방대한 네트워크가 병합 채굴을 통해 양쪽 네트워크를 보호하여, 가장 안전한 암호화폐 중 하나로 만듭니다.</p>
+                                    <p>도지코인의 거대한 네트워크가 병합 채굴을 통해 양쪽 네트워크를 보호하여, 가장 안전한 암호화폐 중 하나로 만듭니다.</p>
                                 </div>
                                 <div class="benefit-item">
                                     <span class="material-icons">speed</span>
@@ -2033,8 +2033,8 @@ dogecoin-cli getmininginfo</code></pre>
                     </div>
 
                     <div class="mining-section">
-                        <h3><span class="material-icons">build</span> 채굴 설정</h3>
-                        <p>채굴을 시작하고 DOGE를 얻기 위해 채굴 환경을 설정하세요. Such setup, much configuration!</p>
+                        <h3><span class="material-icons">build</span>채굴 설정</h3>
+                        <p>채굴 작업을 설정하여 DOGE를 얻기 시작하세요. Such setup, much configuration!</p>
                         
                         <div class="mining-setup">
                             <div class="setup-step">
@@ -2042,7 +2042,7 @@ dogecoin-cli getmininginfo</code></pre>
                                 <div class="mining-software">
                                     <div class="software">
                                         <h5>CCMiner</h5>
-                                        <p>NVIDIA GPU에 적합<</p>
+                                        <p>NVIDIA GPU에서 인기<</p>
                                         <div class="code-block">
                                             <div class="code-header">
                                                 <span>CCMiner 명령어</span>
@@ -2067,7 +2067,7 @@ dogecoin-cli getmininginfo</code></pre>
 
                             <div class="setup-step">
                                 <h4>2. 채굴 전략 선택</h4>
-                                <p>솔로 채굴 또는 채굴 풀 중 선택할 수 있습니다. 각 접근 방식에는 장단점이 있습니다.</p>
+                                <p>솔로 채굴 또는 풀 채굴 중 선택할 수 있습니다. 각 접근 방식에는 장점과 고려사항이 있습니다.</p>
                                 
                                 <div class="mining-strategies">
                                     <div class="strategy-card recommended">
@@ -2080,13 +2080,13 @@ dogecoin-cli getmininginfo</code></pre>
                                             <p><strong>왜 솔로 채굴인가?</strong></p>
                                             <ul>
                                                 <li><span class="material-icons">security</span>네트워크 탈중앙화</li>
-                                                <li><span class="material-icons">account_balance</span>블록 보상의 100% 유지</li>
-                                                <li><span class="material-icons">public</span>네트워크 건강 지원</li>
+                                                <li><span class="material-icons">account_balance</span>블록 보상 100% 유지</li>
+                                                <li><span class="material-icons">public</span>네트워크 안정 지원</li>
                                                 <li><span class="material-icons">warning</span>해시레이트 중앙화 방지</li>
                                             </ul>
                                             <div class="strategy-note">
                                                 <span class="material-icons">info</span>
-                                                <p><strong>중요:</strong> 솔로 채굴은 해시레이트 중앙화를 방지하여 네트워크 보안과 탈중앙화에 필수적입니다.</p>
+                                                <p><strong>중요:</strong> 솔로 채굴은 네트워크 보안과 탈중앙화를 위해 해시레이트 중앙화를 방지하는 데 도움이 됩니다.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -2094,26 +2094,26 @@ dogecoin-cli getmininginfo</code></pre>
                                     <div class="strategy-card">
                                         <div class="strategy-header">
                                             <span class="material-icons">group</span>
-                                            <h5>채굴 풀</h5>
+                                            <h5>풀 채굴</h5>
                                         </div>
                                         <div class="strategy-content">
-                                            <p><strong>채굴 풀 고려사항:</strong></p>
+                                            <p><strong>풀 채굴 고려사항:</strong></p>
                                             <ul>
-                                                <li><span class="material-icons">trending_up</span>보상 지급이 더 빈번함</li>
+                                                <li><span class="material-icons">trending_up</span>더 자주 보상 지급</li>
                                                 <li><span class="material-icons">trending_down</span>개별 보상은 적음</li>
-                                                <li><span class="material-icons">warning</span>중앙화에 기여할 수 있음</li>
+                                                <li><span class="material-icons">warning</span>중앙화 기여 가능</li>
                                                 <li><span class="material-icons">account_balance_wallet</span>풀 수수료 적용</li>
                                             </ul>
                                             <div class="pool-warning">
                                                 <span class="material-icons">warning</span>
-                                                <p><strong>중앙화 위험:</strong> 대형 채굴 풀은 해시레이트 중앙화로 이어져 네트워크 공격에 취약하게 만들 수 있습니다.</p>
+                                                <p><strong>중앙화 위험:</strong> 대형 채굴 풀은 해시레이트 중앙화를 유발할 수 있으며, 네트워크를 공격에 취약하게 만들 수 있습니다.</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 
                                 <div class="mining-pools-info">
-                                    <h5>인기 도지코인 채굴 풀 (채굴 풀 선택 시)</h5>
+                                    <h5>인기 도지코인 채굴 풀 (풀 채굴 선택 시)</h5>
                                     <div class="pools-grid">
                                         <div class="pool-item">
                                             <span class="material-icons">build</span>
@@ -2148,22 +2148,22 @@ dogecoin-cli getmininginfo</code></pre>
                             </div>
 
                             <div class="setup-step">
-                                <h4>3. 지갑 설정</h4>
-                                <p>채굴 보상을 받기 위해 도지코인 코어 지갑을 설정하세요.</p>
+                                <h4>3. 지갑 구성</h4>
+                                <p>채굴 보상을 받을 도지코인 코어 지갑 설정하세요.</p>
                                 <div class="code-block">
                                     <div class="code-header">
                                         <span>채굴 구성</span>
                                         <button class="copy-btn" onclick="copyCode(this)">복사</button>
                                     </div>
-                                    <pre><code># dogecoin.conf 파일 내
-# 채굴 활성화 (선택 사항 - 솔로 채굴 시 권장하지 않음)
+                                    <pre><code># dogecoin.conf 에서
+# 채굴 활성화 (선택 사항 - 솔로 채굴에는 권장되지 않음)
 # gen=1
 # genproclimit=1
 
 # 채굴 주소 설정
 # miningaddress=D7Y55vD8n2pwcGpcuVrBAeErVHuum6Quwb
 
-# 병합 채굴 시, 사용 중인 채굴 소프트웨어에 따라 추가 설정 필요</code></pre>
+# 병합 채굴 시, 채굴 소프트웨어에 따라 추가 구성 필요</code></pre>
                                 </div>
                             </div>
                         </div>
@@ -2171,22 +2171,22 @@ dogecoin-cli getmininginfo</code></pre>
 
                     <div class="mining-section">
                         <h3><span class="material-icons">analytics</span> 채굴 경제학</h3>
-                        <p>도지코인 채굴의 경제학과 수익성에 영향을 미치는 요소를 이해하세요.</p>
+                        <p>도지코인 채굴 경제와 수익성 요인을 이해하세요.</p>
                         
                         <div class="economics-grid">
                             <div class="economic-factor">
                                 <h4><span class="material-icons">trending_up</span> 수익 요인</h4>
                                 <ul>
                                     <li><img src="images/dogecoin.svg" alt="Dogecoin" class="dogecoin-icon-inline">DOGE</li>
-                                    <li><span class="material-icons">card_giftcard</span>블록 보상 (10,000 DOGE)</li>
-                                    <li><span class="material-icons">payments</span>트랜잭션 수수료</li>
+                                    <li><span class="material-icons">card_giftcard</span>블록 보상: 10,000 DOGE</li>
+                                    <li><span class="material-icons">payments</span>거래 수수료</li>
                                     <li><span class="material-icons">swap_horiz</span>병합 채굴 보상</li>
                                 </ul>
                             </div>
                             <div class="economic-factor">
                                 <h4><span class="material-icons">trending_down</span> 비용 요인</h4>
                                 <ul>
-                                    <li><span class="material-icons">electrical_services</span>전기 요금</li>
+                                    <li><span class="material-icons">electrical_services</span>전기 비용</li>
                                     <li><span class="material-icons">computer</span>하드웨어 비용</li>
                                     <li><span class="material-icons">ac_unit</span>냉각 설비 필요</li>
                                     <li><span class="material-icons">wifi</span>인터넷 대역폭</li>
@@ -2213,13 +2213,13 @@ dogecoin-cli getmininginfo</code></pre>
         <div class="container">
             <h2 class="section-title">
                 <span class="material-icons">compare</span>
-                도지코인 vs 비트코인 및 라이트코인
+                도지코인 vs 비트코인 & 라이트코인
                 <span class="doge-word">Such Comparison!</span>
             </h2>
             
             <div class="comparison-content">
                 <div class="comparison-intro">
-                    <p>기술 사양과 화폐로서의 장점 측면에서 도지코인이 비트코인과 라이트코인과 어떻게 다른지 이해합니다. Much technical, so informative!</p>
+                    <p>도지코인이 기술적 사양과 화폐로서의 장점 측면에서 비트코인 및 라이트코인과 어떻게 비교되는지 이해합니다. Much technical, so informative!</p>
                 </div>
 
                 <div class="comparison-table">
@@ -2252,7 +2252,7 @@ dogecoin-cli getmininginfo</code></pre>
                     <div class="comparison-row">
                         <div class="row-label">
                             <span class="material-icons">schedule</span>
-                            <span>블록 생성 시간</span>
+                            <span>블록 시간</span>
                         </div>
                         <div class="crypto-value">10 분</div>
                         <div class="crypto-value">2.5 분</div>
@@ -2264,15 +2264,15 @@ dogecoin-cli getmininginfo</code></pre>
                             <span class="material-icons">account_balance</span>
                             <span>블록 보상</span>
                         </div>
-                        <div class="crypto-value">6.25 BTC (반감기 적용)</div>
-                        <div class="crypto-value">6.25 LTC (반감기 적용)</div>
-                        <div class="crypto-value dogecoin">10,000 DOGE (고정)<br>지갑 분실, 인구 및 경제 성장으로 인해 화폐로 이상적입니다.</div>
+                        <div class="crypto-value">6.25 BTC (반감기 있음)</div>
+                        <div class="crypto-value">6.25 LTC (반감기 있음)</div>
+                        <div class="crypto-value dogecoin">10,000 DOGE (고정)<br>지갑 분실, 인구 증가, 경제 성장으로 인해 화폐로 이상적임</div>
                     </div>
 
                     <div class="comparison-row">
                         <div class="row-label">
                             <span class="material-icons">speed</span>
-                            <span>트랜잭션 속도</span>
+                            <span>거래 속도</span>
                         </div>
                         <div class="crypto-value">느림 (평균 10분)</div>
                         <div class="crypto-value">빠름 (평균 2.5분)</div>
@@ -2282,11 +2282,11 @@ dogecoin-cli getmininginfo</code></pre>
                     <div class="comparison-row">
                         <div class="row-label">
                             <span class="material-icons">payments</span>
-                            <span>트랜잭션 수수료</span>
+                            <span>거래 수수료</span>
                         </div>
-                        <div class="crypto-value">높음 (5-50달러 이상)</div>
-                        <div class="crypto-value">낮음 (0.01-0.10달러)</div>
-                        <div class="crypto-value dogecoin">매우 낮음 (0.001-0.01달러)</div>
+                        <div class="crypto-value">높음 ($5-50 이상)</div>
+                        <div class="crypto-value">낮음 ($0.01-0.10)</div>
+                        <div class="crypto-value dogecoin">매우 낮음 ($0.001-0.01)</div>
                     </div>
 
                     <div class="comparison-row">
@@ -2296,7 +2296,7 @@ dogecoin-cli getmininginfo</code></pre>
                         </div>
                         <div class="crypto-value">솔로 채굴</div>
                         <div class="crypto-value">솔로 채굴</div>
-                        <div class="crypto-value dogecoin">라이트코인과 병합 채굴</div>
+                        <div class="crypto-value dogecoin">LTC와 병합 채굴</div>
                     </div>
 
                     <div class="comparison-row">
@@ -2305,21 +2305,21 @@ dogecoin-cli getmininginfo</code></pre>
                             <span>사용 사례</span>
                         </div>
                         <div class="crypto-value">가치 저장</div>
-                        <div class="crypto-value">디지털 은</div>
-                        <div class="crypto-value dogecoin">재미있는 화폐 및 팁</div>
+                        <div class="crypto-value">디지털 실버</div>
+                        <div class="crypto-value dogecoin">재미 화폐 및 팁 지급</div>
                     </div>
                 </div>
 
                 <div class="dogecoin-advantages">
-                    <h3><span class="material-icons">star</span> 도지코인의 독특한 장점</h3>
+                    <h3><span class="material-icons">star</span> 도지코인의 고유한 장점</h3>
                     <div class="advantages-grid">
                         <div class="advantage-card">
                             <div class="advantage-icon">
                                 <span class="material-icons">speed</span>
                             </div>
                             <div class="advantage-content">
-                                <h4>가장 빠른 트랜잭션</h4>
-                                <p>1분 블록 생성 시간으로 주요 암호화폐 중 가장 빠르며, 일상 거래와 팁에 최적화됨.</p>
+                                <h4>빠른 거래</h4>
+                                <p>1분 블록 시간으로 주요 암호화폐 중 가장 빠르며, 일상 거래 및 팁 지급에 적합합니다.</p>
                             </div>
                         </div>
 
@@ -2329,7 +2329,7 @@ dogecoin-cli getmininginfo</code></pre>
                             </div>
                             <div class="advantage-content">
                                 <h4>최저 수수료</h4>
-                                <p>거래 수수료는 일반적으로 0.01달러 미만으로, 소액 거래 및 작은 결제를 경제적으로 실현 가능하게 합니다.</p>
+                                <p>거래 수수료가 보통 $0.01 미만으로, 일상 구매와 소액 결제에 경제적입니다.</p>
                             </div>
                         </div>
 
@@ -2338,8 +2338,8 @@ dogecoin-cli getmininginfo</code></pre>
                                 <span class="material-icons">security</span>
                             </div>
                             <div class="advantage-content">
-                                <h4>보안 강화</h4>
-                                <p>라이트코인과 병합 채굴로 비트코인에 준하는 보안을 유지하면서 효율성을 확보.</p>
+                                <h4>강화된 보안</h4>
+                                <p>라이트코인과의 병합 채굴로 비트코인과 유사한 보안을 제공하면서 효율 유지합니다.</p>
                             </div>
                         </div>
 
@@ -2349,7 +2349,7 @@ dogecoin-cli getmininginfo</code></pre>
                             </div>
                             <div class="advantage-content">
                                 <h4>커뮤니티 중심</h4>
-                                <p>즐거움, 자선, 접근성을 촉진하는 강력하고 친근한 커뮤니티.</p>
+                                <p>즐거움, 기부, 접근성을 중시하는 강력하고 환영하는 커뮤니티 존재합니다.</p>
                             </div>
                         </div>
 
@@ -2359,7 +2359,7 @@ dogecoin-cli getmininginfo</code></pre>
                             </div>
                             <div class="advantage-content">
                                 <h4>인플레이션 모델</h4>
-                                <p>블록당 10,000 DOGE 고정 발행으로 예측 가능한 낮은 인플레이션, 소비 촉진.</p>
+                                <p>블록당 10,000 DOGE 고정으로 예측 가능하고 낮은 인플레이션, 소비를 장려합니다.</p>
                             </div>
                         </div>
 
@@ -2368,15 +2368,15 @@ dogecoin-cli getmininginfo</code></pre>
                                 <span class="material-icons">public</span>
                             </div>
                             <div class="advantage-content">
-                                <h4>실사용 화폐</h4>
-                                <p>저장용이 아닌 사용용으로 설계되어 일상 거래와 소액 결제에 적합.</p>
+                                <h4>실제 화폐 사용</h4>
+                                <p>저장이 아닌 사용을 목적으로 설계되어 일상 구매와 소액 결제에 이상적입니다.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="currency-advantages">
-                    <h3><img src="images/dogecoin.svg" alt="Dogecoin" class="dogecoin-icon-inline"> 도지코인이 화폐로서 우수한 이유</h3>
+                    <h3><img src="images/dogecoin.svg" alt="Dogecoin" class="dogecoin-icon-inline"> 왜 도지코인이 화폐로 더 나은가?</h3>
                     <div class="currency-comparison">
                         <div class="currency-point">
                             <div class="point-icon">
@@ -2384,7 +2384,7 @@ dogecoin-cli getmininginfo</code></pre>
                             </div>
                             <div class="point-content">
                                 <h4>심리적 소비 촉진</h4>
-                                <p>비트코인의 "디지털 금" 내러티브와 달리, 도지코인의 재미있는 성격과 낮은 단가가 지출과 유통을 촉진합니다.</p>
+                                <p>비트코인의 “디지털 금”이라는 축적 중심 내러티브와 달리, 도지코인은 재미있고 낮은 단가로 지출과 유통을 장려합니다.</p>
                             </div>
                         </div>
 
@@ -2394,7 +2394,7 @@ dogecoin-cli getmininginfo</code></pre>
                             </div>
                             <div class="point-content">
                                 <h4>소액 결제 친화적</h4>
-                                <p>낮은 수수료와 빠른 확인 속도로 인해 도지코인은 비트코인으로는 경제적이지 않은 소액 구매, 팁, 소액 결제에 완벽합니다.</p>
+                                <p>낮은 수수료와 빠른 확인 속도로 인해 도지코인은 비트코인으로는 경제적이지 않은 구매, 팁, 소액 결제에 완벽합니다.</p>
                             </div>
                         </div>
 
@@ -2403,8 +2403,8 @@ dogecoin-cli getmininginfo</code></pre>
                                 <span class="material-icons">check_circle</span>
                             </div>
                             <div class="point-content">
-                                <h4>접근성 높은 입문 포인트</h4>
-                                <p>친근한 커뮤니티 덕분에 어린이와 성인 모두 이해하고 쉽게 사용할 수 있습니다.</p>
+                                <h4>접근성 용이</h4>
+                                <p>친근한 커뮤니티 덕분에 어린이와 성인 모두 쉽게 이해하고 사용 가능합니다.</p>
                             </div>
                         </div>
 
@@ -2414,7 +2414,7 @@ dogecoin-cli getmininginfo</code></pre>
                             </div>
                             <div class="point-content">
                                 <h4>안정적인 인플레이션</h4>
-                                <p>예측 가능한 낮은 인플레이션율(연 약 3.8%)로 소비를 촉진하면서 장기적인 가치 안정성을 유지합니다</p>
+                                <p>예측 가능하고 낮은 연간 인플레이션율(약 3.8%)로 소비를 장려하면서 장기 가치 안정 유지합니다.</p>
                             </div>
                         </div>
                     </div>
@@ -2433,13 +2433,13 @@ dogecoin-cli getmininginfo</code></pre>
             </h2>
             
             <div class="console-intro">
-                <p>도지코인 코어 콘솔 명령어와 그에 상응하는 RPC 명령어에 대한 완전한 참고 자료. Such documentation, much helpful! 모든 명령어는 콘솔과 RPC 호출을 통해 사용할 수 있습니다.</p>
+                <p>도지코인 코어 콘솔 명령어와 그에 상응하는 RPC 명령어에 대한 완전한 참고 자료입니다. Such documentation, much helpful! 모든 명령어는 콘솔과 RPC 호출에서 모두 사용 가능합니다.</p>
             </div>
 
             <div class="commands-categories">
                 <div class="commands-category">
                     <h3><span class="material-icons">info</span> 블록체인 정보 명령어</h3>
-                    <p>블록체인 데이터, 블록 정보 및 네트워크 통계를 가져오는 명령어입니다.</p>
+                    <p>블록체인 데이터, 블록 정보 및 네트워크 통계 확인용 명령어입니다.</p>
                     
                     <div class="commands-grid">
                         <div class="command-card">
@@ -2570,7 +2570,7 @@ dogecoin-cli getmininginfo</code></pre>
                                 <span class="command-type">지갑</span>
                             </div>
                             <div class="command-description">
-                                <p>새로운 도지코인 수신용 주소를 생성합니다.</p>
+                                <p>새로운 도지코인 주소 생성 (입금용)</p>
                             </div>
                             <div class="command-examples">
                                 <div class="example">
@@ -2606,7 +2606,7 @@ dogecoin-cli getmininginfo</code></pre>
                                 </div>
                             </div>
                             <div class="command-returns">
-                                <strong>반환값:</strong> 전송된 트랜잭션의 트랜잭션 ID(txid).
+                                <strong>반환값:</strong> 전송된 거래의 거래 ID (txid).
                             </div>
                         </div>
 
@@ -2616,7 +2616,7 @@ dogecoin-cli getmininginfo</code></pre>
                                 <span class="command-type">지갑</span>
                             </div>
                             <div class="command-description">
-                                <p>지갑의 최근 트랜잭션 목록을 반환합니다.</p>
+                                <p>지갑의 최근 거래 내역 반환합니다.</p>
                             </div>
                             <div class="command-examples">
                                 <div class="example">
@@ -2629,7 +2629,7 @@ dogecoin-cli getmininginfo</code></pre>
                                 </div>
                             </div>
                             <div class="command-returns">
-                                <strong>반환값:</strong> 각 트랜잭션의 세부 정보가 포함된 트랜잭션 배열.
+                                <strong>반환값:</strong> 거래 세부 정보가 포함된 거래 객체 배열.
                             </div>
                         </div>
                     </div>
@@ -2646,7 +2646,7 @@ dogecoin-cli getmininginfo</code></pre>
                                 <span class="command-type">네트워크</span>
                             </div>
                             <div class="command-description">
-                                <p>노드의 네트워크 상태 및 구성 정보를 반환합니다.</p>
+                                <p>노드의 네트워크 상태 및 설정 정보를 반환합니다.</p>
                             </div>
                             <div class="command-examples">
                                 <div class="example">
@@ -2682,7 +2682,7 @@ dogecoin-cli getmininginfo</code></pre>
                                 </div>
                             </div>
                             <div class="command-returns">
-                                <strong>반환값:</strong> 연결 정보가 포함된 피어 객체 배열.
+                                <strong>반환값:</strong> 연결 세부 정보가 포함된 피어 객체 배열.
                             </div>
                         </div>
 
@@ -2768,7 +2768,7 @@ dogecoin-cli getmininginfo</code></pre>
                                 <span class="command-type">채굴</span>
                             </div>
                             <div class="command-description">
-                                <p>즉시 블록을 채굴합니다 (regtest 전용).</p>
+                                <p>즉시 블록을 채굴합니다 (Regtest 전용).</p>
                             </div>
                             <div class="command-examples">
                                 <div class="example">
@@ -2791,7 +2791,7 @@ dogecoin-cli getmininginfo</code></pre>
                                 <span class="command-type">채굴</span>
                             </div>
                             <div class="command-description">
-                                <p>채굴할 블록을 구성하는 데 필요한 데이터를 반환합니다.</p>
+                                <p>채굴 작업에 사용할 블록 구성 데이터를 반환합니다.</p>
                             </div>
                             <div class="command-examples">
                                 <div class="example">
@@ -2812,7 +2812,7 @@ dogecoin-cli getmininginfo</code></pre>
 
                 <div class="commands-category">
                     <h3><span class="material-icons">settings</span> 유틸리티 명령어</h3>
-                    <p>노드 관리 및 디버깅용 일반 유틸리티 명령어입니다.</p>
+                    <p>노드 관리 및 디버깅을 위한 일반 명령어입니다.</p>
                     
                     <div class="commands-grid">
                         <div class="command-card">
@@ -2821,7 +2821,7 @@ dogecoin-cli getmininginfo</code></pre>
                                 <span class="command-type">유틸리티</span>
                             </div>
                             <div class="command-description">
-                                <p>사용 가능한 모든 RPC 명령어를 나열하거나 특정 명령어의 도움말을 표시합니다.</p>
+                                <p>사용 가능한 모든 RPC 명령어 목록을 표시하거나, 특정 명령어의 도움말을 보여줍니다.</p>
                             </div>
                             <div class="command-examples">
                                 <div class="example">
@@ -2834,7 +2834,7 @@ dogecoin-cli getmininginfo</code></pre>
                                 </div>
                             </div>
                             <div class="command-returns">
-                                <strong>반환값:</strong> 사용 가능한 명령어 목록 또는 특정 명령어 도움말.
+                                <strong>반환값:</strong> 사용 가능한 명령어 목록 또는 해당 명령어의 도움말.
                             </div>
                         </div>
 
@@ -2844,7 +2844,7 @@ dogecoin-cli getmininginfo</code></pre>
                                 <span class="command-type">유틸리티</span>
                             </div>
                             <div class="command-description">
-                                <p>Dogecoin Core 데몬을 종료합니다.</p>
+                                <p>도지코인 코어 데몬(daemon)을 종료합니다.</p>
                             </div>
                             <div class="command-examples">
                                 <div class="example">
@@ -2857,7 +2857,7 @@ dogecoin-cli getmininginfo</code></pre>
                                 </div>
                             </div>
                             <div class="command-returns">
-                                <strong>반환값:</strong> "Dogecoin Core 종료 중..." 메세지.
+                                <strong>반환값:</strong> "Dogecoin Core stopping..." 메시지.
                             </div>
                         </div>
 
@@ -2867,7 +2867,7 @@ dogecoin-cli getmininginfo</code></pre>
                                 <span class="command-type">유틸리티</span>
                             </div>
                             <div class="command-description">
-                                <p>서버의 총 가동 시간을 반환합니다.</p>
+                                <p>서버가 실행된 총 시간을 반환합니다.</p>
                             </div>
                             <div class="command-examples">
                                 <div class="example">
@@ -2890,7 +2890,7 @@ dogecoin-cli getmininginfo</code></pre>
                                 <span class="command-type">유틸리티</span>
                             </div>
                             <div class="command-description">
-                                <p>메모리 사용 정보 반환.</p>
+                                <p>메모리 사용량 정보를 반환합니다.</p>
                             </div>
                             <div class="command-examples">
                                 <div class="example">
@@ -2903,7 +2903,7 @@ dogecoin-cli getmininginfo</code></pre>
                                 </div>
                             </div>
                             <div class="command-returns">
-                                <strong>반환값:</strong> 메모리 사용 통계.
+                                <strong>반환값:</strong> 메모리 사용 통계 정보.
                             </div>
                         </div>
                     </div>
@@ -2916,11 +2916,11 @@ dogecoin-cli getmininginfo</code></pre>
                     <div class="note-content">
                         <h4>명령어 사용 팁</h4>
                         <ul>
-                            <li><strong>콘솔:</strong> <code>dogecoin-cli</code>로 직접 명령어 실행</li>
+                            <li><strong>콘솔:</strong> <code>dogecoin-cli</code>명령어로 직접 실행</li>
                             <li><strong>RPC:</strong> JSON-RPC 형식의 HTTP POST 요청 사용</li>
-                            <li><strong>파라미터:</strong> 대부분 명령어는 추가 파라미터를 지원합니다</li>
-                            <li><strong>도움말:</strong> <code>dogecoin-cli help [command]</code>로 상세 정보 확인</li>
-                            <li><strong>보안:</strong> RPC 호출 시 항상 인증 사용</li>
+                            <li><strong>매개변수:</strong> 대부분의 명령은 추가 인자를 받아 세부 조정 가능</li>
+                            <li><strong>도움말:</strong> <code>dogecoin-cli help [command]</code>로 자세한 정보 확인</li>
+                            <li><strong>보안:</strong> RPC 호출 시 반드시 인증 정보를 사용</li>
                         </ul>
                     </div>
                 </div>
